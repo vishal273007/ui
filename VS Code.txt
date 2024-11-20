@@ -1,0 +1,10 @@
+Hide any unnecessary folder from vs code file explorer:
+============================================================
+
+Settings("CTRL + ,) > Search for "files.exclude" > Click "Add Pattern" > enter folder name like "**/.vscode".
+
+
+Het the explorer folder to expand only after clicking the arrow left to the folder:
+========================================================================================
+
+CTRL + , > search "compact folders" > disable.
