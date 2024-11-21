@@ -28,3 +28,5 @@ Alt + Z --> Enable/Disable Word Wrap
 
 Task for VS Code:
 1. Learn Markdown text editing to better manage the text visuals in vs code. Learn and use shortcut in markdown editing to better format your text than default notepad like text editing.
+
+2. Learn what is SSH, SSH client and server and how to use it.
