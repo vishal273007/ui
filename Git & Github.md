@@ -1,39 +1,106 @@
-## Git commands to update repository:
+## Git commands to push/update repository:
 
-1. git status --> this will show the modified files.
-2. git add . --> this will stage the changes.
-3. git commit -m "updated tables in html" --> provide meaningful message describing what you changed.
-4. git push / git push origin main - send the updates to the remote repository by pushing the changes to GitHub.
-
----
-
-## Git Push differences:
-
-1. git push -u origin main --> recommende for first time.
-2. git push --> for subsequent pushes after tracking branch is already set up.
-3. git push origin <branch(i.e. main)> --> push explicitely without setting up tracking.
+1. `git status` --> this will show the modified files.
+2. `git add .` --> this will stage the changes.
+3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
+4. `git push` / git push -u origin main (for first time only) --> send the updates to the GitHub.
+<br>
+<br>
+<br>
 
 ---
 
-## Git Pull:
+### Git Pull:
 
-1. Keep local branch up-to-date with remote repository.
-2. Fetch remote changes: download updates from remote branch and merge into local branch.
+1. Keep local branch up-to-date by fetching/downloading updates from remote branch.
 3. git pull --> download and merge updates only when local branch is already tracking a remote branch.
 4. git pull origin main --> same as git pull but uses explicite branch name to merge.
+<br>
+<br>
+<br>
+---
 
 ### Using Two Devices to Work on The Same Repository:
 
-1. On Laptop:
+1. **On Laptop**: 
+- Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
 
-Make changes, add, commit, and push. (git add . --> git commit -m "message" --> git push)
+2. **On Tablet**: 
+- Pull changes from GitHub before making new edits. (Go to working directory --> git pull).
+- Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> `git push`)
 
-2. On Tablet:
+3. **Back to Laptop**: 
+- Pull the latest changes before starting work again. (git pull)
 
-Pull changes from GitHub before making new edits. (Go to working directory --> git pull)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> git push)
+---
 
-3. Back to Laptop:
+<br>
 
-Pull the latest changes before starting work again. (git pull)
+# Git and GitHub for Beginner
+
+### 1. Set Up Git
+Before starting, configure Git with details:
+- `git config --global user.name "Vishal Vishwakarma"`: Sets Git username.
+- `git config --global user.email "273007@gmail.com"`: Sets email for commits.
+
+<br>
+
+---
+
+### 2. Create a New Repository
+When starting a new project:
+- `git init`: Initializes a new Git repository in the project folder.
+- `git add .`: Adds all the files to the staging area (ready for commit).
+- `git commit -m "initial commit"`: Saves changes with a message.
+
+<br>
+
+- `git remote add origin [repository-url]"`: Links local project to a GitHub repository.
+- `git push -u origin main`: Pushes code to GitHub (need "-u" flag only for the first push).
+
+<br>
+
+---
+
+### 3. Working on the Project
+For regular updates in our code:
+- `git status`: Check what files has been changed.
+- `git add .`: Stage all files.
+- `git commit -m "updated some files"`: Save the staged changes with short message.
+- `git push`: Upload changes to GitHub.
+
+<br>
+
+---
+
+### 4. Update the Code
+To get the latest updates fromGitHub:
+- `git pull`: Pulls changes from GitHub and merges them into local project.
+
+<br>
+
+---
+
+### 5. Work with Branches
+For experimenting or working on new features:
+- `git branch <branch-name>`: Creates a new branch(e.g< feature-login>).
+- `git checkout <branch-name>`: Switches to that branch to start working.
+- `git merge <branch-name>`: Merges changes from another branch into current one.
+- `git branch -d <branch-name>`: Deletes a branch that is no longer needed.
+
+<br>
+
+---
+
+### 6. Undo Mistakes
+If there's a mistake, here's how to fix:
+- `git restore <file>`: Discard changes in the working directory.
+- `git reset <file>`: Removes a file from staging the staging area but keeps the changes locally.
+- `git revert <commit-hash>`: Creates a new commit that undoes changes from a specific commit(safer than reset).
