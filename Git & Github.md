@@ -34,6 +34,6 @@ Pull changes from GitHub before making new edits. (Go to working directory --> g
 
 Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> git push)
 
-3. Back to Device A:
+3. Back to Laptop:
 
 Pull the latest changes before starting work again. (git pull)
