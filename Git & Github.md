@@ -17,7 +17,23 @@
 
 ## Git Pull:
 
-1. It is to keep local branch up-to-date with remote repository.
+1. Keep local branch up-to-date with remote repository.
 2. Fetch remote changes: download updates from remote branch and merge into local branch.
 3. git pull --> download and merge updates only when local branch is already tracking a remote branch.
 4. git pull origin main --> same as git pull but uses explicite branch name to merge.
+
+### Using Two Devices to Work on The Same Repository:
+
+1. On Laptop:
+
+Make changes, add, commit, and push. (git add . --> git commit -m "message" --> git push)
+
+2. On Tablet:
+
+Pull changes from GitHub before making new edits. (Go to working directory --> git pull)
+
+Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> git push)
+
+3. Back to Device A:
+
+Pull the latest changes before starting work again. (git pull)
