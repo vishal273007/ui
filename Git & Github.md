@@ -62,7 +62,7 @@ When starting a new project:
 
 <br>
 
-- `git remote add origin [repository-url]"`: Links local project to a GitHub repository.
+- `git remote add origin https://github.com/vishal273007/Notes.git`: Links local project to a GitHub repository.
 - `git push -u origin main`: Pushes code to GitHub (need "-u" flag only for the first push).
 
 <br>
