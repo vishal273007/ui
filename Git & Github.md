@@ -1,3 +1,5 @@
+# Git & GitHub
+
 ## Git commands to push/update repository:
 
 1. `git status` --> this will show the modified files.
@@ -7,6 +9,17 @@
 <br>
 <br>
 <br>
+
+---
+
+## Git Clone:
+- `git clone https://github.com/vishal273007/ui.git`: Download a copy of ui repository in to current folder.
+
+<br>
+
+## Git Fork:
+- Create a copy of someone else's repository on self GitHub account without any connection to the original repository.
+- We need to **fork first**, then **clone** in our system to work locally.
 
 ---
 
