@@ -62,6 +62,8 @@
 Before starting, configure Git with details:
 - `git config --global user.name "Vishal Vishwakarma"`: Sets Git username.
 - `git config --global user.email "273007@gmail.com"`: Sets email for commits.
+<br>
+- `git config --list`: veryfy if you entered right username and email.
 
 <br>
 
