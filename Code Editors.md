@@ -80,3 +80,32 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
 
 ### Empty/New Line
 - Use `<br>` tag as html for new line as markdown also supports html codes.
+
+
+# Eclipse
+ ---
+
+ ## Basic Settings:
+
+ - **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
+ - **`Change font`**: ...Appearance --> Colors and Fonts --> Basic --> Text Font --> JetBrains Mono. Then Font style "Regular" and leave size default.
+
+--
+
+<br>
+<br>
+
+- Change Output layout to right side of code editor: Hold the top edge of output windows and drag it to the position you want.
+
+---
+
+ **Eclipse Marketplace**:
+
+- Use the eclipse market place to download useful plugins and theme and many more. `Help --> Eclipse Marketplace` the use the search bar for your specific queries.
+
+<br>
+
+## Eclipse Shortcuts:
+
+- **`Ctrl + Shift + F`**: To format code automatically.
+- **`Ctrl + F11`**: Shortcut to run the code immediately.
