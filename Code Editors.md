@@ -90,6 +90,9 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
  - **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
  - **`Change font`**: ...Appearance --> Colors and Fonts --> Basic --> Text Font --> JetBrains Mono. Then Font style "Regular" and leave size default.
 
+ - **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
+ - **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
+
 --
 
 <br>
@@ -102,6 +105,8 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
  **Eclipse Marketplace**:
 
 - Use the eclipse market place to download useful plugins and theme and many more. `Help --> Eclipse Marketplace` the use the search bar for your specific queries.
+
+- Dele the .metadata folder in the username/eclipse-workspace to reset layout and font. it will fix the .project not found while opening the project.
 
 <br>
 
