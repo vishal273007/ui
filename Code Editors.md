@@ -20,6 +20,10 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
 - **Alt + Z** --> Enable/Disable Word Wrap
 - **Ctrl + Shift + V** --> Preview Markdown Docs
 
+- Shift + Alt + F - Auto Format as shortcut and enable "Editor: Format On Save" in setting by searching "format on save" in settings.
+
+
+
 <br>
 <br>
 <br>
