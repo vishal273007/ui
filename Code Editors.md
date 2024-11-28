@@ -19,6 +19,20 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
 - **Ctrl + ,** -->  Open settings
 - **Alt + Z** --> Enable/Disable Word Wrap
 - **Ctrl + Shift + V** --> Preview Markdown Docs
+ 
+ ---
+
+<br>
+
+## Live Server Setup:
+- This live server can be configured to view output on the another device browser.
+
+- Install **nodejs** --> run `node -v` and `npm -v` commands on terminal to verify installation.
+- **`npm install -g live-server`**: run this command on terminal to insatll liver server.
+- **`live-server`**: open desired folder --> open terminal there. run `live-server` command to enable live server.
+- `http://192.168.0.125:8080`: open this url in tab to see live changes.
+- **Firewall Issue**: Initially, the url will not open in another device. <br> 
+Firewall --> Advanced settings --> Inbound Rules --> Port --> 8080 --> Allow connection --> Name "Allow live-server".
 
 <br>
 <br>
