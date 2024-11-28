@@ -34,6 +34,10 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
 - **Firewall Issue**: Initially, the url will not open in another device. <br> 
 Firewall --> Advanced settings --> Inbound Rules --> Port --> 8080 --> Allow connection --> Name "Allow live-server".
 
+- Shift + Alt + F - Auto Format as shortcut and enable "Editor: Format On Save" in setting by searching "format on save" in settings.
+
+
+
 <br>
 <br>
 <br>
