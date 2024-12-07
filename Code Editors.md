@@ -1,8 +1,12 @@
 # VS Code
 
+### Regular use tips:
+- Hold “Alt” key and click on any text to write same word many places
+
 ### Hide any folder from file explorer
 
 - Settings("CTRL + ,) > Search for "files.exclude" > Click "Add Pattern" > enter folder name like "**/.vscode or **/gitignore".
+- Similarly, add pattern [**/*.class] to hide generated java .class files from vscode file exporer area.
 
 ### Folder expand only after clicking the arrow left to the folder:
 
@@ -17,11 +21,12 @@ Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
 
 - **Ctrl + `** --> Open terminal.
 - **Ctrl + ,** -->  Open settings
-- **Alt + Z** --> Enable/Disable Word Wrap
+<br>
+
+- **Ctrl + D** --> Copy same line below
+- **Alt + Z** --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
 - **Ctrl + Shift + V** --> Preview Markdown Docs
  
- ---
-
 <br>
 
 ## Live Server Setup:
@@ -39,10 +44,18 @@ Firewall --> Advanced settings --> Inbound Rules --> Port --> 8080 --> Allow con
 
 
 <br>
+
+- Open the folder where you want to open the VS Code. Hold shift key and right click on an empty space in the folder and choose open with VS Code.
+- Or open the terminal in the same folder/directory where you wanna open VS Code then type "code ." in the terminal and the VS Code will open with folder.
+
 <br>
 <br>
 <br>
 
+---
+
+<br>
+<br>
 
 # ACODE
 
