@@ -5,7 +5,7 @@
 1. `git status` --> show modified files.
 2. `git add .` --> stages the changes.
 3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
-4. `git push` --> send the updates to the GitHub.
+4. `git push` --> upload changes to the GitHub.
 <br>
 
 ### Git Pull:
