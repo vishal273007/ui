@@ -49,8 +49,6 @@
 
 ---
 
-<br>
-
 # Git and GitHub for Beginner
 
 ### 1. Set Up Git
