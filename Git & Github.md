@@ -37,7 +37,6 @@
 ## Git Clone:
 - `git clone https://github.com/vishal273007/ui.git`: Download a copy of ui repository in to current folder.
 
-<br>
 
 ## Git Fork:
 - Create a copy of someone else's repository on self GitHub account without any connection to the original repository.
