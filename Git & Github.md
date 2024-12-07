@@ -1,8 +1,6 @@
 # Git & GitHub
 
-## Git commands to push/update repository:
-
-### After changes:
+### push changes:
 
 1. `git status` --> this will show the modified files.
 2. `git add .` --> this will stage the changes.
