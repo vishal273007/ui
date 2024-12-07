@@ -1,6 +1,6 @@
 # Git & GitHub
 
-### Push changes:
+### Push Changes:
 
 1. `git status` --> this will show the modified files.
 2. `git add .` --> this will stage the changes.
