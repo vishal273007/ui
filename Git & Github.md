@@ -2,6 +2,8 @@
 
 ### Using Two Devices to Work on The Same Repository:
 
+> Always do this before starting to work.
+
 1. **On Laptop**: 
 - Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
 
