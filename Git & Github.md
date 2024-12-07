@@ -1,39 +1,8 @@
 # Git & GitHub
 
-## Git commands to push/update repository:
-
-1. `git status` --> this will show the modified files.
-2. `git add .` --> this will stage the changes.
-3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
-4. `git push` / git push -u origin main (for first time only) --> send the updates to the GitHub.
-<br>
-<br>
-<br>
-
----
-
-## Git Clone:
-- `git clone https://github.com/vishal273007/ui.git`: Download a copy of ui repository in to current folder.
-
-<br>
-
-## Git Fork:
-- Create a copy of someone else's repository on self GitHub account without any connection to the original repository.
-- We need to **fork first**, then **clone** in our system to work locally.
-
----
-
-### Git Pull:
-
-1. Keep local branch up-to-date by fetching/downloading updates from remote branch.
-3. git pull --> download and merge updates only when local branch is already tracking a remote branch.
-4. git pull origin main --> same as git pull but uses explicite branch name to merge.
-<br>
-<br>
-<br>
----
-
 ### Using Two Devices to Work on The Same Repository:
+
+> Always do this before making any changes.
 
 1. **On Laptop**: 
 - Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
@@ -46,15 +15,38 @@
 - Pull the latest changes before starting work again. (git pull)
 
 <br>
+
+### Push Changes:
+
+1. `git status` --> show modified files.
+2. `git add .` --> stages the changes.
+3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
+4. `git push` --> upload changes to the GitHub.
 <br>
-<br>
-<br>
-<br>
+
+### Git Pull:
+
+1. Download changes and updates from remote branch to keep local branch up-to-date.
+2. `git pull` --> download and merge updates. Make sure local branch is already tracking a remote branch.
+3. Ex: You cloned prasad sir project. when he changes in his code, then you can simply run the "git pull" command to update your copy of their project automatically.
+
 <br>
 
 ---
 
+## Git Clone:
+- `git clone https://github.com/vishal273007/ui.git`: Download a copy of ui repository in to current folder.
+
+
+## Git Fork:
+- Create a copy of someone else's repository on self GitHub account without any connection to the original repository.
+- We need to **fork first**, then **clone** in our system to work locally.
+
+
 <br>
+<br>
+
+---
 
 # Git and GitHub for Beginner
 
@@ -65,6 +57,7 @@ Before starting, configure Git with details:
 <br>
 - `git config --list`: veryfy if you entered right username and email.
 
+<br>
 <br>
 
 ---
