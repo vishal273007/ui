@@ -10,6 +10,12 @@
 <br>
 <br>
 
+### Git Pull:
+
+1. Keep local branch up-to-date by fetching/downloading updates from remote branch.
+2. git pull --> download and merge updates only when local branch is already tracking a remote branch.
+3. Ex: You cloned prasad sir project. when he changes in his code, then you can simply run the "git pull" command to update your copy of their project automatically.
+
 ---
 
 ## Git Clone:
@@ -21,16 +27,11 @@
 - Create a copy of someone else's repository on self GitHub account without any connection to the original repository.
 - We need to **fork first**, then **clone** in our system to work locally.
 
----
 
-### Git Pull:
+<br>
+<br>
+<br>
 
-1. Keep local branch up-to-date by fetching/downloading updates from remote branch.
-2. git pull --> download and merge updates only when local branch is already tracking a remote branch.
-3. Ex: You cloned prasad sir project. when he changes in his code, then you can simply run the "git pull" command to update your copy of their project automatically.
-<br>
-<br>
-<br>
 ---
 
 ### Using Two Devices to Work on The Same Repository:
