@@ -10,7 +10,7 @@
 
 ### Git Pull:
 
-1. Download updates from remote branch to keep local branch up-to-date.
+1. Download changes and updates from remote branch to keep local branch up-to-date.
 2. git pull --> download and merge updates. Make sure local branch is already tracking a remote branch.
 3. Ex: You cloned prasad sir project. when he changes in his code, then you can simply run the "git pull" command to update your copy of their project automatically.
 
