@@ -1,5 +1,19 @@
 # Git & GitHub
 
+### Using Two Devices to Work on The Same Repository:
+
+1. **On Laptop**: 
+- Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
+
+2. **On Tablet**: 
+- Pull changes from GitHub before making new edits. (Go to working directory --> git pull).
+- Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> `git push`)
+
+3. **Back to Laptop**: 
+- Pull the latest changes before starting work again. (git pull)
+
+<br>
+
 ### Push Changes:
 
 1. `git status` --> show modified files.
@@ -28,25 +42,6 @@
 - We need to **fork first**, then **clone** in our system to work locally.
 
 
-<br>
-
----
-
-### Using Two Devices to Work on The Same Repository:
-
-1. **On Laptop**: 
-- Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
-
-2. **On Tablet**: 
-- Pull changes from GitHub before making new edits. (Go to working directory --> git pull).
-- Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> `git push`)
-
-3. **Back to Laptop**: 
-- Pull the latest changes before starting work again. (git pull)
-
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
