@@ -8,7 +8,6 @@
 4. `git push` / git push -u origin main (for first time only) --> send the updates to the GitHub.
 <br>
 <br>
-<br>
 
 ### Git Pull:
 
@@ -28,7 +27,6 @@
 - We need to **fork first**, then **clone** in our system to work locally.
 
 
-<br>
 <br>
 <br>
 
