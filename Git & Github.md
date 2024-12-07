@@ -2,6 +2,8 @@
 
 ## Git commands to push/update repository:
 
+### After changes:
+
 1. `git status` --> this will show the modified files.
 2. `git add .` --> this will stage the changes.
 3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
