@@ -59,6 +59,7 @@ Before starting, configure Git with details:
 - `git config --list`: veryfy if you entered right username and email.
 
 <br>
+<br>
 
 ---
 
