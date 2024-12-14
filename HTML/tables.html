@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Tables in HTML</title>
+</head>
+
+<body>
+
+    <table border="1" cellspacing="20" cellpadding="15">
+        <tr>
+            <th>S.no.</th>
+            <th>Subject name</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <td>English</td>
+            <td>80</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <td>Math</td>
+            <td>96</td>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <td>Science</td>
+            <td>85</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellspacing="15" cellpadding="25">
+        <!--
+        cellspacing: space between 2 consecutive cells
+        cellpadding: innner space from content to the cell border in a single cell
+        -->
+        <tr>
+            <th>no</th>
+            <th>name</th>
+            <th>score</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>raj</td>
+            <td rowspan="2">25</td>
+            <!-- rowspan: combining mulitple rows of a single column -->
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>naresh</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td colspan="2">NA</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
