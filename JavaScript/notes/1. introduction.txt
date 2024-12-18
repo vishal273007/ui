@@ -19,7 +19,7 @@ How to include JavaScript into HTML:
         console.log("bye world")
         </script>
 
-2. External JS: we can include JavaScript to HTML by an extenal file path in src.
+2. External JS: we can include JavaScript to HTML by an external file path in src.
                 <script src = "./script.js"></script>
 
 
@@ -33,10 +33,10 @@ How to include JavaScript into HTML:
 - Every browser supports certain tools called developer tools.
 - Most used developer tools includes: element, console, sources, network, memory, performance, application, and lighthouse.
 
-Console is used for debugging(The process to find bugs by checking the code thouroughly or line by line).
+Console is used for debugging(The process to finding bugs by checking the code thoroughly - line by line).
 The bug represents unexpected result or not working the way it supposed to. Ex: you wrote add program but mentioned subtraction. it's not error.
 
-JavaScript can also perform Server Side but basic JavaScript is designed for client side.
+JavaScript can also perform on Server Side but basic JavaScript is designed for client side.
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -44,50 +44,24 @@ JavaScript can also perform Server Side but basic JavaScript is designed for cli
 Comments in JavaScript:
     Comments are used for readability purposes and they make the code more clear and understandable for the developer.
 
-    A good developer always use Comments. Comments are ignored by the compiler.
+    Comments are ignored by the compiler. (A good developer always uses Comments).
 
     There are two ways of commenting code in JavaScript:
         i. Single Line Comments: Used in one line and is followed by "//", e.g. //Single Line Comments
-        ii. Multi Line Comments: Used for multiple line and are always between /* and */.
+        ii. Multi Line Comments: Used for multi-line and are always between /* and */.
 
 
 -----------------------------------------------------------------------------------------------------------
 
 Variables in JS:
-    Variables are the fundamental concepts in any programming language. Variables are used to store the values such that those values can be modified/manipulated easily.
+    Variables are used to store the values such that those values can be modified/manipulated easily.
     These variables also called identifiers. There are 3 ways we can declare variables in javascript:
-        i. var: var is the traditional way of declaring variables in JS. var is a "functional scoped variable" and var values can be re-declared and re-assigned.
+        i. var: var is the traditional way of declaring variables in JS. var is a *"functional scoped variable"* and var values can be re-declared and re-assigned.
         e.g. var x = 25;
 
-        ii. let: let is introduced in ES6, 2015. It is a block scoped variable and let value can not be re-declared but can be re-assigned. 
+        ii. let: let is introduced in ES6, 2015. It is a *block scoped variable* and let value can not be re-declared but can be re-assigned. 
 
-        iii. const: const is introduced in ES6, 2015. It is a block scoped variable and const value can not be re-declared or re-assigned. const means constant.
+        iii. const: const is introduced in ES6, 2015. It is a *block scoped variable* and const value can not be re-declared or re-assigned. const means constant.
 
     
-** For modern programming, avoid using 'var' and mostly use let and const.
-
-
-===================================================================================================================================
-
-
-** is semicolon mandatory in JS? JS has auto semicolon insertion in JS engine. still, using (;) at the end of every statement is good practice.
-
-Basic Default methods:
-    alert: alert method is used to alert the user with a message.
-    e.g.: alert(message); 
-
-    prompt:prompt is use to input a value from the user but prompt takes the value always as string(alphanumerical value).
-    e.g.: prompt(xyz);
-
-    confirm: confirm is used to confirm a certain condition.
-    e.g.: confirm(question);
-
-
-
-**** To fix an error or debug or in the code, just comment some snippet one by one find the issue, like in this js code.
-
-
-JavaScript basic practice resources:
-    freeCodeCamp - just like html and css practice.
-    jshero
-    jschallenger
+** Note: For modern programming, avoid using var and mostly use let and const.

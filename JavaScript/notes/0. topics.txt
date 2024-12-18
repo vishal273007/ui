@@ -1,0 +1,30 @@
+JAVASCRIPT:
+==========
+
+1. Basics:
+    Introduction
+    Primitive data types
+    Operators
+    Functions
+    Arrays
+    Objects
+    Control Statements
+    Loops
+    (These are in every pogramming language.)
+
+2. DOM(Document)
+
+3. Async: (Asynchronous)
+    Events
+    Timers
+    API, AJAX
+    Promises
+    Async await
+    ES6
+
+4. OOPS
+
+5. BOM
+
+6. Libraries
+

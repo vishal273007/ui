@@ -68,6 +68,8 @@
 
 [ **Enable Autosave**: Settings > Click on "Search" > Type "autosava" > enter 1000]
 
+<mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
+
 ### Steps To Set Up "browser-sync" For Live Preview:
 
 1. pkg install nodejs
@@ -81,6 +83,10 @@
 - Go to Settings >Editor Settings > Disable Live autcompletion
 - Go to Settings > Themes > Enable VS Code for editor in Themes
 - Go to Formatter > Select popular language and and there format.
+
+### Emmets:
+
+- **main** + enter = java main() snippet
 
 <br>
 <br>

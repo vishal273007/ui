@@ -4,6 +4,38 @@ Win+I = Settings
 
 ## Terminal Command:
 
+- `Get-WmiObject -Class Win32_Battery | Select-Object -Property EstimatedChargeRemaining` = Check charging level with terminal
+
+## Basic Linux Commands:
+
+- `pwd` = to show present working directly
+- `ls` = list the files/folders inside the present directory
+
+- `cd folder_name` = Open the directory//folder
+- `cat filename.txt` = Show the content of any file like txt on the terminal
+
+- `mkdir folder_name` = Make a folder the current directory
+- `touch filename.extension` = Create a file
+- `'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
+- `mv folder/file.txt ~/storage/downloads/` = Move
+- `mv oldfolder/oldname.txt newfolder/newname.txt` = Rename
+- `rm file.txt / rm -r folder` = Delete.
+- `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
+- `du -h file.txt / du -sh folder` = Check size.
+- `ls -l file.txt / ls -ld folder` = Check property.
+-
+
+- `# sometexts` - Comments ignored by terminal
+- `echo message` - print any message on the terminal
+
+<br>
+
+Keyboard Shortcuts:
+
+- `Tab, Right arrow` - Autocomplete the command to mitigate the mistakes.
+
+## Terminal Command:
+
 - **`pwd`**: print working directory to see the path
 - **`ls`**: list items in the current folder
 - **`cd`**: change directory. use cd folder_name to open that folder. use cd .. to go back to previous folder. cd . is current is present directory.
@@ -44,6 +76,7 @@ Win+I = Settings
 
 <br>
 
+- **F11**: To open the terminal in focus mode/any app in full screen.
 - You can still resize windows in focus mode.
 
 <br>
