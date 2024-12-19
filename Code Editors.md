@@ -64,7 +64,7 @@
 # ACODE
 
 [ **Enable Autosave**: Settings > Click on "Search" > Type "autosava" > enter 2000]
-[ **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to  ]
+[ **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select  ]
 
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
 
