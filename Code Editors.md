@@ -63,10 +63,10 @@
 
 # ACODE
 
-[ **Autosave**: Settings > Click on "Search" > Type "autosava" > enter 0 to diable Autosave. ]
+[ **Autosave**: Settings > Search "autosava" > enter 0 to diable Autosave. ]
 [ **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select a formatter. ]
-[ **Ctrl+Shift+D**: copy line down. ]
-[ **Alt + Backspace**: remove whole at once. ]
+[ **Ctrl+Shift+D**: Copy line down. ]
+[ **Alt + Backspace**: Remove whole at once. ]
 [ **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase. ]
 
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
