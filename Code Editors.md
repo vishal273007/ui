@@ -65,11 +65,14 @@
 
 - **Autosave**: Settings > Search "autosava" > Enter 0 to diable autosave.
 - **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select a formatter.
-- **Ctrl+Shift+D**: Copy line down.
+- **Ctrl+Shift+D**: Copy line down.  
+
+<br>
 - **Alt + Backspace**: Remove whole at once.
 - **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase.
 - **Alt + Right Arrow**: Go to end of the line.
 - *Alt + Up/Down Arrow**: Instead of moving a line up or down, use it to move the line.
+- **Ctrl + Q**: To close the current open file.
 
 **Acode plugins**: AcodeX Terminal, GitHub, Acode Ayu, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
 
