@@ -68,6 +68,7 @@
 [ **Ctrl+Shift+D**: copy line down. ]
 [ **Alt + Backspace**: remove whole at once. ]
 
+
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
 
 ### Steps To Set Up "browser-sync" For Live Preview:
