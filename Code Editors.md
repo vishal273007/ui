@@ -75,7 +75,7 @@
 
 <br>
 
-- *Alt + Up/Down Arrow**: Instead of moving a line up or down, use it to move the line.
+- **Alt + Up/Down Arrow**: Instead of moving a line up or down, use it to move the line.
 - **Ctrl + Q**: To close the current open file.
 
 **Acode plugins**: AcodeX Terminal, GitHub, Acode Ayu, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
