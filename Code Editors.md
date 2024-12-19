@@ -63,7 +63,7 @@
 
 # ACODE
 
-[ **Autosave**: Settings > Click on "Search" > Type "autosava" > enter 2000 ]
+[ **Autosave**: Settings > Click on "Search" > Type "autosava" > enter 0 to diable Autosave. ]
 [ **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select a formatter. ]
 [ **Ctrl+Shift+D**: copy line down. ]
 [ **Alt + Backspace**: remove whole at once. ]
@@ -89,10 +89,7 @@
 
 - **main** + enter = java main() snippet
 
-<br>
-<br>
-<br>
-<br>
+<br> <br> <br> <br>
 
 # MARKDOWN GUIDE
 
@@ -142,8 +139,7 @@
 
 --
 
-<br>
-<br>
+<br> <br>
 
 - Change Output layout to right side of code editor: Hold the top edge of output windows and drag it to the position you want.
 
