@@ -65,10 +65,11 @@
 
 - **Autosave**: Settings > Search "autosava" > enter 0 to diable Autosave.
 - **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select a formatter.
-[ **Ctrl+Shift+D**: Copy line down. ]
-[ **Alt + Backspace**: Remove whole at once. ]
-[ **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase. ]
+- **Ctrl+Shift+D**: Copy line down.
+- **Alt + Backspace**: Remove whole at once.
+- **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase.
 - **Alt + Right Arrow**: Go to end of the line.
+- 
 **Acode plugins**: AcodeX Terminal, GitHub, Acode Ayu, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
 
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
