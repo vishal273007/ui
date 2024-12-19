@@ -69,7 +69,7 @@
 - **Alt + Backspace**: Remove whole at once.
 - **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase.
 - **Alt + Right Arrow**: Go to end of the line.
-- 
+
 **Acode plugins**: AcodeX Terminal, GitHub, Acode Ayu, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
 
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
