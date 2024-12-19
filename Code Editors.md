@@ -71,6 +71,8 @@
 - **Alt + Backspace**: Remove whole at once.
 - **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase.
 - **Alt + Right Arrow**: Go to end of the line.
+
+<br>
 - *Alt + Up/Down Arrow**: Instead of moving a line up or down, use it to move the line.
 - **Ctrl + Q**: To close the current open file.
 
