@@ -55,9 +55,7 @@
 - Open the folder where you want to open the VS Code. Hold shift key and right click on an empty space in the folder and choose open with VS Code.
 - Or open the terminal in the same folder/directory where you wanna open VS Code then type "code ." in the terminal and the VS Code will open with folder.
 
-<br>
-<br>
-<br>
+<br> <br> <br>
 
 ---
 
@@ -65,7 +63,7 @@
 
 # ACODE
 
-[ **Enable Autosave**: Settings > Click on "Search" > Type "autosava" > enter 1000]
+[ **Enable Autosave**: Settings > Click on "Search" > Type "autosava" > enter 2000]
 
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
 
