@@ -63,7 +63,7 @@
 
 # ACODE
 
-- **Autosave**: Settings > Search "autosava" > enter 0 to diable Autosave.
+- **Autosave**: Settings > Search "autosava" > Enter 0 to diable autosave.
 - **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select a formatter.
 - **Ctrl+Shift+D**: Copy line down.
 - **Alt + Backspace**: Remove whole at once.
