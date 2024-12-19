@@ -69,6 +69,8 @@
 [ **Alt + Backspace**: Remove whole at once. ]
 [ **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase. ]
 
+**Acode plugins**: AcodeX Terminal, GitHub, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
+
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'None'.</span> "Default" option will make the code forced Un-formatted which is worse than even text editors. </mark>
 
 ### Steps To Set Up "browser-sync" For Live Preview:
