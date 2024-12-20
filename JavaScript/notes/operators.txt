@@ -1,2 +1,41 @@
 Operators are used to perform and operation and between operands.
 E.g.: a + b is an addition operation with + as an operator and a, b as operands.
+
+There are several operators sush as:
+    i. Arithmetic Operators
+        Arithmetic operators are used to perform basic arithmetic operations.
+        '+' -- used for addtition
+        '-' -- used for subraction
+        '*' -- used for multiplication
+        '/' -- used for division -- It will give exact value unlike other programming language. 10/2 = 5 in js, and 10/2 = 0 in python, java.
+        '%' -- used for modulus -- 7/2 = 3.5 ,, 7%2 = 1.
+        '**' -- used for power, eg 2**3 = 2*2*2 = 8. or [math.pow().]
+    
+    2. Relational Operators:
+        Relational operators are used to perform comparisons and returns boolean values. 
+        E.g.
+        > -- greater than
+        < -- less than
+        >= -- greater than or equals to
+        <= -- less than or equals to
+        == -- double equals is used to compare two values.
+        === -- triple equals is used to compare two values and datatypes.
+        != -- will be true when both values are not equals to each other
+        !== -- will be true when both values are not equals to each other or datatypes.
+        e.g. '5' == 5 --> True, '5' === 5 --> False
+        0 == false --> true, 0 === false --> F
+        '1' == true -- T, '1' === --> F.
+
+    3. Logical Operators:
+        Logical operators are used to perform logical conditions, such as:
+            
+            AND -- && -- Both values are true. Used to check multiple conditions based on AND.
+            E.g.: (5>2) && (5>4) -- True
+
+            OR -- || -- True when any of the condition is True. Used to check multiple conditions based on OR.
+            e.g.: (5>2) || (5>6) -- True
+            
+            NOT --! - Used to check whether condition is false or not.
+            e.g.: !(10>5) --!(true) --> False.
+
+        
