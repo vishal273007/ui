@@ -32,6 +32,8 @@
         8. Math.pow(a,b) -- returns the value of a power b.
         9. Math.random() -- returns the random value from 0.0 to 1.0.
 
+-------------------------------------------------------------------------------------------------------------------------------
+
 
 String:
     String is used for alphanumerical values. it might contain numbers, characters, or special symbols.
@@ -89,16 +91,20 @@ String:
 
 
 
+---------------------------------------------------------------------------------------------------------------------------------
 
 3. Boolean: Boolean is used to store true or false. True can be converted as 1 and false can be converted as 0.
         e.g.: let x = true;
         let y = 10>5;
 
+---------------------------------------------------------------------------------------------------------------------------------
 
 4. undefined: represents accidental absense of value. It expects the value in future
     e.g.: 
         let x = undefined;
 
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 5. null: null represents intentional absense of value. it ends the value and will not expects.
     e.g.:

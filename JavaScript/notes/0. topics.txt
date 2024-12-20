@@ -4,6 +4,7 @@ JAVASCRIPT:
 1. Basics:
     Introduction
     Primitive data types
+    JS Engine(Hoisting, call stack, dubug)
     Operators
     Functions
     Arrays

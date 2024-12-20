@@ -71,6 +71,10 @@ For the first time push, enter following:
 
 - `git config --list`: veryfy if you entered right username and email.
 
+- **Note**: for setting up in ubuntu:
+- Run `git config --global credential.helper store`.
+- Enter credentials once when pushing/pulling (after this, Git will remember them)
+
 <br>
 <br>
 

@@ -1,0 +1,2 @@
+Operators are used to perform and operation and between operands.
+E.g.: a + b is an addition operation with + as an operator and a, b as operands.
