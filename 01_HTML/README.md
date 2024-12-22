@@ -1,18 +1,19 @@
 # HTML Folder
 
-This folder covers all HTML concepts I have studied so far.
+> Use README.md files as documentation so you never forget what a folder or file is for.
 
-### Topics Covered
+This folder contains all the examples and projects related to HTML concepts.
 
-1. Basics - Headings, paragraphs, lists, etc.
-2. Forms - Input fields, dropdowns, and buttons.
-3. Tables - Simple and advanced tables.
+### Folder Structure
 
-### File Naming Convention
+1. **01_Basics** - Basic concepts like headings, paragraphs, and links.
+2. **02_Lists_and_Tables** - Examples of lists and tables.
+3. **03_Forms** - Input fields, buttons, and form validation examples.
+4. **04_Media** - Working with images, audio, and video tags.
+5. **05_Semantic_HTML** - Examples of semantic HTML tags.
+6. **HTML_Projects** - HTML-based mini-projects for practice.
 
-- Files are numbered based on the order studied.
-- Example: `01_intro.html`, `02_headings.html`.
+### How to Use
 
-### How to Test
-
-- Open any file in a web browser.
+- Browse topics in order for step-by-step learning.
+- Open files in a browser or editor to view and modify examples.
