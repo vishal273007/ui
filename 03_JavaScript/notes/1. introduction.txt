@@ -1,0 +1,67 @@
+JavaScript:
+==========
+    JavaScript is client side programming language used for the functionality of website.
+    JavaScript is JIT(Just-in-Time)(the moment we type, it starts compiling) compiled programming language that runs on JS Engine of every browser.
+
+    Popular browser like Chrome has an engine called v8, Mozilla has an engine called spidermonkey, and edge has an engine called chakra.
+    JavaScript is synchronous(runs line by line without waiting), single threaded(one task at a time) language.
+
+
+    JavaScript is developed by Brenden Eich in 1995. While working in NetScape, he started it. Initially it was named as "livescript", but due to popularity of java, it renamed as JavaScript.
+
+
+How to include JavaScript into HTML:
+    1. Internal JS
+    2. External JS
+
+1. Internal JS: we can include JavaScript into HTML directly within script tag.
+    e.g. <script>
+        console.log("bye world")
+        </script>
+
+2. External JS: we can include JavaScript to HTML by an external file path in src.
+                <script src = "./script.js"></script>
+
+
+** JavaScript is case sensitive **
+
+** It is recommended to include JS at the end of body.
+
+-----------------------------------------------------------------------------------------------------------
+
+
+- Every browser supports certain tools called developer tools.
+- Most used developer tools includes: element, console, sources, network, memory, performance, application, and lighthouse.
+
+Console is used for debugging(The process to finding bugs by checking the code thoroughly - line by line).
+The bug represents unexpected result or not working the way it supposed to. Ex: you wrote add program but mentioned subtraction. it's not error.
+
+JavaScript can also perform on Server Side but basic JavaScript is designed for client side.
+
+-----------------------------------------------------------------------------------------------------------
+
+
+Comments in JavaScript:
+    Comments are used for readability purposes and they make the code more clear and understandable for the developer.
+
+    Comments are ignored by the compiler. (A good developer always uses Comments).
+
+    There are two ways of commenting code in JavaScript:
+        i. Single Line Comments: Used in one line and is followed by "//", e.g. //Single Line Comments
+        ii. Multi Line Comments: Used for multi-line and are always between /* and */.
+
+
+-----------------------------------------------------------------------------------------------------------
+
+Variables in JS:
+    Variables are used to store the values such that those values can be modified/manipulated easily.
+    These variables also called identifiers. There are 3 ways we can declare variables in javascript:
+        i. var: var is the traditional way of declaring variables in JS. var is a *"functional scoped variable"* and var values can be re-declared and re-assigned.
+        e.g. var x = 25;
+
+        ii. let: let is introduced in ES6, 2015. It is a *block scoped variable* and let value can not be re-declared but can be re-assigned. 
+
+        iii. const: const is introduced in ES6, 2015. It is a *block scoped variable* and const value can not be re-declared or re-assigned. const means constant.
+
+    
+** Note: For modern programming, avoid using var and mostly use let and const.

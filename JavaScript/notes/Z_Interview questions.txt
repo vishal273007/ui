@@ -1,3 +1,0 @@
-1. what is the difference in var, let, and const?
-
-2. is console part of JS?
