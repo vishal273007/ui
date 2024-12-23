@@ -8,7 +8,7 @@ There are several operators sush as:
         '-' -- used for subraction
         '*' -- used for multiplication
         '/' -- used for division -- It will give exact value unlike other programming language. 10/2 = 5 in js, and 10/2 = 0 in python, java.
-        '%' -- used for modulus -- 7/2 = 3.5 ,, 7%2 = 1.
+        '%' -- used for remainder -- 7/2 = 3.5 ,, 7%2 = 1.
         '**' -- used for power, eg 2**3 = 2*2*2 = 8. or [math.pow().]
     
     2. Relational Operators:
@@ -37,5 +37,38 @@ There are several operators sush as:
             
             NOT --! - Used to check whether condition is false or not.
             e.g.: !(10>5) --!(true) --> False.
+
+    
+    4. Assignment Operators:
+        Assignment operators are used to assign certain values.
+        += -->  eg: a += 2 : a = a+2
+        -= --> eg: a -= 2 : a = a-2
+        *= --> eg: a -= 2 : a = a*2
+        /= --> eg: a -= 2 : a = a/2
+        %= --> eg: a -= 2 : a = a%2
+        **= --> eg: a -= 2 : a = a**2
+
+
+    5. Icrement and Decrement Operators:
+        Increment and Decrement operators are used to increase or decrease the value by 1.
+        Increment(++): Increment can be done in two ways
+            1. pre-increment: pre-increment first increases the value and then assigns the value.
+            eg.: ++a 
+
+            2. post-increment: post-increment first assigns the value and then increments the value.
+            eg.: a++;
+
+            Same applies to decrement also.
+
+    6. Ternary Operators:
+        Ternary operators are used to choose between two options based on a condition.
+        e.g.: 
+        let c = a>5 ? 10:20; (short form of if statement)
+        if the statement (a > 5) is true, then c = 10;
+        else c = 20;
+
+    7. unary + or unary - : These are used to convert any datatype to numbers. "unary +" is recommended to use.
+
+    8. nullish coelsion operator: it is used to when the decision needs to be done with empty or unknown values.
 
         
