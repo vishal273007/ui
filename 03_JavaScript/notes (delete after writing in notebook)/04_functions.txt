@@ -1,0 +1,49 @@
+functions are used to perform a specific task. we devide code into smaller reusable block to make code more easy to read and debug. They are called functions.
+
+Syntax:
+    function function_name(parameters/arguments)
+    {
+        function body/definition;
+        ...;
+    }
+    function_name(); // function call.
+
+    ex:
+    function add() {
+    let a = 10, b = 20;
+    let c = a + b;
+    console.log(c);
+}
+add();
+
+
+
+--> function can even take parameters such that every time we can use dynamic inputs.
+    function add(a, b){
+        let c = a + b;
+        console.log(c);
+    }
+    add(5, 3);
+    add(10, 20);
+
+
+--> we can assign default parameters in function prototype.
+    function add(a, b= 25){
+        let c = a + b;
+        console.log(c);
+    }
+    add(5);
+
+
+--> functions can even return the values. 
+
+
+functions are called "first class citizen in JavaScript"
+
+--> functions expressions : functions can be expressed  as a variable where an anonymous function named with variable is called function expression.
+
+
+
+-- Arrow functions: Arrow functions are function expression with modern Syntax. if definition has only one statement, no need of braces or return keyword.
+
+

@@ -41,12 +41,13 @@ There are several operators sush as:
     
     4. Assignment Operators:
         Assignment operators are used to assign certain values.
+        = --> a = 5;
         += -->  eg: a += 2 : a = a+2
         -= --> eg: a -= 2 : a = a-2
-        *= --> eg: a -= 2 : a = a*2
-        /= --> eg: a -= 2 : a = a/2
-        %= --> eg: a -= 2 : a = a%2
-        **= --> eg: a -= 2 : a = a**2
+        *= --> eg: a *= 2 : a = a*2
+        /= --> eg: a /= 2 : a = a/2
+        %= --> eg: a %= 2 : a = a%2
+        **= --> eg: a **= 2 : a = a**2
 
 
     5. Icrement and Decrement Operators:

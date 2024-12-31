@@ -1,0 +1,28 @@
+control statements are used to control the flow or execution of the code.
+i. if:
+ //simple if:
+    it executes a set of statements once the condition is true.
+    
+    if(condition){
+        //code
+    }
+
+ii. if..else:
+    it executes a set of statements when condition is true and another set of statements when condition is false.
+    if(condition){
+        //code
+    }
+    else{
+        //code
+    }
+
+iii. if--else--if
+    it executes multiple conditions or options to check.
+    if(condition){
+        //code
+    }
+    else if(condition){
+        //code
+    }
+
+    

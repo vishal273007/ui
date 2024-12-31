@@ -1,0 +1,12 @@
+Objects:
+Objects are physical entities which contains properties and methods.
+eg.: let obj = {
+    name: "raj",
+    age: 30,
+    email: 'a@a.com'
+}
+
+objects can be accessed by dot notation(objectName.propertyName) or index signature(objectname['propertyname']).
+
+
+By default, everything in javascript ends up as object. There is underlying inheritance called prototype inheritance.

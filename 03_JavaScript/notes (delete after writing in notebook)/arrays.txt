@@ -1,0 +1,57 @@
+Array is a collection of elements. Arrays always use square brackets. arrays stores the elements with unique addresses called index. index always starts from 0.
+
+eg. arr = [5,7,3,10];
+
+Arrays have a property called length. length will print total no of elements in the array. 
+
+
+Arrays have some default methods:
+*** Arrays are non primitive datatype and mutable. (String are primitive). None primitive datatypes compares the reference/addresss, not the value unlike primitive data type(primitive data compares value)
+eg. let x = "raj", y = "raj";
+console.log(x==y);
+
+let a = [1,2], b = [1,2];
+console.log(a==b);
+
+
+1. push(): push is used to push an element at the end of the array and it returns the length of new array. 
+
+2. pop(): pop is used to remove the last element of the array.
+
+3. shift(): shift is used to remove the first element of the array.
+
+4. unshift(): unshift is used to add elements at the start of the array and it returns the length of the array.
+
+
+5. splice(starting_index, deleteCount, inserting elements):
+    -- only one parameter: deletes all elements from that index.
+    -- two parameters: it deletes no of elements as mentioned.
+    -- three parameters: it deletes based on starting_index, deleteCount, and it accepts multiple values to store.
+
+
+
+// Array iterators:
+	1. forEach() -- forEach() is used to iterate all the values of the array and pass a callback for each and every element of the array.
+
+		arrayName.forEach()
+        but forEach cannot return any value.
+    2. map(): -- map is used to iterate all the values of the array and pass a callback for each and every element of the array but it also return the values.
+    arrayName.map(callback)
+
+    3. filter() -- fitler is used to iterrate all the values of the array and pass a callback for each and every element of the array but it returns only the elements whose condition is true.
+    arrayName.fitler(callback).
+
+    4. some() -- some() is used to check at least for one of the value of array, the given condition must be true. else, it returns false.
+    let var_name = arrayName.some(callback) //just like logical or
+
+    5. every() -- every() is used to check whether all the values of the array are satisfying the given condition or not.
+    let var_name = arrName.every(callback)
+
+    6. find() -- find is used to find the first element that satisfies the given condition.
+    let var_name = arrayName.find(callback)
+
+    7. reduce() -- reduce() is used to find the cummulative values such that each value uses its previous result.
+    arrayName.reduce(callback(prev, ccurr), initial_value)
+
+
+	
