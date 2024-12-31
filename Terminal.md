@@ -1,12 +1,15 @@
-# Terminal Guide
+<div style="text-align: center;">   <h1> Terminal Guide  </h1>  </div>
 
-Win+I = Settings
+A uninfied multi-tab command line interface/app/toolbox/container. Helps to run command line shells(tools) like powershell, cmd, and other shells. We use termial to access and switch between cmd, powershell, or wsl. It also let us costomize look of tools we use. just "shell name" on command line to access that shell, like for sqlplus, type "sqlplus".
 
-## Terminal Command:
+**Real-Life Analogy**: Imagine a toolbox: - 1. Windows Terminal is the toolbox where you can organize and use your tools. 2. CMD is like a basic screwdriver—it does simple jobs. 3. PowerShell is like a power drill, powerfull than cmd.
+
+
+## Powershell Command:
 
 - `Get-WmiObject -Class Win32_Battery | Select-Object -Property EstimatedChargeRemaining` = Check charging level with terminal
 
-## Basic Linux Commands:
+## Linux Commands:
 
 - `pwd` = to show present working directly
 - `ls` = list the files/folders inside the present directory
@@ -18,8 +21,8 @@ Win+I = Settings
 - `touch filename.extension` = Create a file
 - `'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
 - `mv folder/file.txt ~/storage/downloads/` = Move
-- `mv oldfolder/oldname.txt newfolder/newname.txt` = Rename
-- `rm file.txt / rm -r folder` = Delete.
+- `mv old_foldername/old_filename.txt new_foldername/new_filename.txt` = Rename
+- `rm filename.txt / rm -r foldername` = Delete.
 - `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
 - `du -h file.txt / du -sh folder` = Check size.
 - `ls -l file.txt / ls -ld folder` = Check property.
@@ -33,16 +36,6 @@ Win+I = Settings
 Keyboard Shortcuts:
 
 - `Tab, Right arrow` - Autocomplete the command to mitigate the mistakes.
-
-## Terminal Command:
-
-- **`pwd`**: print working directory to see the path
-- **`ls`**: list items in the current folder
-- **`cd`**: change directory. use cd folder_name to open that folder. use cd .. to go back to previous folder. cd . is current is present directory.
-
-<br>
-
-- **`pwd`**: print/show current working directory.
 
   ## Windows Powershell UI:
 
@@ -76,7 +69,7 @@ Keyboard Shortcuts:
 
 <br>
 
-- **F11**: To open the terminal in focus mode/any app in full screen.
+- **`F11`**: To open the terminal in focus mode/any app in full screen.
 - You can still resize windows in focus mode.
 
 <br>
@@ -85,14 +78,43 @@ Keyboard Shortcuts:
 
 - `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
 
-## TURMUX COMMONLYLY USED COMMANDS:
 
-<br>
+# Termux
 
-- `whoami` - Show the username
-- `ifconfig`: Show inet ipv4 address
+- `pkg update -y`, `pkg upgrade -y`
+
+
+- `termux-setup-storage`
+- `termux-change-repo` >  `choose asia server`.
+
+- `cd ~(tilde)` - home folder
+- `cd /` - root folder
+- `cd /sdcard/` - storage folder
+
+
+### Termux margin settings:
+1. `nvim ~/.termux/termux.properties` - open termux settings files
+2. `terminal-margin-horizontal=20` - set horizontal margin
+3. `terminal-margin-vertical=10`  - set vertical margin
+
+4. `termux-reload-settings`  - to refresh the shell to load the changes
 
 <br>
 
 - `pkg update && pkg upgrade -y`: update termux package frequently
 - `pkg install python/nodejs/openjdk21/yt-dlp/net-tools/`: Install useful packages in termux.
+
+
+### Packages to have installed:
+
+> **`pkg list-installed`** - list installed pakckages.
+> **`pkg search <package>`** - search available pakckages.
+
+- python
+- git
+- nodejs-lts
+- openjdk-21
+- openssh and sshpass
+- neovim
+- curl and wget - `pkg install curl wget`
+- termux api - `pkg install termux-api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]

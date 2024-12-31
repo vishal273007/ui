@@ -135,9 +135,9 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------------------->
 
-# Eclipse
+<br>
 
----
+# Eclipse
 
 ## Basic Settings:
 
@@ -146,8 +146,15 @@
 
 -   **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
 -   **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
+-   **`Nested Project Explorer`**: Project Explorer > three vertical dots > Package Presentation > Select Hierarchical.
+---
 
---
+**Disable forced comment formatting**:
+- search formatter in settings.
+- click edit(beside active profile).
+- go to comment tab
+- uncheck enable line comment formatting and block comment formatting.
+- change the name from built-in to your any name.
 
 <br> <br>
 
@@ -159,7 +166,7 @@
 
 -   Use the eclipse market place to download useful plugins and theme and many more. `Help --> Eclipse Marketplace` the use the search bar for your specific queries.
 
--   Dele the .metadata folder in the username/eclipse-workspace to reset layout and font. it will fix the .project not found while opening the project.
+-   Delete the .metadata folder in the username/eclipse-workspace to reset layout and font. it will fix the .project not found while opening the project.
 
 <br>
 
