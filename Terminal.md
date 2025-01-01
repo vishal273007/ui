@@ -1,5 +1,8 @@
 <div style="text-align: center;">   <h1> Terminal Guide  </h1>  </div>
 
+
+> Note: Official Docs have the the knowledge you need. then AI chatbots, YouTube, and Internet have the solution. if both are confusing, just copy the official documentation text and paste it in the chatbots to search for your need in an even more refined way.
+
 A uninfied multi-tab command line interface/app/toolbox/container. Helps to run command line shells(tools) like powershell, cmd, and other shells. We use termial to access and switch between cmd, powershell, or wsl. It also let us costomize look of tools we use. just "shell name" on command line to access that shell, like for sqlplus, type "sqlplus".
 
 **Real-Life Analogy**: Imagine a toolbox: - 1. Windows Terminal is the toolbox where you can organize and use your tools. 2. CMD is like a basic screwdriver—it does simple jobs. 3. PowerShell is like a power drill, powerfull than cmd.
