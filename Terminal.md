@@ -42,7 +42,10 @@ Keyboard Shortcuts:
 
 ### Settings
 
+_Go to settings > Startup tab > Default profile > Ubuntu_
+
 **Default profile**
+
 
 - Color Scheme: Dark+
 - Font-size: Medium
@@ -72,6 +75,30 @@ Keyboard Shortcuts:
 - You can still resize windows in focus mode.
 
 <br>
+
+## Install NeoVim and Setup NV Chad in termux
+- pkg update && pkg upgrade -y
+- `sudo apt install libfuse2` - without it, nvim will not work.
+- `curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage`: run this command.
+- `chmod u+x nvim.appimage`: verify with 'ls -la filename.ext'.
+- `./nvim.appimage`: to run nvim for one time.
+
+_To expose nvim globally:_
+- `mkdir -p /opt/nvim`; permission denied, so run `sudo !!` if doing normally or just use `sudo` before mkdir.
+- `(use sudo) mv nvim.appimage /opt/nvim/nvim`; if denied without using 'sudo', use `sudo !!`.
+
+-  run `nano .bashrc` and add `export PATH="$PATH:/opt/nvim/"` below the last line and save to set the env variable to be able to use nvim from anywhere.
+-  `source ~/.bashrc`: load changes. Now Install Nerd Fonts to proceed for NvChad.
+-  NerdFont > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
+
+-  `sudo apt install ripgrep gcc make -y`: Install dependencies before.
+-  `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
+-  type `:q` and then `:MasonInstallAll`
+-  `Space th` to choose the theme.
+-  `~/.config/nvin` open config directory > `nvim` to open neovim in the same directory > `Ctrl + N` to open _file tree_ in neovim.
+-  On any folder like .git, while in normal mode, press `d` key and `y` to delete.
+
+
 
 ### To reset Windows Terminal:
 
