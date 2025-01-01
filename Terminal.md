@@ -28,6 +28,7 @@ A uninfied multi-tab command line interface/app/toolbox/container. Helps to run 
 - `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
 - `du -h file.txt / du -sh folder` = Check size.
 - `ls -l file.txt / ls -ld folder` = Check property.
+- `touch/rm ClassA.java ClassB.java ClassC.java` = create/delete files at once.
 -
 
 - `# sometexts` - Comments ignored by terminal
@@ -53,7 +54,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - Color Scheme: Dark+
 - Font-size: Medium
 - Font face: Fira Code
-- Transparency- Background Opacity: 85%, Enable acrylic material
+- Transparency- Background Opacity: 80%, Enable acrylic material
 - Padding: 12
 - Set terminal default directory: D drive
 
