@@ -4,7 +4,6 @@ A uninfied multi-tab command line interface/app/toolbox/container. Helps to run 
 
 **Real-Life Analogy**: Imagine a toolbox: - 1. Windows Terminal is the toolbox where you can organize and use your tools. 2. CMD is like a basic screwdriver—it does simple jobs. 3. PowerShell is like a power drill, powerfull than cmd.
 
-
 ## Powershell Command:
 
 - `Get-WmiObject -Class Win32_Battery | Select-Object -Property EstimatedChargeRemaining` = Check charging level with terminal
@@ -78,43 +77,74 @@ Keyboard Shortcuts:
 
 - `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
 
+<hr>
 
-# Termux
+<br> <br>
 
+
+
+<div style="text-align: center;">   <h1>  Termux  </h1>  </div>  <br>
+
+### Basic to-dos:
 - `pkg update -y`, `pkg upgrade -y`
 
-
 - `termux-setup-storage`
-- `termux-change-repo` >  `choose asia server`.
+- `termux-change-repo` > `choose asia server`.
 
 - `cd ~(tilde)` - home folder
 - `cd /` - root folder
 - `cd /sdcard/` - storage folder
+  
+<br>
 
+<hr>
 
 ### Termux margin settings:
+
 1. `nvim ~/.termux/termux.properties` - open termux settings files
 2. `terminal-margin-horizontal=20` - set horizontal margin
-3. `terminal-margin-vertical=10`  - set vertical margin
+3. `terminal-margin-vertical=10` - set vertical margin
 
-4. `termux-reload-settings`  - to refresh the shell to load the changes
+4. `termux-reload-settings` - load the changes
 
 <br>
 
-- `pkg update && pkg upgrade -y`: update termux package frequently
-- `pkg install python/nodejs/openjdk21/yt-dlp/net-tools/`: Install useful packages in termux.
+<hr>
+
+### Packages:
+
+_pkg list-installed_ - list installed pakckages.  <br>
+_pkg search <package_ - search available pakckages.
+
+- `python, git, nodejs, openssh and sshpass, neovim, curl and wget, openjdk-21, yt-dlp`
+- `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
 
 
-### Packages to have installed:
+<br>
 
-> **`pkg list-installed`** - list installed pakckages.
-> **`pkg search <package>`** - search available pakckages.
+<hr>
 
-- python
-- git
-- nodejs-lts
-- openjdk-21
-- openssh and sshpass
-- neovim
-- curl and wget - `pkg install curl wget`
-- termux api - `pkg install termux-api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
+### Setup NV Chad in termux
+- pkg update && pkg upgrade -y
+- pkg install neovim python nodejs git wget lua-language-server -y
+- Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command > termux > paste and execute.
+- if asked for install exp custom config - type 'n'
+- After installation, click `esc` key.
+- Now, install Nerd Font if you haven't already
+
+<br>
+
+<hr>
+
+### Install Nerd Font in termux
+- Go to Nerd Font from NvChad website
+- Select download and scroll to the FiraCode font. Long press on download button and click "copy link address".
+- open termux > `mkdir NerdFonts` > `cd NerdFonts`
+- ` wget <paste the font link address>`
+- after download completes, extract by `unzip FiraCode.zip` > 'ls' to see.
+- `cp FiraCodeNerFont-Regular.ttf ~/.termux/font.ttf` - to copy font in font directory.
+- Exit and reopen to apply changes. 
+
+<br>
+
+<hr>
