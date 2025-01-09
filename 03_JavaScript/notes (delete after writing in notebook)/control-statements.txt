@@ -25,4 +25,30 @@ iii. if--else--if
         //code
     }
 
+
+    Imagine a situation to print name of the month or name of the week based on numbers. Instead of the using multiple if else if, we can use switch case
+
+    switch: switch works one of the option between multiple options easily. it uses with respective match and includes the default also.
+
+    syntax: 
+        switch(expression/value){
+            case value1:
+                // code;
+                break;
+            case value2:
+                // code;
+                break;
+            case value3:
+                // code;
+                break;
+            case value4:
+                // code;
+                break;
+            default:
+                // code;
+        }
+
+    break: break is a keyword that will stop the execution of the current block.
+
+
     

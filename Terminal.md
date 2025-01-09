@@ -11,36 +11,17 @@
 
 - `Get-WmiObject -Class Win32_Battery | Select-Object -Property EstimatedChargeRemaining` = Check charging level with terminal
 
-## Linux Commands:
-
-- `pwd` = to show present working directly
-- `ls` = list the files/folders inside the present directory
-
-- `cd folder_name` = Open the directory//folder
-- `cat filename.txt` = Show the content of any file like txt on the terminal
-
-- `mkdir folder_name` = Make a folder the current directory
-- `touch filename.extension` = Create a file
-- `'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
-- `mv folder/file.txt ~/storage/downloads/` = Move
-- `mv old_foldername/old_filename.txt new_foldername/new_filename.txt` = Rename
-- `rm filename.txt / rm -r foldername` = Delete.
-- `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
-- `du -h file.txt / du -sh folder` = Check size.
-- `ls -l file.txt / ls -ld folder` = Check property.
-- `touch/rm ClassA.java ClassB.java ClassC.java` = create/delete files at once.
--
-
-- `# sometexts` - Comments ignored by terminal
-- `echo message` - print any message on the terminal
-
-<br>
 
 Keyboard Shortcuts:
 
 - `Tab, Right arrow` - Autocomplete the command to mitigate the mistakes.
 
-  ## Windows Powershell UI:
+<br>
+
+<!-- --------------------------------------------------------- -->
+
+
+## Windows Powershell UI:
 
 - `Settings(Ctrl + ,)` --> `Color Schemes` --> Choose `Dark` and click `Set as Default` and then click `Save`.
 
@@ -80,8 +61,71 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 <br>
 
-## Install NeoVim and Setup NV Chad in termux
-- pkg update && pkg upgrade -y
+
+
+
+
+### To reset Windows Terminal:
+
+- `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
+
+<hr>
+
+<br> <br>
+
+
+<!-- --------------------------------------------------------- -->
+
+
+
+<div style="text-align: center;">   <h1>  Ubuntu  </h1>  </div>  <br>
+
+### Basic Settings to do:
+- Open terminal startup settings tab and set `default profile` to `ubuntu` with bird icon instead of red icon to open current folder with ubuntu. 
+
+
+### Basic Linux Commands:
+
+
+- `pwd` = to show present working directly
+- `ls` = list the files/folders inside the present directory
+
+- `cd folder_name` = Open the directory//folder
+- `cat filename.txt` = Show the content of any file like txt on the terminal
+
+- `mkdir folder_name` = Make a folder the current directory
+- `touch filename.extension` = Create a file
+- `'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
+- `mv folder/file.txt ~/storage/downloads/` = Move
+- `mv old_foldername/old_filename.txt new_foldername/new_filename.txt` = Rename
+- `rm filename.txt / rm -r foldername` = Delete.
+- `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
+- `du -h file.txt / du -sh folder` = Check size.
+- `ls -l file.txt / ls -ld folder` = Check property.
+- `touch/rm ClassA.java ClassB.java ClassC.java` = create/delete files at once.
+
+- `# sometexts` - Comments ignored by terminal
+- `echo message` - print any message on the terminal
+
+<br>
+
+### Ubuntu packages:
+- git
+- python
+- java
+- nodejs
+- ssh & sshpass
+- adb 
+- fastboot and plateform-tools
+- neovim
+- build-essential, wget, curl, gcc, libfuse2(for neovim), make, net-tools, synaptic(graphical pkg manager), ripgrep, unzip.
+
+<br>
+
+
+## Install NeoVim and Setup NV Chad in Ubuntu
+
+- `pkg update && pkg upgrade -y`: always recommended.
 - `sudo apt install libfuse2` - without it, nvim will not work.
 - `curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage`: run this command.
 - `chmod u+x nvim.appimage`: verify with 'ls -la filename.ext'.
@@ -103,14 +147,9 @@ _To expose nvim globally:_
 -  On any folder like .git, while in normal mode, press `d` key and `y` to delete.
 
 
-
-### To reset Windows Terminal:
-
-- `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
-
-<hr>
-
 <br> <br>
+
+<!-- --------------------------------------------------------- -->
 
 
 
@@ -179,3 +218,5 @@ _pkg search <package_ - search available pakckages.
 <br>
 
 <hr>
+
+

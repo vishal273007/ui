@@ -1,0 +1,24 @@
+Loops: loops repeat again and again. each repition is called iteration. we have primarily two types of loops in javascript
+
+1. entry controlled loops: for, while, etc.
+
+2. exit controlled loops: do while.
+
+1. entery controlled loops: these loops checks the condition at the starting a loop.
+A loop contains three phases: (initialization, condition, updation)
+
+2. exit contrlled loops:  these loops check the condition at the exit. eg: dowhile.
+
+while: while is an entry controlled loop which is used to iterate certain statements according to a condition.
+syntax: 
+    initialization;
+    while(condition){
+        //code;
+        updation;
+    }
+
+dowhile : initialization;
+do{
+    //code;
+    //updation
+} while(condition);
