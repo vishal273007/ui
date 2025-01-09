@@ -1,5 +1,7 @@
 # VS Code Settings
 
+* add 'vdcode.dev/' before the github link to edit files in vscode web editor.
+
 ### Regular used keys tips:
 
 -   Hold “Alt” key to enable multi-line cursor to write or delete similar text at once.
