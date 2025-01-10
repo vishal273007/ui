@@ -37,6 +37,8 @@
 -   In `json` file settings, add following:
     -   `"editor.suggest.overline": false` (,): for suggestions show below cursor line.
     -   From the suggestions popup edge, hold the edge and drag inward to resize the suggestions box to make it small.
+    -   Search `code-runner` and check `clear previous output` for clean output.
+    -   
 
 ### Files and Folders Organization:
 
@@ -45,19 +47,6 @@
     01_Basics/
     |--- 01_first.html  
     |--- 02_anchor.html
-
-        02_Images/
-        |--- 01_img.html
-
--   02_CSS/
-    01_Basics/
-    |--- 01_index.html
-    |--- 02_style.css
-
--   03_JavaScript/
-    01_Basics/
-    |--- 01_index.html
-    |--- 02_grid.js
 
 <br>
 
