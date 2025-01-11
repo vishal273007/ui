@@ -107,7 +107,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - `# sometexts` - Comments ignored by terminal
 - `echo message` - print any message on the terminal
 - `sudo !!` - repeat last command with super user right 
-
+- `Ctrl + z/c` - stops/halts current command
 
 <br>
 
