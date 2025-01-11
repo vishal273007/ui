@@ -164,6 +164,9 @@ _To expose nvim globally:_
 - `cd ~(tilde)` - home folder
 - `cd /` - root folder
 - `cd /sdcard/` - storage folder
+
+- `pkg remove PACKAGE_NAME` - uninstall a package
+
   
 <br>
 
