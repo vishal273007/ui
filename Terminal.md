@@ -167,6 +167,11 @@ _To expose nvim globally:_
 
 - `pkg remove nano` - uninstall a package
 
+- `pkg help` - help
+- `pkg show nano` - details about nano
+- `pkg search music` - searching packages related to music
+- `pkg search "web terminal"` - search for package exactly matching the quoted terms
+
   
 <br>
 
