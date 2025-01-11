@@ -88,7 +88,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 
 - `pwd` = to show present working directly
-- `ls` = list the files/folders inside the present directory
+- `ls -a` = list hidden and normal files/folders inside the present directory
 
 - `cd folder_name` = Open the directory//folder
 - `cat filename.txt` = Show the content of any file like txt on the terminal
