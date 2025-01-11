@@ -81,7 +81,10 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <div style="text-align: center;">   <h1>  Ubuntu  </h1>  </div>  <br>
 
 ### Basic Settings to do:
-- Open terminal startup settings tab and set `default profile` to `ubuntu` with bird icon instead of red icon to open current folder with ubuntu. 
+- Settings > set `default profile` to `ubuntu` (bird icon) to open current folder with ubuntu. 
+
+- `touch ~/.hushlogin`: Hide home screen message.
+
 
 
 ### Basic Linux Commands:
