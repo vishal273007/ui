@@ -189,18 +189,10 @@
 **Acode plugins**: AcodeX Terminal, GitHub, Acode Ayu, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
 
 <mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'Java extension'.</span> Java language formatting extension works only if acode language server is installed as a prerequisite. </mark>
-
-### Steps To Set Up "browser-sync" For Live Preview:
-
-1. pkg install nodejs
-2. pkg install -g browser-sync
-
-3. cd folder_name_with_index.html_file
-4. browser-sync start --server --files "\*" --no-notify. Enter "http://localhost:3000" manually in browser search bar.
+
 
 ### Common Settings to do in Acode:
-
--   Go to Settings >Editor Settings > Disable Live autcompletion
+
 -   Go to Settings > Themes > Enable VS Code for editor in Themes
 -   Go to Formatter > Select popular language and and there format.
 
