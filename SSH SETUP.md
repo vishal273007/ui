@@ -3,7 +3,6 @@
 - type `ubuntu(or shell name)`: To open ubuntu from any local or remote terminal client.
 
 <br>
-<br>
 
 ### Set Up SSH Server on Windws
 - Go to Settings > System > Optional Features > Add an optional feature > Search for SSH and install the SSH Server.
@@ -31,7 +30,7 @@ _[In client .bashrc config file, First login with `ssh username@ip -p 8022` and 
 - `whoami`: _Show termux username_
 - `ifconfig`: _Find Termux IP address_
 
-## Now from Windows Terminal
+**Frome client device**
 - **Enter** - `ssh -p 8022 u0_a303@192.168.215.212`
 - **Password** - `SSH@log1n`
 
