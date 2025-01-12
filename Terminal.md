@@ -220,12 +220,12 @@ _pkg search <package_ - search available pakckages.
 <hr>
 
 ### Install Nerd Font in termux
-- Go to Nerd Font from NvChad website
-- Select download and scroll to the FiraCode font. Long press on download button and click "copy link address".
-- open termux > `mkdir NerdFonts` > `cd NerdFonts`
-- ` wget <paste the font link address>`
-- after download completes, extract by `unzip FiraCode.zip` > 'ls' to see.
-- `cp FiraCodeNerFont-Regular.ttf ~/.termux/font.ttf` - to copy font in font directory.
+- Open Nerd Font website from NvChad website.
+- Click download and scroll to the FiraCode font. Long press on download button and click "copy link address".
+- Open termux > `mkdir NerdFonts` > `cd NerdFonts`
+- `wget <paste the font link address>`
+- After downloading, extract by `unzip FiraCode.zip` > 'ls' to see.
+- `cp <fontname.ttf> ~/.termux/font.ttf` (cp FiraCodeNerdFont-Regular.ttf ~/.termux/font.ttf) - copy font in termux directory.
 - Exit and reopen to apply changes. 
 
 <br>
