@@ -2,13 +2,13 @@
 ## SSH Setup
 - type `ubuntu(or shell name)`: To open ubuntu from any local or remote terminal client.
 
-### Setup SSH Server on Windws
-- Go to Settings > System > Optional Features > Add an optional feature > Search for SSH and install the SSH Server.
-- Open Terminal > type "services.msc" > Look for SSH Server > Properties > Change from manual to Automatic.
+### SSH Server Setup on Windws
+- Settings > System > Optional Features > Add an optional feature > Search for SSH and install the SSH Server.
+- Terminal > "services.msc" > SSH Server > Properties > Change from manual to Automatic.
 
-- To access the SSH, open Termus or any SSH Client app
-- type `ssh "Vishal Vishwakarma"@192.168.0.125` and press enter.
-- Now, since you used Microsoft Name/User_Name, so type Microsoft password, not local password.
+- Test with SSH Client
+- Type `ssh "Vishal Vishwakarma@192.168.0.125"` and enter.
+- Now, since you used Microsoft User_Name, so enter Microsoft account password, not local password.
 
 <br>
 
@@ -21,7 +21,7 @@
  4. `sshd`: _Start SSH server_
  5. `ps aux | grep sshd`: _Verify if server is running_ 
  5. `nano .bashrc` ==> add `sshd` in the end of the config file to auto start ssh server after opening termux.
- 6. _[In client's `.bashrc` config file, First login with `ssh username@ip -p 8022` and password. Then add alias as `alias sshpad6="sshpass -p 'ssh@pad6' ssh u0_a327@192.168.0.149 -p 8022"` to .bashrc file for quick login. Directly using alias will not work as first credentials needs to be stored first]_
+ 6. _[In client's `.bashrc` config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` > `ls -a` to check_
 
 <br>
 
