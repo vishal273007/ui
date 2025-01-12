@@ -209,11 +209,11 @@ _pkg search <package_ - search available pakckages.
 
 ### Setup NV Chad in termux
 - pkg update && pkg upgrade -y
+- First, install Nerd Font if you haven't already
 - pkg install neovim python nodejs git wget lua-language-server -y
 - Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command > termux > paste and execute.
 - if asked for install exp custom config - type 'n'
 - After installation, click `esc` key.
-- Now, install Nerd Font if you haven't already
 
 <br>
 
