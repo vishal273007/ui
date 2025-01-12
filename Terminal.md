@@ -160,22 +160,20 @@ _To expose nvim globally:_
 
 <div style="text-align: center;">   <h1>  Termux  </h1>  </div>  <br>
 
-### Basic to-dos:
-- `pkg update -y`, `pkg upgrade -y`
+### Basic to-dos after installing temux:
+
+- `pkg update -y` and `pkg upgrade -y`
 
 - `termux-setup-storage`
 - `termux-change-repo` > `choose asia server`.
 
 - `cd ~(tilde)` - home folder
 - `cd /` - root folder
-- `cd /sdcard/` - storage folder
-
-- `pkg remove nano` - uninstall a package
+- `cd /sdcard/` - storage folder
 
 - `pkg help` - help
-- `pkg show nano` - details about nano
-- `pkg search music` - searching packages related to music
-- `pkg search "web terminal"` - search for package exactly matching the quoted terms
+- `pkg show <PKG name>` - details about a package
+- `pkg search <music>` - searching packages related to <music>
 
   
 <br>
