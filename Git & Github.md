@@ -67,13 +67,13 @@ For the first time push, enter following:
 - `username`: Enter github username `vishal273007`
 - `enter password`: enter the `access token` from your password manager's note. Password support is removed.
 
+- `git config --list`: verify details.
+
 <br>
 
-- `git config --list`: veryfy if you entered right username and email.
-
-- **Note**: for setting up in ubuntu:
+- **Note**: for git to remember crendentials:
 - Run `git config --global credential.helper store`.
-- Enter credentials once when pushing/pulling (after this, Git will remember them)
+- Clone and then edit and push > Enter credentials once when pushing/pulling (after this, Git will remember them)
 
 <br>
 <br>
