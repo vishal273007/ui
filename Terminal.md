@@ -167,6 +167,7 @@ _To expose nvim globally:_
 - `termux-setup-storage`
 - `termux-change-repo` > `choose asia server`.
 
+- `touch ~/.hushlogin`: Hide home screen message.
 - `cd ~(tilde)` - home folder
 - `cd /` - root folder
 - `cd /sdcard/` - storage folder
