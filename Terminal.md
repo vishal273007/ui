@@ -115,15 +115,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br>
 
 ### Ubuntu packages:
-- git
-- python
-- java
-- nodejs
-- ssh & sshpass
-- adb 
-- fastboot and plateform-tools
-- neovim
-- build-essential, wget, curl, gcc, libfuse2(for neovim), make, net-tools, synaptic(graphical pkg manager), ripgrep, unzip.
+- `sudu apt install git python openjdk-21 nodejs ssh sshpass adb fastboot plateform-tools neovim build-essential wget curl gcc libfuse2 make net-tools ripgrep unzip`
 
 <br>
 
