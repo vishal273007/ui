@@ -144,6 +144,8 @@ _To expose nvim globally:_
 -  `source ~/.bashrc`: load changes. Now Install Nerd Fonts to proceed for NvChad.
 -  NerdFont > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
 
+
+_Now NvChad:_
 -  `sudo apt install ripgrep gcc make -y`: Install dependencies before.
 -  `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
 -  type `:q` and then `:MasonInstallAll`
