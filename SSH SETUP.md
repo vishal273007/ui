@@ -2,8 +2,6 @@
 ## SSH Setup
 - type `ubuntu(or shell name)`: To open ubuntu from any local or remote terminal client.
 
-<br>
-
 ### Set Up SSH Server on Windws
 - Go to Settings > System > Optional Features > Add an optional feature > Search for SSH and install the SSH Server.
 - Open Terminal > type "services.msc" > Look for SSH Server > Properties > Change from manual to Automatic.
