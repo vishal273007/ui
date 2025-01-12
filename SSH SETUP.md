@@ -21,7 +21,7 @@
  4. `sshd`: _Start SSH server_
  5. `ps aux | grep sshd`: _Verify if server is running_ 
  5. `nano .bashrc` ==> add `sshd` in the end of the config file to auto start ssh server after opening termux.
- 6. _[In client's `.bashrc` config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` > `ls -a` to check_
+ 6. _[In client's `.bashrc` config file, add  line `alias ssh_pad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` > add script `#!/bin/bash (enter) sshpass -p 'ssh@pad6' ssh "u0_a327@192.168.0.149"` > `ls -a` to check_
 
 <br>
 
