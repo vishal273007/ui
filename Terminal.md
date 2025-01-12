@@ -203,7 +203,7 @@ _pkg search <package_ - search available pakckages.
 
 ### Install Nerd Font and setup NvChad in termux:
 
--Dependencies:_
+_Dependencies:_
 
 - `pkg update && pkg upgrade -y`
 - `apt install ripgrep make -y`
