@@ -128,7 +128,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br>
 
 
-## Install NeoVim and Setup NV Chad in Ubuntu
+## Install NeoVim and Setup NvChad in Ubuntu
 
 - `pkg update && pkg upgrade -y`: always recommended.
 - `sudo apt install libfuse2` - without it, nvim will not work.
@@ -146,7 +146,8 @@ _To expose nvim globally:_
 
 
 _Now NvChad:_
--  `sudo apt install ripgrep gcc make -y`: Install dependencies before.
+-  `sudo apt install ripgrep gcc make -y`: Dependencies.
+
 -  `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
 -  type `:q` and then `:MasonInstallAll`
 -  `Space th` to choose the theme.
@@ -210,6 +211,13 @@ _pkg search <package_ - search available pakckages.
 
 ### Install Nerd Font and setup NvChad in termux:
 
+-Dependencies:_
+
+- `pkg update && pkg upgrade -y`
+- `apt install ripgrep make -y`
+
+<br>
+
 - Open NvChad website > Click Nerd Font website link.
 - Click download and scroll to the FiraCode font. Long press on download button and click "copy link address".
 - Open termux > `mkdir NerdFonts` > `cd NerdFonts`
@@ -221,9 +229,8 @@ _pkg search <package_ - search available pakckages.
 
 <br>
 
-
-- pkg update && pkg upgrade -y
-- First, install Nerd Font if you haven't already
+_Now NvChad:_
+
 - pkg install neovim python nodejs git wget lua-language-server -y
 - Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command > termux > paste and execute.
 - if asked for install exp custom config - type 'n'
