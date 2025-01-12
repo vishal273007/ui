@@ -30,7 +30,7 @@ _[In client .bashrc config file, First login with `ssh username@ip -p 8022` and 
 - `whoami`: _Show termux username_
 - `ifconfig`: _Find Termux IP address_
 
-**Frome client device**
+_Test From client device:_
 - **Enter** - `ssh -p 8022 u0_a303@192.168.215.212`
 - **Password** - `SSH@log1n`
 
