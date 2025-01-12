@@ -207,18 +207,6 @@ _pkg search <package_ - search available pakckages.
 
 <hr>
 
-### Setup NV Chad in termux
-- pkg update && pkg upgrade -y
-- First, install Nerd Font if you haven't already
-- pkg install neovim python nodejs git wget lua-language-server -y
-- Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command > termux > paste and execute.
-- if asked for install exp custom config - type 'n'
-- After installation, click `esc` key.
-
-<br>
-
-<hr>
-
 ### Install Nerd Font in termux
 - Open Nerd Font website from NvChad website.
 - Click download and scroll to the FiraCode font. Long press on download button and click "copy link address".
@@ -227,6 +215,21 @@ _pkg search <package_ - search available pakckages.
 - After downloading, extract by `unzip FiraCode.zip` > 'ls' to see.
 - `cp <fontname.ttf> ~/.termux/font.ttf` (cp FiraCodeNerdFont-Regular.ttf ~/.termux/font.ttf) - copy font in termux directory.
 - Exit and reopen to apply changes. 
+
+
+<br>
+
+<hr>
+
+
+
+### Setup NV Chad in termux
+- pkg update && pkg upgrade -y
+- First, install Nerd Font if you haven't already
+- pkg install neovim python nodejs git wget lua-language-server -y
+- Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command > termux > paste and execute.
+- if asked for install exp custom config - type 'n'
+- After installation, click `esc` key.
 
 <br>
 
