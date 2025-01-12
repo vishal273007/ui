@@ -199,7 +199,7 @@ _To expose nvim globally:_
 _pkg list-installed_ - list installed pakckages.  <br>
 _pkg search <package_ - search available pakckages.
 
-- `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-21 yt-dlp`
+- `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-21 yt-dlp -y`
 - `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
 
 
