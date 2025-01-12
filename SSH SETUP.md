@@ -20,8 +20,9 @@
  ## SSH Server setup in Termux:
  1. `pkg update && pkg upgrade -y`: _Update packages_
  2. `pkg install openssh -y`: _Install OpenSSH_
- 3. `passwd`: _Set password for SSH login_
+ 3. `passwd`: _Set password `ssh@pad6/ssh@nord4`_
  4. `sshd`: _Start SSH server_
+ 5. `ps aux | grep sshd`: _Verify if server is running_ 
  5. `nano .bashrc` ==> add `sshd` in the end of the config file to auto start ssh server after opening termux.
 
 <br>
