@@ -24,7 +24,7 @@
 
 <br>
 
-_[In client .bashrc config file, First login with `ssh username@ip -p 8022` and enter password and then add `alias sshpad6="sshpass -p 'ssh@pad6' ssh u0_a327@192.168.0.149 -p 8022"` to auto login with `sshpad6` alias name. Directly using alias will not work as first credentials needs to be stored]_
+_[In client's .bashrc config file, First login with `ssh username@ip -p 8022` and password. Then add alias as `alias sshpad6="sshpass -p 'ssh@pad6' ssh u0_a327@192.168.0.149 -p 8022"` to .bashrc file for quick login. Directly using alias will not work as first credentials needs to be stored first]_
 
 <br>
 
