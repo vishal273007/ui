@@ -207,8 +207,9 @@ _pkg search <package_ - search available pakckages.
 
 <hr>
 
-### Install Nerd Font in termux
-- Open Nerd Font website from NvChad website.
+### Install Nerd Font and setup NvChad in termux:
+
+- Open NvChad website > Click Nerd Font website link.
 - Click download and scroll to the FiraCode font. Long press on download button and click "copy link address".
 - Open termux > `mkdir NerdFonts` > `cd NerdFonts`
 - `wget <paste the font link address>`
@@ -218,12 +219,8 @@ _pkg search <package_ - search available pakckages.
 
 
 <br>
+
 
-<hr>
-
-
-
-### Setup NV Chad in termux
 - pkg update && pkg upgrade -y
 - First, install Nerd Font if you haven't already
 - pkg install neovim python nodejs git wget lua-language-server -y
