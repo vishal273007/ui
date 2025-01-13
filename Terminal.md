@@ -165,7 +165,8 @@ _Now NvChad:_
 - `touch ~/.hushlogin`: Hide home screen message.
 - `cd ~(tilde)` - home folder
 - `cd /` - root folder
-- `cd /sdcard/` - storage folder
+- `cd /sdcard/` - storage folder
+
 
 - `pkg help` - help
 - `pkg show <PKG name>` - details about a package
@@ -220,13 +221,17 @@ _Dependencies:_
 
 
 <br>
-
+
+
 _Now NvChad:_
-
+
+
 - pkg install neovim python nodejs git wget lua-language-server -y
-- Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command > termux > paste and execute.
-- if asked for install exp custom config - type 'n'
-- After installation, click `esc` key.
+- Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command and run.
+- `:MasonInstallAll` > Delete the `.git` from nvim config directory.
+- `:Lazy sync` - run to update
+
+- `:h nvui` - Learn customization
 
 <br>
 
