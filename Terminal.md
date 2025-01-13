@@ -375,7 +375,7 @@ Create or edit the Starship configuration file:
 nano ~/.config/starship.toml
 ```
 
-### Example Configuration
+### Add this config in toml file
 ```toml
 format = """
 [](#9A348E)\
