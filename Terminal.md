@@ -238,6 +238,27 @@ _Now NvChad:_
 <hr>
 
 # Neovim NvChad configuration: 
+- Mapping (keymp) -  `:Telescope keymaps`, `:NvCheatsheet`(Space + ch)
+- `TSModuleInfo` > `TSInstall java html css javascript` - Check installed `Syntax highlight` and install if needed.
+
+
+- `Space + v/h` - terminal at right/down
+- `Space + ff` - find files
+- `Control + t` - open file in new window
+- `Tab` - switch window active windows
+- `m` - to mark in file explorer tree
+- `a` - to create new file while on a dir in file tree
+- `c` - copy
+- `y` - copy in text editor
+- `p` - paste
+- `r` - rename
+- `Space(leader)` - other command
+- `Vsp/sp` - vertical split/split
+- `Ctrl+hjkl` - focus windows
+- `Tab/shift + tab` - cycle through open file buffer/tabs or reverse cycle
+- `Space+ x` - close active tab
+- `Ctrl + n` - Show/hide file tree
+
 - `Set indentation to 4 spaces`: `cd ~/.config/nvin/` ==> type `nvim` ==> `Ctrl + n` ==> Expand the folders and look for `options.lua` and and these lines:
 - `vim.opt.tabstop = 4        -- Number of spaces for a tab
 	vim.opt.shiftwidth = 4     -- Number of spaces for auto-indentation
