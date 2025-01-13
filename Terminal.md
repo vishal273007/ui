@@ -240,6 +240,7 @@ _Now NvChad:_
 # Neovim NvChad configuration: 
 - Mapping (keymp) -  `:Telescope keymaps`, `:NvCheatsheet`(Space + ch)
 - `TSModuleInfo` > `TSInstall java html css javascript` - Check installed `Syntax highlight` and install if needed.
+- [`:MasonInstall jdtls` - install java lsp not working.]
 
 
 - `Space + v/h` - terminal at right/down
