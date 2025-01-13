@@ -18,10 +18,12 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 
 - Color Scheme: Dark+
-- Font-size: Medium
-- Font face: Fira Code
-- Transparency- Background Opacity: 80%, Enable acrylic material
-- Padding: 12
+- Default profile: Ubuntu
+- Font face: FiraCode Nerd Font
+- Font-size/Font-weight: 10 / Medium
+
+- Transparency- Background Opacity: 70%, Enable acrylic material
+- Padding: 20
 - Set terminal default directory: D drive
 
 - Settings --> Profile at left side --> Scroll down --> Delete profile.
