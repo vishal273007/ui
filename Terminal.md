@@ -240,7 +240,7 @@ _Now NvChad:_
 # Neovim NvChad configuration: 
 - Mapping (keymp) -  `:Telescope keymaps`, `:NvCheatsheet`(Space + ch)
 - `TSModuleInfo` > `TSInstall java html css javascript` - Check installed `Syntax highlight` and install if needed.
-- [`:MasonInstall jdtls` - install java lsp not working.]
+- Set `Fira Code Nerd Font` instead of just `Fira Code` to view files with icons.
 
 
 - `Space + v/h` - terminal at right/down
