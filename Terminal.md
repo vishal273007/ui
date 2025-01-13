@@ -33,8 +33,8 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 **Startup section > Launch parameters**
 
 - Launch mode: Focus/Default
-- Launch size: Coulumn: 95, Row: 23
-- Launch positions: X:640, Y: 300.
+- Launch size: Coulumn: 90, Row: 22
+- Launch positions: X:840, Y: 400.
 - `Alt + F4` - to close terminal, `Ctrl + ,` - Settings
 
 - In Interaction section, disable `Warn when closing more than one tab`.
