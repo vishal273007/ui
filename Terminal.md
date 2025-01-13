@@ -341,7 +341,7 @@ _Now NvChad:_
 
 ## Install Fish Shell
 ```bash
-pkg install fish -y && fish
+pkg install fish -y > fish
 ```
 
 Set Fish as the default shell:
