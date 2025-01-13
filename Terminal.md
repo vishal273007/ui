@@ -181,7 +181,7 @@ _Now NvChad:_
     Add the following configurations:
     ```toml
 
-    set -g fish_greeting ""    #Hide homescreen message
+    set -g fish_greeting ""
     [character]
     success_symbol = "[➜](bold green) "
     error_symbol = "[➜](bold red) "
