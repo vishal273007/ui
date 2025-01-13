@@ -21,7 +21,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - Font-size/Font-weight: 10 / Medium
 
 - Transparency- Background Opacity: 70%, Enable acrylic material
-- Padding: 20
+- Padding: 10
 - Set terminal default directory: D drive
 
 - Settings --> Profile at left side --> Scroll down --> Delete profile.
