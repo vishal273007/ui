@@ -332,3 +332,99 @@ _Now NvChad:_
 	vim.opt.expandtab = true   -- Convert tabs to spaces
 	vim.opt.smartindent = true -- Enable smart indentation`
 - save and restart.
+
+
+<!-- ===================================================================================================================================== -->
+
+
+# Setting Up Fish Shell and Starship Prompt
+
+## Install Fish Shell
+```bash
+pkg install fish -y && fish
+```
+
+Set Fish as the default shell:
+```bash
+chsh -s fish
+```
+
+## Configure Fish Shell
+Create or edit the Fish configuration file:
+```bash
+mkdir -p ~/.config/fish
+nano ~/.config/fish/config.fish
+```
+
+Add the following lines to the file:
+```fish
+# Hide homescreen message
+set -g fish_greeting ""
+
+# Initialize Starship prompt
+starship init fish | source
+```
+
+## Install Starship Prompt
+```bash
+pkg install starship
+starship init fish | source
+```
+
+## Starship Configuration
+Create or edit the Starship configuration file:
+```bash
+nano ~/.config/starship.toml
+```
+
+### Example Configuration
+```toml
+format = """
+[](#9A348E)\
+$username\
+[](bg:#DA627D fg:#9A348E)\
+$directory\
+[](fg:#DA627D bg:#33658A)\
+$time\
+[ ](fg:#33658A)\
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+# Username module
+[username]
+show_always = true
+style_user = "bg:#9A348E"
+style_root = "bg:#9A348E"
+format = '[$user ]($style)'
+disabled = false
+
+# OS module (optional)
+[os]
+style = "bg:#9A348E"
+disabled = true
+
+# Directory module
+[directory]
+style = "bg:#DA627D"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+# Time module
+[time]
+disabled = false
+time_format = "%I:%M %p"  # 12-hour format with AM/PM
+style = "bg:#33658A"
+format = '[$time ]($style)'
+```
+
+
+
