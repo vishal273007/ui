@@ -2,7 +2,6 @@
 
 
 > _Note: Official Docs contains all the guide you need._
-**Terminal**: A uninfied multi-tab command line app. Helps to run command line shells like powershell, cmd, etc.
 
 
 ## Windows Powershell UI:
