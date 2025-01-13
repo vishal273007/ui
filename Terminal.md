@@ -106,7 +106,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br>
 
 
-## Install NeoVim and Setup NvChad in Ubuntu
+# Install NeoVim and Setup NvChad in Ubuntu
 
 - `pkg update && pkg upgrade -y`: always recommended.
 - `sudo apt install libfuse2` - without it, nvim will not work.
@@ -132,10 +132,10 @@ _Now NvChad:_
 -  `~/.config/nvin` open config directory > `nvim` to open neovim in the same directory > `Ctrl + N` to open _file tree_ in neovim.
 -  On any folder like .git, while in normal mode, press `d` key and `y` to delete.
 
-
+<- ======================================================================================================================= ->
 <hr>
 
-# Setting up Fish Shell and Starship
+# Setting up Fish Shell and Starship in Ubuntu
 
 ## Fish Shell:
 
