@@ -3,22 +3,7 @@
 
 > Note: Official Docs contains all the guide you need. AI chatbots, YouTube, and Internet should be referred after official documentation. if both are confusing, just copy the official documentation guide and paste in the chatbots to search for your need in an even more refined way.
 
-**Terminal**: A uninfied multi-tab command line interface/app/toolbox/container. Helps to run command line shells(tools) like powershell, cmd, etc. We use termial to access and switch between cmd, powershell, etc. Type "shell name" on terminal to access the shell, ex, for sqlplus - type "sqlplus".
-
-**Real-Life Analogy**: Imagine a toolbox: - 1. Windows Terminal is the toolbox where you can organize and use your tools. 2. CMD is like a basic screwdriver—it does simple jobs. 3. PowerShell is like a power drill, powerfull than cmd.
-
-## Powershell Command:
-
-- `Get-WmiObject -Class Win32_Battery | Select-Object -Property EstimatedChargeRemaining` = Check charging level with terminal
-
-
-Keyboard Shortcuts:
-
-- `Tab, Right arrow` - Autocomplete the command to mitigate the mistakes.
-
-<br>
-
-<!-- --------------------------------------------------------- -->
+**Terminal**: A uninfied multi-tab command line app. Helps to run command line shells like powershell, cmd, etc.
 
 
 ## Windows Powershell UI:
@@ -63,8 +48,6 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 
 
-
-
 ### To reset Windows Terminal:
 
 - `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
@@ -74,7 +57,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br> <br>
 
 
-<!-- --------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------- -->
 
 
 
@@ -92,6 +75,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 - `pwd` = to show present working directly
 - `ls -a` = list hidden and normal files/folders inside the present directory
+- `cd ../..` = two directory back
 
 - `cd folder_name` = Open the directory//folder
 - `cat filename.txt` = Show the content of any file like txt on the terminal
@@ -149,8 +133,8 @@ _Now NvChad:_
 
 <br> <br>
 
-<!-- --------------------------------------------------------- -->
 
+<!-- ==================================================================================================== -->
 
 
 <div style="text-align: center;">   <h1>  Termux  </h1>  </div>  <br>
@@ -173,9 +157,7 @@ _Now NvChad:_
 - `pkg search <music>` - searching packages related to <music>
 
   
-<br>
-
-<hr>
+<br> <hr>
 
 ### Termux margin settings:
 
@@ -184,10 +166,11 @@ _Now NvChad:_
 3. `terminal-margin-vertical=10` - set vertical margin
 
 4. `termux-reload-settings` - load the changes
+5. `vol-up + k` - hide/unhide termux toolbar.
+6. `termux-open file.txt / file.img` - open any file with termux
+7. `pkg install starship` > `eval "$(starship init bash)"` add in .bashrc > preset (pastel powerline) starship preset pastel-powerline -o > ~/.config/starship.toml.
 
-<br>
-
-<hr>
+<br>  <hr>
 
 ### Packages:
 
@@ -196,11 +179,10 @@ _pkg search <package_ - search available pakckages.
 
 - `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-21 -y`
 - `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
+- `pkg install fish -y` > fish : interactive shell with auto-completion
 
 
-<br>
-
-<hr>
+<br>  <hr>
 
 ### Install Nerd Font and setup NvChad in termux:
 
