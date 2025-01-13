@@ -133,6 +133,84 @@ _Now NvChad:_
 -  On any folder like .git, while in normal mode, press `d` key and `y` to delete.
 
 
+<hr>
+
+# Setting up Fish Shell and Starship
+
+## Fish Shell:
+
+1. Update package lists and install Fish:
+    ```bash
+    sudo apt update
+    sudo apt install fish
+    ```
+
+2. Set Fish as the default shell:
+    ```bash
+    chsh -s /usr/bin/fish
+    ```
+
+## Starship:
+
+3. Install Starship:
+    ```bash
+    curl -sS https://starship.rs/install.sh | sh
+    ```
+
+4. Add Starship initialization to the Fish configuration file:
+    ```bash
+    echo 'starship init fish | source' >> ~/.config/fish/config.fish
+    ```
+
+    Reload the configuration:
+    ```bash
+    source ~/.config/fish/config.fish
+    ```
+
+5. Create the Starship configuration file if it doesn’t exist:
+    ```bash
+    mkdir -p ~/.config
+    touch ~/.config/starship.toml
+    ```
+
+6. Open the Starship configuration file:
+    ```bash
+    nano ~/.config/starship.toml
+    ```
+
+    Add the following configurations:
+    ```toml
+    [character]
+    success_symbol = "[➜](bold green) "
+    error_symbol = "[➜](bold red) "
+
+    [line_break]
+    disabled = true
+
+    [directory]
+    home_symbol = ""
+    ```
+
+7. Copy and paste the following lines from your `.bashrc` config file into `~/.config/fish/config.fish`:
+    ```bash
+    export PATH="$PATH:/opt/nvim/"
+
+    alias ui="cd /mnt/d/classes/01_WebDev"
+
+    # Tablet
+    alias sshtablet="~/.ssh_login_tablet.sh"
+
+    # Windows
+    alias sshwindows="~/.ssh_login_windows.sh"
+    ```
+
+    Reload the Fish configuration:
+    ```bash
+    source ~/.config/fish/config.fish
+    ```
+
+
+
 <br> <br>
 
 
