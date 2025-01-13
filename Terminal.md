@@ -1,4 +1,4 @@
-<div style="text-align: center;">   <h1> Terminal Guide  </h1>  </div>
+<div style="text-align: center;">   <h1> Terminal  </h1>  </div>
 
 
 > Note: Official Docs contains all the guide you need. AI chatbots, YouTube, and Internet should be referred after official documentation. if both are confusing, just copy the official documentation guide and paste in the chatbots to search for your need in an even more refined way.
