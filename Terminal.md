@@ -159,7 +159,21 @@ _Now NvChad:_
 
 4. Add Starship initialization to the Fish configuration file:
     ```bash
-    echo 'starship init fish | source' >> ~/.config/fish/config.fish
+    starship init fish | source
+
+    # Hide fish message
+    set -g fish_greeting ""
+
+    # Manually added .bashrc aliases and contents
+    export PATH="$PATH:/opt/nvim/"
+
+    alias ui="cd /mnt/d/classes/01_WebDev"
+
+    # Tablet
+    alias sshtablet="~/.ssh_login_tablet.sh"
+
+    # Windows
+    alias sshwindows="~/.ssh_login_windows.sh"
     ```
 
     Reload the configuration:
@@ -181,7 +195,6 @@ _Now NvChad:_
     Add the following configurations:
     ```toml
 
-    set -g fish_greeting ""
     [character]
     success_symbol = "[➜](bold green) "
     error_symbol = "[➜](bold red) "
