@@ -35,7 +35,7 @@ _Test From client device:_
 <br>
 <br>
 
-### Termux SSH Client Setup:
+### Termux as SSH Client Setup:
 - Type `pkg install sshpass -y`: for storing password. verify with `sshpass -V`.
 - `nano ~/ssh_login_windows.sh`: to create and open to edit.
 - `#!/bin/bash` (enter) `sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma"@192.168.0.125`: add this lines to config file.
