@@ -130,7 +130,7 @@ _Now NvChad:_
 
 2. Set Fish as the default shell:
     ```bash
-    chsh -s fish/bash/zsh
+    'chsh -s fish'   (or bash/zsh)
     ```
 
 ## Fisher + Plugins:
@@ -323,7 +323,7 @@ pkg install fish -y
 
 ### Set Fish as the default shell:
 ```bash
-chsh -s fish/bash/zsh
+'chsh -s fish'   (or bash/zsh)
 ```
 
 ## Configure Fish Shell
