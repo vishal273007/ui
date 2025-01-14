@@ -237,10 +237,9 @@ color15 = #FFFFFF
 ### Packages:
 _pkg list-installed_ - list installed pakckages.
 _pkg search <pkg_name>_ - search available pakckages.
-
-    ```bash
-    pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
-    ```
+```bash
+pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
+```
 
 - `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
 
