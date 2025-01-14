@@ -84,7 +84,10 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br>
 
 ### Ubuntu packages:
-- `sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl build-essential make net-tools unzip adb fastboot platform-tools`
+
+    ```bash
+    sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl build-essential make net-tools unzip adb fastboot platform-tools
+    ```
 
 <br>
 
@@ -233,13 +236,14 @@ color15 = #FFFFFF
 <br>  <hr>
 
 ### Packages:
-_pkg list-installed_ - list installed pakckages.  <br>
+_pkg list-installed_ - list installed pakckages.
 _pkg search <pkg_name>_ - search available pakckages.
 
-- `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y`
-- `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
-- `pkg install fish -y` > fish : interactive shell with auto-completion
+    ```bash
+    pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
+    ```
 
+- `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
 
 <br>  <hr>
 
