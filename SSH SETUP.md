@@ -35,7 +35,7 @@ _Test From client device:_
 <br>
 <br>
 
-### Setup Termux to auto login for SSH:
+### Termux SSH Client Setup:
 - Type `pkg install sshpass -y`: for storing password. verify with `sshpass -V`.
 - `nano ~/ssh_login_windows.sh`: to create and open to edit.
 - `#!/bin/bash` (enter) `sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma"@192.168.0.125`: add this lines to config file.
@@ -43,9 +43,9 @@ _Test From client device:_
 - `~/ssh_login_windows.sh`: run to verify the script.
 
 - **`nano ~/.bashrc`**: open config file
-- `alias ssh_pad6="~/ssh_login_windows.sh"` : add this line belowy.
+- `alias sshwindows="~/ssh_login_windows.sh"` : add this line belowy.
 - `source ~/.bashrc`: save and apply the changes.
-- `ssh_pad6`: now type this you'll be automatically signed in with SSH. 
+- `sshwindows`: type on cliet to SSH on windows. 
 
 
 - windows terminal can also be accessed even before signing in after boot.
