@@ -1,6 +1,6 @@
 
 ## SSH Setup
-- type `ubuntu(or shell name)`: To open ubuntu from any local or remote terminal client.
+- type `ubuntu(or shell name)`: To access ubuntu from any local or remote terminal client.
 
 ### SSH Server Setup on Windws
 - Settings > System > Optional Features > Add an optional feature > Search for SSH and install the SSH Server.
@@ -47,12 +47,4 @@ _Test From client device:_
 - `alias sshwindows="~/ssh_login_windows.sh"` : add this line belowy.
 - `source ~/.bashrc`: save and apply the changes.
 - `sshwindows`: type on cliet to SSH on windows. 
-
-
-- windows terminal can also be accessed even before signing in after boot.
-
----
-
-SSH(Secure Shell) is a protocol. Do not enable the ssh keygen method for server access.
-
 
