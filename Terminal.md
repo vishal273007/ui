@@ -341,7 +341,10 @@ set -g fish_greeting ""
 
 ## Install Prompt Designer
 
+
+
 ```bash
+# Copy these commands from repo or GPT. Copying from here might contain space which may cause errors.
 #Fisher
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
