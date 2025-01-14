@@ -41,38 +41,26 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 <br>
 
-- **`F11`**: To open the terminal in focus mode/any app in full screen.
-- You can still resize windows in focus mode.
-
+- **`F11`**: Full screen
+- 
 <br>
 
-
-
-### To reset Windows Terminal:
+-To reset Windows Terminal:_
 
 - `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
 
-<hr>
-
-<br> <br>
-
+<hr> <br> <br>
 
 <!-- ===================================================================================================================================== -->
 
 
-
-<div style="text-align: center;">   <h1>  Ubuntu  </h1>  </div>  <br>
+<div style="text-align: center;">   <h1>  Ubuntu  </h1>  </div>
 
 ### Basic Settings to do:
-- Settings > set `default profile` to `ubuntu` (bird icon) to open current folder with ubuntu. 
-
 - `touch ~/.hushlogin`: Hide home screen message.
 
 
-
 ### Basic Linux Commands:
-
-
 - `pwd` = to show present working directly
 - `ls -a` = list hidden and normal files/folders inside the present directory
 - `cd ../..` = two directory back
@@ -99,7 +87,9 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br>
 
 ### Ubuntu packages:
-- `sudo apt install git python openjdk-21 nodejs openssh sshpass adb fastboot platform-tools neovim build-essential wget curl gcc libfuse2 make net-tools ripgrep unzip`: Install packages at once.
+- `sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl build-essential make net-tools unzip adb fastboot platform-tools`
+
+- `sudo apt install gcc libfuse2 ripgrep -y`: NvChad depencies
 
 <br>
 
@@ -107,7 +97,6 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 # Install NeoVim and Setup NvChad in Ubuntu
 
 - `pkg update && pkg upgrade -y`: always recommended.
-- `sudo apt install libfuse2` - without it, nvim will not work.
 - `curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage`: run this command.
 - `chmod u+x nvim.appimage`: verify with 'ls -la filename.ext'.
 - `./nvim.appimage`: to run nvim for one time.
@@ -117,8 +106,9 @@ _To expose nvim globally:_
 - `(use sudo) mv nvim.appimage /opt/nvim/nvim`; if denied without using 'sudo', use `sudo !!`.
 
 -  run `nano .bashrc` and add `export PATH="$PATH:/opt/nvim/"` below the last line and save to set the env variable to be able to use nvim from anywhere.
--  `source ~/.bashrc`: load changes. Now Install Nerd Fonts to proceed for NvChad.
--  NerdFont > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
+-  `source ~/.bashrc`: load changes.
+
+-  NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
 
 
 _Now NvChad:_
@@ -142,30 +132,38 @@ _Now NvChad:_
 1. Update package lists and install Fish:
     ```bash
     sudo apt update
-    sudo apt install fish
+    sudo apt install fish -y
     ```
 
 2. Set Fish as the default shell:
     ```bash
-    chsh -s /usr/bin/fish
+    chsh -s fish
     ```
 
-## Starship:
+## Fisher + Plugins:
 
-3. Install Starship:
+3. Install Fisher:
     ```bash
-    curl -sS https://starship.rs/install.sh | sh
+    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
     ```
 
-4. Add Starship initialization to the Fish configuration file:
+4. Install a Prompt:
     ```bash
-    starship init fish | source
+    fisher install IlanCosman/tide@v5
+tide configure
+    ```
+
+
+Move this in config file of the active shell:
+    ```bash
+
+
+    # Manually added aliases and contents
+    
+    export PATH="$PATH:/opt/nvim/"
 
     # Hide fish message
     set -g fish_greeting ""
-
-    # Manually added .bashrc aliases and contents
-    export PATH="$PATH:/opt/nvim/"
 
     alias ui="cd /mnt/d/classes/01_WebDev"
 
@@ -181,53 +179,7 @@ _Now NvChad:_
     source ~/.config/fish/config.fish
     ```
 
-5. Create the Starship configuration file if it doesn’t exist:
-    ```bash
-    mkdir -p ~/.config
-    touch ~/.config/starship.toml
-    ```
-
-6. Open the Starship configuration file:
-    ```bash
-    nano ~/.config/starship.toml
-    ```
-
-    Add the following configurations:
-    ```toml
-
-    [character]
-    success_symbol = "[➜](bold green) "
-    error_symbol = "[➜](bold red) "
-
-    [line_break]
-    disabled = true
-
-    [directory]
-    home_symbol = ""
-    ```
-
-7. Copy and paste the following lines from your `.bashrc` config file into `~/.config/fish/config.fish`:
-    ```bash
-    export PATH="$PATH:/opt/nvim/"
-
-    alias ui="cd /mnt/d/classes/01_WebDev"
-
-    # Tablet
-    alias sshtablet="~/.ssh_login_tablet.sh"
-
-    # Windows
-    alias sshwindows="~/.ssh_login_windows.sh"
-    ```
-
-    Reload the Fish configuration:
-    ```bash
-    source ~/.config/fish/config.fish
-    ```
-
-
-
 <br> <br>
-
 
 <!-- ===================================================================================================================================== -->
 
@@ -242,12 +194,13 @@ _Now NvChad:_
 - `termux-change-repo` > `choose asia server`.
 
 - `touch ~/.hushlogin`: Hide home screen message.
-- `cd ~(tilde)` - home folder
-- `cd /` - root folder
+- `cd ~(tilde)` - home directory
+- `cd /` - root directory
 - `cd /sdcard/` - storage folder
 
 
 - `pkg help` - help
+- `which <pkg name>`: show pkg path
 - `pkg show <PKG name>` - details about a package
 - `pkg search <music>` - searching packages related to <music>
 
@@ -256,12 +209,12 @@ _Now NvChad:_
 
 ### Termux margin settings:
 
-1. `nvim ~/.termux/termux.properties` - open termux settings files
+1. `nano ~/.termux/termux.properties` - open termux settings files
 2. `terminal-margin-horizontal=20` - set horizontal margin
 3. `terminal-margin-vertical=10` - set vertical margin
 
 4. `termux-reload-settings` - load the changes
-5. `vol-up + k` - hide/unhide termux toolbar.
+5. `vol-up + k` - hide/unhide termux bottom toolbar.
 6. `termux-open file.txt / file.img` - open any file with termux
 
 ### Termux Theme:
@@ -290,9 +243,8 @@ color15 = #FFFFFF
 <br>  <hr>
 
 ### Packages:
-
 _pkg list-installed_ - list installed pakckages.  <br>
-_pkg search <package_ - search available pakckages.
+_pkg search <pkg_name>_ - search available pakckages.
 
 - `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y`
 - `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
