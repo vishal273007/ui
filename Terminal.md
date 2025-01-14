@@ -345,6 +345,7 @@ set -g fish_greeting ""
 #Fisher
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
+#Tide
 fisher install llanCosman/tide@v5
 tide configure
 ```
