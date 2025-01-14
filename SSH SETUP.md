@@ -37,6 +37,7 @@ _Test From client device:_
 
 ### Termux as SSH Client Setup:
 - Type `pkg install sshpass -y`: for storing password. verify with `sshpass -V`.
+- First, connect manually with "ssh username@ip" > password.
 - `nano ~/ssh_login_windows.sh`: to create and open to edit.
 - `#!/bin/bash` (enter) `sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma"@192.168.0.125`: add this lines to config file.
 - `chmod +x ~/ssh_login_windows.sh`: make the script executable.
