@@ -342,16 +342,19 @@ set -g fish_greeting ""
 ## Install Prompt Designer
 
 
-
+_Install Fisher_
 ```bash
-# Copy these commands from repo or GPT. Copying from here might contain space which may cause errors.
-#Fisher
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-
-#Tide
-fisher install llanCosman/tide@v5
-tide configure
+curl -sL https://git.io/fisher | source
+fisher install jorgebucaran/fisher
+```
+_Install Tide_
+```bash
+fisher install IlanCosman/tide@v5
 ```
 
+_Configure Tide_
+```bash
+tide configure
+```
 
 
