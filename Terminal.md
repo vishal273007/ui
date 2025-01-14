@@ -147,9 +147,9 @@ tide configure
 ```
 
 
-### Copy these lines in config file of the active shell:
+# Aliases and other configs in config file:
     ```bash
-    # Expose nvim
+    # Expose nvim (In pc only)
     export PATH="$PATH:/opt/nvim/"
 
     # Hide fish message
@@ -164,8 +164,7 @@ tide configure
     alias sshwindows="~/.ssh_login_windows.sh"
     ```
 
-
-Reload the configuration:
+Source the configuration(not with termux-reload):
     ```bash
     source ~/.config/fish/config.fish
     ```
@@ -333,11 +332,33 @@ mkdir -p ~/.config/fish
 nano ~/.config/fish/config.fish
 ```
 
-Add the following lines to the file:
-```fish
-# Hide homescreen message
-set -g fish_greeting ""
-```
+# Aliases and other configs in config file:
+    ```fish
+    # Hide fish homescreen message
+    set -g fish_greeting ""
+
+    # Auto start ssh server on termux startup
+    sshd
+
+    # Alias for common git command
+    alias gs="git status"
+    alias commit="git add . && git commit -m "updated" && git push"
+
+    # Projects folder with alias name
+    alias projects="cd /sdcard/projects"
+
+    # Nord 4
+    alias sshnord4="~/.ssh_login_nord4.sh"
+
+    # Windows
+    alias sshwindows="~/.ssh_login_windows.sh"
+    ```
+
+Source the configuration(not with termux-reload):
+    ```bash
+    source ~/.config/fish/config.fish
+    ```
+
 
 ## Install Prompt Designer
 
