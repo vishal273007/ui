@@ -134,15 +134,15 @@ _Now NvChad:_
 ## Fisher + Plugins:
 
 3. Install Fisher:
-    ```bash
+```bash
     curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-    ```
+```
 
-4. Install a Prompt:
-    ```bash
-    fisher install IlanCosman/tide@v5
+7. Install a Prompt:
+```bash
+fisher install IlanCosman/tide@v5
 tide configure
-    ```
+```
 
 
 Move this in config file of the active shell:
@@ -162,7 +162,8 @@ Move this in config file of the active shell:
     alias sshwindows="~/.ssh_login_windows.sh"
     ```
 
-    Reload the configuration:
+
+Reload the configuration:
     ```bash
     source ~/.config/fish/config.fish
     ```
