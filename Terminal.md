@@ -318,7 +318,7 @@ _Now NvChad:_
 pkg install fish -y
 ```
 
-Set Fish as the default shell:
+### Set Fish as the default shell:
 ```bash
 chsh -s fish/bash/zsh
 ```
