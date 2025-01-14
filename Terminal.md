@@ -303,7 +303,7 @@ _Now NvChad:_
 - `Space+ x` - close active tab
 - `Ctrl + n` - Show/hide file tree
 
-- `Set indentation to 4 spaces`: `cd ~/.config/nvin/` ==> add in `options.lua` these lines:
+- `Set indentation to 4 spaces(Error in Termux nvim)`: `cd ~/.config/nvin/` ==> add in `options.lua` these lines:
 - `vim.opt.tabstop = 4        -- Number of spaces for a tab
 	vim.opt.shiftwidth = 4     -- Number of spaces for auto-indentation
 	vim.opt.expandtab = true   -- Convert tabs to spaces
