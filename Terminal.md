@@ -4,7 +4,7 @@
 > _Note: Official Docs contains all the guide you need._
 
 
-## Windows Powershell UI:
+## Powershell UI:
 
 - `Settings(Ctrl + ,)` --> `Color Schemes` --> Choose `Dark` and click `Set as Default` and then click `Save`.
 
@@ -35,17 +35,14 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - Launch mode: Focus/Default
 - Launch size: Coulumn: 90, Row: 22
 - Launch positions: X:840, Y: 400.
-- `Alt + F4` - to close terminal, `Ctrl + ,` - Settings
+- `Ctrl + ,` - Settings
 
 - In Interaction section, disable `Warn when closing more than one tab`.
 
-<br>
-
 - **`F11`**: Full screen
-- 
 <br>
 
--To reset Windows Terminal:_
+-Reset Terminal:_
 
 - `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
 
@@ -65,10 +62,10 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - `ls -a` = list hidden and normal files/folders inside the present directory
 - `cd ../..` = two directory back
 
-- `cd folder_name` = Open the directory//folder
+- `cd foldername` = Open the directory/folder
 - `cat filename.txt` = Show the content of any file like txt on the terminal
 
-- `mkdir folder_name` = Make a folder the current directory
+- `mkdir foldername` = Make a folder the current directory
 - `touch filename.extension` = Create a file
 - `'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
 - `mv folder/file.txt ~/storage/downloads/` = Move
@@ -81,51 +78,45 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 - `# sometexts` - Comments ignored by terminal
 - `echo message` - print any message on the terminal
-- `sudo !!` - repeat last command with super user right 
-- `Ctrl + z/c` - stops/halts current command
+- `sudo !!` - repeat last command with sudo right 
+- `Ctrl + z/c` - stops/halts executing command
 
 <br>
 
 ### Ubuntu packages:
 - `sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl build-essential make net-tools unzip adb fastboot platform-tools`
 
-- `sudo apt install gcc libfuse2 ripgrep -y`: NvChad depencies
-
 <br>
 
 
 # Install NeoVim and Setup NvChad in Ubuntu
 
-- `pkg update && pkg upgrade -y`: always recommended.
+- `pkg update && pkg upgrade -y`
 - `curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage`: run this command.
 - `chmod u+x nvim.appimage`: verify with 'ls -la filename.ext'.
 - `./nvim.appimage`: to run nvim for one time.
 
 _To expose nvim globally:_
-- `mkdir -p /opt/nvim`; permission denied, so run `sudo !!` if doing normally or just use `sudo` before mkdir.
+- `mkdir -p /opt/nvim`; permission denied; run `sudo !!` if doing normally or just use `sudo` before mkdir.
 - `(use sudo) mv nvim.appimage /opt/nvim/nvim`; if denied without using 'sudo', use `sudo !!`.
 
--  run `nano .bashrc` and add `export PATH="$PATH:/opt/nvim/"` below the last line and save to set the env variable to be able to use nvim from anywhere.
+-  `export PATH="$PATH:/opt/nvim/"` add in .bashrc to set the env variable to run nvim from anywhere.
 -  `source ~/.bashrc`: load changes.
 
 -  NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
 
 
 _Now NvChad:_
--  `sudo apt install ripgrep gcc make -y`: Dependencies.
-
+-  `sudo apt install ripgrep libfuse2 gcc make -y`: Dependencies.
 -  `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
--  type `:q` and then `:MasonInstallAll`
+-  `:MasonInstallAll`
 -  `Space th` to choose the theme.
--  `~/.config/nvin` open config directory > `nvim` to open neovim in the same directory > `Ctrl + N` to open _file tree_ in neovim.
--  On any folder like .git, while in normal mode, press `d` key and `y` to delete.
+-  delete .git from `~/.config/nvin`, in nvim, while in normal mode, press `d` key on directory and `y` to delete.
 
 
 <!-- ===================================================================================================================================== -->
 
 <hr>
-
-# Setting up Fish Shell and Starship in Ubuntu
 
 ## Fish Shell:
 
@@ -156,10 +147,7 @@ tide configure
 
 Move this in config file of the active shell:
     ```bash
-
-
-    # Manually added aliases and contents
-    
+    # Expose nvim
     export PATH="$PATH:/opt/nvim/"
 
     # Hide fish message
@@ -191,12 +179,12 @@ Move this in config file of the active shell:
 - `pkg update -y` and `pkg upgrade -y`
 
 - `termux-setup-storage`
-- `termux-change-repo` > `choose asia server`.
+- `termux-change-repo` > `asia server`.
 
-- `touch ~/.hushlogin`: Hide home screen message.
+- `touch ~/.hushlogin`: Hide homescreen message.
 - `cd ~(tilde)` - home directory
 - `cd /` - root directory
-- `cd /sdcard/` - storage folder
+- `cd /sdcard/` - main storage
 
 
 - `pkg help` - help
@@ -209,7 +197,7 @@ Move this in config file of the active shell:
 
 ### Termux margin settings:
 
-1. `nano ~/.termux/termux.properties` - open termux settings files
+1. `nano ~/.termux/termux.properties` - termux settings files
 2. `terminal-margin-horizontal=20` - set horizontal margin
 3. `terminal-margin-vertical=10` - set vertical margin
 
@@ -219,7 +207,7 @@ Move this in config file of the active shell:
 
 ### Termux Theme:
 - `touch colors.properties` or edit by adding.
-- ```bash
+   ```bash
 background = #202020
 foreground = #C0C0C0
 color0 = #1C1C1C
@@ -238,7 +226,7 @@ color12 = #5FAFFF
 color13 = #8787FF
 color14 = #5FFFFF
 color15 = #FFFFFF
-  ```
+   ```
 
 <br>  <hr>
 
@@ -322,11 +310,11 @@ _Now NvChad:_
 <!-- ===================================================================================================================================== -->
 
 
-# Setting Up Fish Shell and Starship Prompt
+# Fish Shell
 
 ## Install Fish Shell
 ```bash
-pkg install fish -y > fish
+pkg install fish -y
 ```
 
 Set Fish as the default shell:
@@ -345,9 +333,6 @@ Add the following lines to the file:
 ```fish
 # Hide homescreen message
 set -g fish_greeting ""
-
-# Initialize Starship prompt
-starship init fish | source
 ```
 
 ## Install Prompt Designer
