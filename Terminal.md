@@ -263,7 +263,29 @@ _Now NvChad:_
 4. `termux-reload-settings` - load the changes
 5. `vol-up + k` - hide/unhide termux toolbar.
 6. `termux-open file.txt / file.img` - open any file with termux
-7. `pkg install starship` > `eval "$(starship init bash)"` add in .bashrc > preset (pastel powerline) starship preset pastel-powerline -o > ~/.config/starship.toml.
+
+### Termux Theme:
+- `touch colors.properties` or edit by adding.
+- ```bash
+background = #202020
+foreground = #C0C0C0
+color0 = #1C1C1C
+color1 = #AF0000
+color2 = #00AF00
+color3 = #AF8700
+color4 = #5F87AF
+color5 = #8787AF
+color6 = #5FAFAF
+color7 = #EEEEEE
+color8 = #444444
+color9 = #FF0000
+color10 = #00FF00
+color11 = #FFFF00
+color12 = #5FAFFF
+color13 = #8787FF
+color14 = #5FFFFF
+color15 = #FFFFFF
+  ```
 
 <br>  <hr>
 
@@ -272,7 +294,7 @@ _Now NvChad:_
 _pkg list-installed_ - list installed pakckages.  <br>
 _pkg search <package_ - search available pakckages.
 
-- `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-21 -y`
+- `pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y`
 - `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
 - `pkg install fish -y` > fish : interactive shell with auto-completion
 
@@ -376,65 +398,14 @@ set -g fish_greeting ""
 starship init fish | source
 ```
 
-## Install Starship Prompt
+## Install Prompt Designer
+
 ```bash
-pkg install starship
-starship init fish | source
-```
+#Fisher
+curl -sL https://git.io/fisher ......
 
-## Starship Configuration
-Create or edit the Starship configuration file:
-```bash
-nano ~/.config/starship.toml
-```
-
-### Add this config in toml file
-```toml
-format = """
-[](#9A348E)\
-$username\
-[](bg:#DA627D fg:#9A348E)\
-$directory\
-[](fg:#DA627D bg:#33658A)\
-$time\
-[ ](fg:#33658A)\
-"""
-
-# Disable the blank line at the start of the prompt
-add_newline = false
-
-# Username module
-[username]
-show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
-format = '[$user ]($style)'
-disabled = false
-
-# OS module (optional)
-[os]
-style = "bg:#9A348E"
-disabled = true
-
-# Directory module
-[directory]
-style = "bg:#DA627D"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "…/"
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
-# Time module
-[time]
-disabled = false
-time_format = "%I:%M %p"  # 12-hour format with AM/PM
-style = "bg:#33658A"
-format = '[$time ]($style)'
+fisher install llanCosman/tide@v5
+tide configure
 ```
 
 
