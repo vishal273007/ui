@@ -207,8 +207,9 @@ Reload the configuration:
 6. `termux-open file.txt / file.img` - open any file with termux
 
 ### Termux Theme:
-- `touch colors.properties` or edit by adding.
-   ```bash
+_`touch colors.properties` or edit by adding._
+
+```bash
 background = #202020
 foreground = #C0C0C0
 color0 = #1C1C1C
@@ -227,7 +228,7 @@ color12 = #5FAFFF
 color13 = #8787FF
 color14 = #5FFFFF
 color15 = #FFFFFF
-   ```
+```
 
 <br>  <hr>
 
