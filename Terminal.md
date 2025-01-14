@@ -84,10 +84,9 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 <br>
 
 ### Ubuntu packages:
-
-    ```bash
-    sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl build-essential make net-tools unzip adb fastboot platform-tools
-    ```
+```bash
+sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl build-essential make net-tools unzip adb fastboot platform-tools
+```
 
 <br>
 
