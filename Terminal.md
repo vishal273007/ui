@@ -145,7 +145,7 @@ tide configure
 ```
 
 
-Move this in config file of the active shell:
+### Copy these lines in config file of the active shell:
     ```bash
     # Expose nvim
     export PATH="$PATH:/opt/nvim/"
