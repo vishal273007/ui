@@ -59,21 +59,19 @@ Before starting, configure Git with details:
 
 - `git config --global user.name "Vishal Vishwakarma"`: Sets Git username.
 - `git config --global user.email "273007@gmail.com"`: Sets email for commits.
+- `git config --list`: verify details.
 
 <br>
 
 For the first time push, enter following:
 
-- `username`: Enter github username `vishal273007`
-- `enter password`: enter the `access token` from your password manager's note. Password support is removed.
-
-- `git config --list`: verify details.
-
-<br>
-
-- **Note**: for git to remember crendentials:
-- Run `git config --global credential.helper store`.
+- `git config --global credential.helper store` - firt time only to store git credentials
 - Clone and then edit and push > Enter credentials once when pushing/pulling (after this, Git will remember them)
+
+_Now, when asked, enter the details like following:_
+
+- `username`: Enter github username `vishal273007`
+- `enter password`: enter the `PAT(access token)` from Proton pass note.
 
 <br>
 <br>
