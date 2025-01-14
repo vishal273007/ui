@@ -259,8 +259,8 @@ _Dependencies:_
 - Open termux > `mkdir NerdFonts` > `cd NerdFonts`
 - `wget <paste the font link address>`
 - After downloading, extract by `unzip FiraCode.zip` > 'ls' to see.
-- `cp <fontname.ttf> ~/.termux/font.ttf` (cp FiraCodeNerdFont-Regular.ttf ~/.termux/font.ttf) - copy font in termux directory.
-- Exit and reopen to apply changes. 
+- `copy font.ttf to ~/.termux directory (~/.termux/font.ttf)`
+- `termux-reload-settings` - reload for changes. 
 
 
 <br>
@@ -269,7 +269,7 @@ _Dependencies:_
 _Now NvChad:_
 
 
-- pkg install neovim python nodejs git wget lua-language-server -y
+- pkg install neovim python nodejs git wget -y
 - Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command and run.
 - `:MasonInstallAll` > Delete the `.git` from nvim config directory.
 - `:Lazy sync` - run to update
