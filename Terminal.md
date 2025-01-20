@@ -276,24 +276,27 @@ Source the configuration(not with termux-reload):
 _`touch colors.properties` or edit by adding._
 
 ```bash
-background = #202020
-foreground = #C0C0C0
-color0 = #1C1C1C
-color1 = #AF0000
-color2 = #00AF00
-color3 = #AF8700
-color4 = #5F87AF
-color5 = #8787AF
-color6 = #5FAFAF
-color7 = #EEEEEE
-color8 = #444444
-color9 = #FF0000
-color10 = #00FF00
-color11 = #FFFF00
-color12 = #5FAFFF
-color13 = #8787FF
-color14 = #5FFFFF
-color15 = #FFFFFF
+background=#282A36
+foreground=#F8F8F2
+cursor=#F8F8F2
+
+color0=#21222C
+color1=#FF5555
+color2=#50FA7B
+color3=#F1FA8C
+color4=#BD93F9
+color5=#FF79C6
+color6=#8BE9FD
+color7=#F8F8F2
+
+color8=#6272A4
+color9=#FF6E6E
+color10=#69FF94
+color11=#FFFFA5
+color12=#D6ACFF
+color13=#FF92DF
+color14=#A4FFFF
+color15=#FFFFFF
 ```
 
 <br>  <hr>
