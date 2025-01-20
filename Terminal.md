@@ -4,9 +4,11 @@
 > _Note: Official Docs contains all the guide you need._
 
 
-## Powershell UI:
+## Powershell Theme:
 
-- `Settings(Ctrl + ,)` --> `Color Schemes` --> Choose `Dark` and click `Set as Default` and then click `Save`.
+- `Settings(Ctrl + ,)` --> `Default profile` --> `Color Schemes` --> Choose `Drakula`.
+- Add Drakula theme terminal:
+- add theme code in profile.json file in 'scheme [ here multiple themes with {code}] (ask theme code from multiple ai assistant).
 
 ### Settings
 
@@ -71,6 +73,11 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 3. source ~/.config/fish/config.fish
 
 <br>
+
+### Terminal Multiplexer(side by side windows):
+- `sudo apt isntall tmux -y` > type tmux to open it > `ctrl + b` then `%` for vertical side by side windows.
+- `ctrl + b` then left/right arrow to navigate in opened windows.
+- `RESIZE PANE: ` `ctrl + b` followed by : then `resize-pane -L 15` (always relative to current self windows size)
 
 
 
