@@ -85,11 +85,10 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 ### Basic Settings to do:
 - `touch ~/.hushlogin`: Hide home screen message.
 
-### ls command icon theme
-1. sudo apt install eza
+### ls command icon theme with eza
+1. sudo apt install eza -y
 
 2. Add these lines in (~/.config/fish/config.fish)
-# Modern ls commands using eza
 ```bash
    alias ls='eza --icons'
    alias ll='eza -l --icons'
