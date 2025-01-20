@@ -56,6 +56,24 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 ### Basic Settings to do:
 - `touch ~/.hushlogin`: Hide home screen message.
 
+### ls command icon theme
+1. sudo apt install eza
+
+2. Add these lines in (~/.config/fish/config.fish)
+# Modern ls commands using eza
+```bash
+   alias ls='eza --icons'
+   alias ll='eza -l --icons'
+   alias la='eza -la --icons'
+   alias lt='eza --tree --icons'
+   alias l.='eza -d .* --icons'
+```
+3. source ~/.config/fish/config.fish
+
+<br>
+
+
+
 
 ### Basic Linux Commands:
 - `pwd` = to show present working directly
@@ -114,6 +132,19 @@ _Now NvChad:_
 -  `:MasonInstallAll`
 -  `Space th` to choose the theme.
 -  delete .git from `~/.config/nvin`, in nvim, while in normal mode, press `d` key on directory and `y` to delete.
+
+_NvChad Manual tweaks:_
+- add following in "init.lua" file to set 4 space for tab
+```bash
+   vim.opt.tabstop = 4
+   vim.opt.shiftwidth = 4
+   vim.opt.expandtab = true
+```
+
+**Deleting text**:
+- 5d: delete line no 5
+- d2d:   delete 3 lines starting from the current line
+- dd: delete current line
 
 
 <!-- ===================================================================================================================================== -->
