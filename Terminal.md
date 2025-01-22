@@ -248,6 +248,7 @@ tmux new-session \; split-window -h \; select-pane -L
 2. `chmod +x .tmux-start.sh` and then > restart
 
 ## Start Tmux by default in fish:
+(solution link - https://github.com/fish-shell/fish-shell/issues/4434)
 Add these lines to `config.fish`:
 ```bash
 if status is-interactive
@@ -255,7 +256,7 @@ and not set -q TMUX
     exec ~/.tmux-start.sh("tmux" if not using alias)
 end
 ```
-> Ai assistant didn't help to start tmux by default, but a simple google search fixed the problem. So, use the combination of solution istead of reliance on a signle technology.
+> Ai assistant couln't help and wasted time to start tmux by default, but a simple google search fixed the problem. So, use the combination of resources and techniques to fix any problem istead of relying on a signle technology.
 
 <br> <br>
 
