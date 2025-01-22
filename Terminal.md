@@ -236,6 +236,8 @@ Source the configuration(not with termux-reload):
 
 <br>
 
+<!-- ======================================================================================================================== -->
+
 # Tmux
 
 ## Create alias to open tmux with two window:
@@ -256,6 +258,10 @@ and not set -q TMUX
     exec ~/.tmux-start.sh("tmux" if not using alias)
 end
 ```
+
+### Set mouse on/off in tmux:
+`ctrl+b :` > type `setw -g mouse on/off` in the input field
+
 > Ai assistant couln't help and wasted time to start tmux by default, but a simple google search fixed the problem. So, use the combination of resources and techniques to fix any problem istead of relying on a signle technology.
 
 <br> <br>
