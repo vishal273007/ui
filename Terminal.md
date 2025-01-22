@@ -182,7 +182,8 @@ _NvChad Manual tweaks:_
 
 <!-- ===================================================================================================================================== -->
 
-<hr>
+<hr> <br>
+
 
 ## Fish Shell:
 
@@ -212,7 +213,7 @@ tide configure
 
 
 # Aliases and other configs in config file:
-    ```bash
+```bash
     # Expose nvim (In pc only)
     export PATH="$PATH:/opt/nvim/"
 
@@ -226,12 +227,35 @@ tide configure
 
     # Windows
     alias sshwindows="~/.ssh_login_windows.sh"
-    ```
+```
 
 Source the configuration(not with termux-reload):
-    ```bash
+```bash
     source ~/.config/fish/config.fish
-    ```
+```
+
+<br>
+
+# Tmux
+
+## Create alias to open tmux with two window:
+1. Touch `.tmux-start.sh` and add these lines
+```bash
+#!/bin/bash
+tmux new-session \; split-window -h \; select-pane -L
+```
+
+2. `chmod +x .tmux-start.sh` and then > restart
+
+## Start Tmux by default in fish:
+Add these lines to `config.fish`:
+```bash
+if status is-interactive
+and not set -q TMUX
+    exec ~/.tmux-start.sh("tmux" if not using alias)
+end
+```
+> Ai assistant didn't help to start tmux by default, but a simple google search fixed the problem. So, use the combination of solution istead of reliance on a signle technology.
 
 <br> <br>
 
