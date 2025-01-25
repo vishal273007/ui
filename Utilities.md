@@ -6,13 +6,91 @@
 - Folder - search "ui"
 - Set the "Number of results shown before scrolling" to 1 from default 4.
 - Plugin hint: none - to disable auto suggestion below search box.
+
     
 
+<div style="text-align: center;">   <h1>  Termux  </h1>  </div>  <br>
+
+### Basic to-dos after installing temux:
+
+- `pkg update -y` and `pkg upgrade -y`
+
+- `termux-setup-storage`
+- `termux-change-repo` > `asia server`.
+
+- `touch ~/.hushlogin`: Hide homescreen message.
+- `cd ~(tilde)` - home directory
+- `cd /` - root directory
+- `cd /sdcard/` - main storage
 
 
+- `pkg help` - help
+- `which <pkg name>`: show pkg path
+- `pkg show <PKG name>` - details about a package
+- `pkg search <music>` - searching packages related to <music>
 
+  
+<br> <hr>
 
-# Termux
+### Termux margin settings:
+
+1. `nano ~/.termux/termux.properties` - termux settings files
+2. `terminal-margin-horizontal=20` - set horizontal margin
+3. `terminal-margin-vertical=10` - set vertical margin
+
+4. `termux-reload-settings` - load the changes
+5. `vol-up + k` - hide/unhide termux bottom toolbar.
+6. `termux-open file.txt / file.img` - open any file with termux
+
+### Termux Theme:
+_`touch colors.properties` or edit by adding._
+
+```bash
+background=#282A36
+foreground=#F8F8F2
+cursor=#F8F8F2
+
+color0=#21222C
+color1=#FF5555
+color2=#50FA7B
+color3=#F1FA8C
+color4=#BD93F9
+color5=#FF79C6
+color6=#8BE9FD
+color7=#F8F8F2
+
+color8=#6272A4
+color9=#FF6E6E
+color10=#69FF94
+color11=#FFFFA5
+color12=#D6ACFF
+color13=#FF92DF
+color14=#A4FFFF
+color15=#FFFFFF
+```
+
+<br>  <hr>
+
+### Packages:
+_pkg list-installed_ - list installed pakckages.
+_pkg search <pkg_name>_ - search available pakckages.
+```bash
+pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
+```
+
+- `termux api` - [termux-sms-send -n "number" "message", termux-battery-status, termux-camera-photo picture.jpg, termux-tts-speak "hello", termux-brightness 100, termux-location]
+
+<br>  <hr>
+
+### Install Nerd Font and setup NvChad in termux:
+
+_Dependencies:_
+
+- `pkg update && pkg upgrade -y`
+- `apt install ripgrep make -y`
+
+<br>
+
 
 - `m` - to mark in file explorer tree
 - `a` - to create new file while on a dir in file tree
