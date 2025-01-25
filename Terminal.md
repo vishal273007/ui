@@ -110,28 +110,28 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 ### Basic Linux Commands:
 ```bash
-- `pwd` = to show present working directly
-- `ls -a` = list hidden and normal files/folders inside the present directory
-- `cd ../..` = two directory back
+`pwd` = to show present working directly
+`ls -a` = list hidden and normal files/folders inside the present directory
+`cd ../..` = two directory back
 
-- `cd foldername` = Open the directory/folder
-- `cat filename.txt` = Show the content of any file like txt on the terminal
+`cd foldername` = Open the directory/folder
+`cat filename.txt` = Show the content of any file like txt on the terminal
 
-- `mkdir foldername` = Make a folder the current directory
-- `touch filename.extension` = Create a file
-- `'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
-- `mv folder/file.txt ~/storage/downloads/` = Move
-- `mv old_foldername/old_filename.txt new_foldername/new_filename.txt` = Rename
-- `rm filename.txt / rm -r foldername` = Delete.
+`mkdir foldername` = Make a folder the current directory
+`touch filename.extension` = Create a file
+`'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
+`mv folder/file.txt ~/storage/downloads/` = Move
+`mv old_foldername/old_filename.txt new_foldername/new_filename.txt` = Rename
+`rm filename.txt / rm -r foldername` = Delete.
 - `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
-- `du -h file.txt / du -sh folder` = Check size.
-- `ls -l file.txt / ls -ld folder` = Check property.
-- `touch/rm ClassA.java ClassB.java ClassC.java` = create/delete files at once.
+`du -h file.txt / du -sh folder` = Check size.
+`ls -l file.txt / ls -ld folder` = Check property.
+`touch/rm ClassA.java ClassB.java ClassC.java` = create/delete files at once.
 
-- `# sometexts` - Comments ignored by terminal
-- `echo message` - print any message on the terminal
-- `sudo !!` - repeat last command with sudo right 
-- `Ctrl + z/c` - stops/halts executing command
+`# sometexts` - Comments ignored by terminal
+`echo message` - print any message on the terminal
+`sudo !!` - repeat last command with sudo right 
+`Ctrl + z/c` - stops/halts executing command
 ```
 
 <br>
