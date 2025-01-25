@@ -35,16 +35,17 @@ pkg search <music> - searching packages related to <music>
 
 ### Termux margin settings:
 
-1. `nano ~/.termux/termux.properties` - termux settings files
-2. `terminal-margin-horizontal=20` - set horizontal margin
-3. `terminal-margin-vertical=10` - set vertical margin
+```bash
+nano ~/.termux/termux.properties - termux settings files
+terminal-margin-horizontal=20 - set horizontal margin
+terminal-margin-vertical=10 - set vertical margin
 
-4. `termux-reload-settings` - load the changes
-5. `vol-up + k` - hide/unhide termux bottom toolbar.
-6. `termux-open file.txt / file.img` - open any file with termux
+termux-reload-settings - load the changes
+vol-up + k - hide/unhide termux bottom toolbar.
+termux-open file.txt / file.img - open any file with termux
 
 ### Termux Theme:
-_`touch colors.properties` or edit by adding._
+_touch colors.properties - then add these lines_
 
 ```bash
 background=#282A36
