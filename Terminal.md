@@ -1,7 +1,7 @@
 <div style="text-align: center;">   <h1> Terminal  </h1>  </div>
 
 
-> _Note: Official Docs contains all the guide you need._
+> _Note: Official Docs is must recommended to read._
 
 
 ## Powershell Theme:
