@@ -145,28 +145,31 @@ sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl b
 
 
 # Install NeoVim and Setup NvChad in Ubuntu
-
-- `pkg update && pkg upgrade -y`
-- `curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage`: run this command.
-- `chmod u+x nvim.appimage`: verify with 'ls -la filename.ext'.
-- `./nvim.appimage`: to run nvim for one time.
+```bash
+pkg update && pkg upgrade -y
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+```
 
 _To expose nvim globally:_
-- `mkdir -p /opt/nvim`; permission denied; run `sudo !!` if doing normally or just use `sudo` before mkdir.
-- `(use sudo) mv nvim.appimage /opt/nvim/nvim`; if denied without using 'sudo', use `sudo !!`.
+```bash
+`mkdir -p /opt/nvim`; permission denied; run `sudo !!` if doing normally or just use `sudo` before mkdir.
+`(use sudo) mv nvim.appimage /opt/nvim/nvim`; if denied without using 'sudo', use `sudo !!`.
 
--  `export PATH="$PATH:/opt/nvim/"` add in .bashrc to set the env variable to run nvim from anywhere.
--  `source ~/.bashrc`: load changes.
+`export PATH="$PATH:/opt/nvim/"` add in .bashrc to set the env variable to run nvim from anywhere.
+`source ~/.bashrc`: load changes.
 
--  NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
+NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
 
 
 _Now NvChad:_
--  `sudo apt install ripgrep libfuse2 gcc make -y`: Dependencies.
--  `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
--  `:MasonInstallAll`
--  `Space th` to choose the theme.
--  delete .git from `~/.config/nvin`, in nvim, while in normal mode, press `d` key on directory and `y` to delete.
+```bash
+`sudo apt install ripgrep libfuse2 gcc make -y`: Dependencies.
+`git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
+`:MasonInstallAll`
+`Space th` to choose the theme.
+delete .git from `~/.config/nvin`, in nvim, while in normal mode, press `d` key on directory and `y` to delete.
 
 _NvChad Manual tweaks:_
 - add following in "init.lua" file to set 4 space for tab
