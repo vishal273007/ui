@@ -109,6 +109,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 
 ### Basic Linux Commands:
+```bash
 - `pwd` = to show present working directly
 - `ls -a` = list hidden and normal files/folders inside the present directory
 - `cd ../..` = two directory back
@@ -131,6 +132,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - `echo message` - print any message on the terminal
 - `sudo !!` - repeat last command with sudo right 
 - `Ctrl + z/c` - stops/halts executing command
+```
 
 <br>
 
