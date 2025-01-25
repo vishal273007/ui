@@ -13,22 +13,23 @@
 
 ### Basic to-dos after installing temux:
 
-- `pkg update -y` and `pkg upgrade -y`
+```bash
+pkg update -y` and `pkg upgrade -y`
 
-- `termux-setup-storage`
-- `termux-change-repo` > `asia server`.
+termux-setup-storage`
+termux-change-repo` > `asia server`.
 
-- `touch ~/.hushlogin`: Hide homescreen message.
-- `cd ~(tilde)` - home directory
-- `cd /` - root directory
-- `cd /sdcard/` - main storage
+touch ~/.hushlogin`: Hide homescreen message.
+cd ~(tilde)` - home directory
+cd /` - root directory
+cd /sdcard/` - main storage
 
 
-- `pkg help` - help
-- `which <pkg name>`: show pkg path
-- `pkg show <PKG name>` - details about a package
-- `pkg search <music>` - searching packages related to <music>
-
+pkg help` - help
+which <pkg name>`: show pkg path
+pkg show <PKG name>` - details about a package
+pkg search <music>` - searching packages related to <music>
+```
   
 <br> <hr>
 
