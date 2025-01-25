@@ -17,12 +17,12 @@
 pkg update -y and pkg upgrade -y
 
 termux-setup-storage
-termux-change-repo > `asia server
+termux-change-repo > asia server
 
 touch ~/.hushlogin : Hide homescreen message
 cd ~(tilde) - home directory
 cd / - root directory
-cd /sdcard/` - main storage
+cd /sdcard/ - main storage
 
 
 pkg help - help
