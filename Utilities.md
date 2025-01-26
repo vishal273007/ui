@@ -15,15 +15,10 @@
 
 ```bash
 pkg update -y and pkg upgrade -y
-
 termux-setup-storage
 termux-change-repo > asia server
 
-touch ~/.hushlogin : Hide homescreen message
-cd ~(tilde) - home directory
-cd / - root directory
 cd /sdcard/ - main storage
-
 
 pkg help - help
 which <pkg name>: show pkg path
@@ -45,7 +40,7 @@ vol-up + k - hide/unhide termux bottom toolbar.
 termux-open file.txt / file.img - open any file with termux
 
 ### Termux Theme:
-_touch colors.properties - then add these lines_
+_touch colors.properties_
 ```
 
 
@@ -81,63 +76,12 @@ color15=#FFFFFF
 pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
 ```
 
-<br>  <hr>
-
-### Install Nerd Font:
-
-_Dependencies:_
-
-- `pkg update && pkg upgrade -y`
-- `apt install ripgrep make -y`
-
-<br>
-
-
 <!-- ===================================================================================================================================== -->
 
-
-# Fish Shell
 
 ## Install Fish Shell
 ```bash
 pkg install fish -y
 ```
 
-### Set Fish as the default shell:
-```bash
-'chsh -s fish'   (or bash/zsh)
-```
 
-## Configure Fish Shell
-Create or edit the Fish configuration file:
-```bash
-mkdir -p ~/.config/fish
-nano ~/.config/fish/config.fish
-```
-
-# Aliases and other configs in config file:
-    ```fish
-    # Hide fish homescreen message
-    set -g fish_greeting ""
-
-    # Auto start ssh server on termux startup
-    sshd
-
-    # Alias for common git command
-    alias gs="git status"
-    alias commit="git add . && git commit -m "updated" && git push"
-
-    # Projects folder with alias name
-    alias projects="cd /sdcard/projects"
-
-    # Nord 4
-    alias sshnord4="~/.ssh_login_nord4.sh"
-
-    # Windows
-    alias sshwindows="~/.ssh_login_windows.sh"
-    ```
-
-Source the configuration(not with termux-reload):
-    ```bash
-    source ~/.config/fish/config.fish
-    ```
