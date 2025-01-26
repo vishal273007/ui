@@ -342,23 +342,26 @@ _Now NvChad:_
 - `Tab` - switch window active windows
 
 ### Shortcuts
-```bash
-m - to mark in file explorer tree
-a - to create new file while on a dir in file tree
-c - copy
-y - copy in text editor
-p - paste
-r - rename
 
-Vsp/sp - vertical split/split
-Ctrl+hjkl - focus windows
-Shift + tab - cycle through open file buffer/tabs or reverse cycle
-Space+ x - close active tab
-Ctrl + n - Show/hide file tree
+- m - to mark in file explorer tree
+- a - to create new file while on a dir in file tree
+- c - copy
+- y - copy in text editor
+- p - paste
+- r - rename
+
+- Vsp/sp - vertical split/split
+- Ctrl+hjkl - focus windows
+- Shift + tab - cycle through open file buffer/tabs or reverse cycle
+- Space+ x - close active tab
+- Ctrl + n - Show/hide file tree
+
 
 - Set indentation to 4 spaces(Error in nvim): 
-    cd ~/.config/nvin/ ==> options.lua
-    vim.opt.tabstop = 4        -- spaces for a tab
-	vim.opt.shiftwidth = 4     -- spaces for auto-indentation
-	vim.opt.expandtab = true   -- convert tabs to spaces
-	vim.opt.smartindent = true -- smart indentation
+```bash
+#cd ~/.config/nvin/ ==> options.lua
+vim.opt.tabstop = 4        -- spaces for a tab
+vim.opt.shiftwidth = 4     -- spaces for auto-indentation
+vim.opt.expandtab = true   -- convert tabs to spaces
+vim.opt.smartindent = true -- smart indentation
+```
