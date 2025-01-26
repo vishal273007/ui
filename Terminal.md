@@ -253,39 +253,47 @@ source ~/.config/fish/config.fish
   
 
 ```bash
-    alias ui="cd /mnt/d/classes/01_WebDev"
+# hiding .class file
+alias ls 'ls --ignore="*.class"'
 
-    # Tablet
-    alias sshtablet="~/.ssh_login_tablet.sh"
+alias ui="cd /mnt/d/classes/01_WebDev"
 
-    # Windows
-    alias sshwindows="~/.ssh_login_windows.sh"
+# Tablet
+alias sshtablet="~/.ssh_login_tablet.sh"
 
-    # Tmux
-    alias tmux="~/.tmux-start.sh"
+# Windows
+alias sshwindows="~/.ssh_login_windows.sh"
 
-    # eza/exa
-    alias ls='eza --icons'
-    alias la='eza -la --icons'
-    alias lt='eza --tree --icons'
-    alias l.='eza -d .* --icons'
-    alias ll='eza -l --icons'
+# Tmux
+alias tmux="~/.tmux-start.sh"
 
-    # source ~/.config/fish/aliases.fish --> source file for changes
+# Git aliases
+alias gs='git status'
+alias update='git add . && git commit -m "updated" && git push'
+
+
+# eza/exa
+alias ls='eza --icons'
+alias la='eza -la --icons'
+alias lt='eza --tree --icons'
+alias l.='eza -d .* --icons'
+alias ll='eza -l --icons'
+
+# source ~/.config/fish/aliases.fish --> source file forchanges
 ```
 
-
+_in config.fish file_
 ```bash
-    # Hide fish message
-    set -g fish_greeting ""
+# Hide fish message
+set -g fish_greeting ""
 
-    # Expose nvim (In pc only)
-    export PATH="$PATH:/opt/nvim/"
+# Expose nvim (In pc only)
+export PATH="$PATH:/opt/nvim/"
 ```
 
 Source the configuration(not with termux-reload):
 ```bash
-    source ~/.config/fish/filename.fish
+source ~/.config/fish/filename.fish
 ```
 
 <br>
@@ -361,7 +369,7 @@ _Now NvChad:_
 - `Control + t` - open file in new window
 - `Tab` - switch window active windows
 
-### Shortcuts
+### NvChad Shortcuts
 
 - m - to mark in file explorer tree
 - a - to create new file while on a dir in file tree
@@ -377,7 +385,8 @@ _Now NvChad:_
 - Ctrl + n - Show/hide file tree
 
 
-- Set indentation to 4 spaces(Error in nvim): 
+### Set indentation to 4 spaces(Error in nvim): 
+
 ```bash
 #cd ~/.config/nvin/ ==> options.lua
 vim.opt.tabstop = 4        -- spaces for a tab
@@ -387,5 +396,5 @@ vim.opt.smartindent = true -- smart indentation
 ```
 
 ### Troubleshooting:
-** Fix shell not found**:
+**Fix shell deleted without changing shell**:
 - powershell(admin) > `wsl -d Ubuntu --exec bash` > `sudo nano /etc/passwd` > edit `.../usr/bin/fish` - change to `.../bash`. 
