@@ -212,11 +212,18 @@ _NvChad Manual tweaks:_
 # Install
 curl -s https://ohmyposh.dev/install.sh | bash
 
-# Add to Fish path
+# Add to fish Config - Oh My Posh initialization
+oh-my-posh init fish --config ~/agnoster.omp.json | source
+
+# Download Agnoster theme
+wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/mai
+n/themes/agnoster.omp.json -O ~/agnoster.omp.json
+
+# Add to PATH if needed
 fish_add_path ~/.local/bin
 
-# Configure Fish
-echo 'eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"' >> ~/.config/fish/config.fish
+# Add initialization
+eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"
 
 # Source config
 source ~/.config/fish/config.fish
