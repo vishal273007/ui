@@ -2,6 +2,7 @@
 
 
 > _Note: Official Docs is must recommended to read._
+> _Linux is purely keyboard based, So use only keyboard to control the system, else, just use windows. Don't try to use mouse in Linux enviroment._
 
 
 ## Powershell Theme:
@@ -103,8 +104,6 @@ _Reset Terminal:_
 - `RESIZE PANE: ` `ctrl + b` followed by : then `resize-pane -L 15` (always relative to current self windows size)
 
 
-
-
 ### Basic Linux Commands:
 ```bash
 pwd = to show present working directly
@@ -131,9 +130,9 @@ echo message - print any message on the terminal
 sudo !! - repeat last command with sudo right 
 Ctrl + z/c - stops/halts executing command
 
-
-`rm *.class` - remove all .class files
-
+rm *.class  # remove all .class files
+rm *.png *.jpg  # remove all file with these extensions.
+mv .* * ~/ui  # move all files in previous folder
 ```
 
 <br>
@@ -148,7 +147,7 @@ sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl b
 
 # NeoVim and NvChad in Ubuntu
 ```bash
-pkg update && pkg upgrade -y
+sudo apt update && apt upgrade -y
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
@@ -156,11 +155,11 @@ chmod u+x nvim.appimage
 
 _To expose nvim globally:_
 ```bash
-mkdir -p /opt/nvim #permission denied; run `sudo !!` if doing normally or just use `sudo` before mkdir.
-(use sudo) mv nvim.appimage /opt/nvim/nvim #if denied without using 'sudo', use `sudo !!`.
+sudo mkdir -p /opt/nvim #if permission denied; run `sudo !!`.
+sudo mv nvim.appimage /opt/nvim/nvim
 
-export PATH="$PATH:/opt/nvim/" #add in .bashrc to set the env variable to run nvim from anywhere.
-source ~/.bashrc # load changes.
+export PATH="$PATH:/opt/nvim/" #add in shell config file to set the env variable to run nvim from anywhere.
+source config_file # load changes.
 
 NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
 ```
@@ -168,25 +167,19 @@ NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .t
 _Now NvChad:_
 ```bash
 sudo apt install ripgrep libfuse2 gcc make -y #Dependencies.
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # from NvChad website
 :MasonInstallAll
-Space th to choose the theme.
-delete .git from `~/.config/nvin, in nvim, while in normal mode, press d key on directory and `y` to delete.
+Space th - theme.
+delete .git from ~/.config/nvin, in nvim, while in normal mode, press d key on directory and y to delete.
 ```
 
 _NvChad Manual tweaks:_
 - add following in "init.lua" file to set 4 space for tab
 ```bash
-   vim.opt.tabstop = 4
-   vim.opt.shiftwidth = 4
-   vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 ```
-
-**Deleting text**:
-- 5d: delete line no 5
-- d2d:   delete 3 lines starting from the current line
-- dd: delete current line
-
 
 <!-- ===================================================================================================================================== -->
 
@@ -292,7 +285,6 @@ set -g fish_greeting ""
 export PATH="$PATH:/opt/nvim/"
 ```
 
-Source the configuration(not with termux-reload):
 ```bash
 source ~/.config/fish/filename.fish
 ```
@@ -332,19 +324,6 @@ _Ai assistant couln't help for starting tmux by default, but a google search fix
 <!-- ===================================================================================================================================== -->
 
 
-
-- Open NvChad website > Click Nerd Font website link.
-- Click download and scroll to the FiraCode font. Long press on download button and click "copy link address".
-- Open termux > `mkdir NerdFonts` > `cd NerdFonts`
-- `wget <paste the font link address>`
-- After downloading, extract by `unzip FiraCode.zip` > 'ls' to see.
-- `copy font.ttf to ~/.termux directory (~/.termux/font.ttf)`
-- `termux-reload-settings` - reload for changes. 
-
-
-<br>
-
-
 _Now NvChad:_
 
 
@@ -363,6 +342,11 @@ _Now NvChad:_
 - Mapping (keymp) -  `:Telescope keymaps`, `:NvCheatsheet`(Space + ch)
 - `TSModuleInfo` > `TSInstall java html css javascript` - Check installed `Syntax highlight` and install if needed.
 - Set `Fira Code Nerd Font` instead of just `Fira Code` to view files with icons.
+
+**Deleting text**:
+- 5d: delete line no 5
+- d2d:   delete 3 lines starting from the current line
+- dd: delete current line
 
 
 - `Space + v/h` - terminal at right/down
