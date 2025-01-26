@@ -34,16 +34,19 @@ pkg search <music> - searching packages related to <music>
 nano ~/.termux/termux.properties - termux settings files
 terminal-margin-horizontal=20 - set horizontal margin
 terminal-margin-vertical=10 - set vertical margin
-
-termux-reload-settings - load the changes
-vol-up + k - hide/unhide termux bottom toolbar.
-termux-open file.txt / file.img - open any file with termux
-
-### Termux Theme:
-_touch colors.properties_
 ```
 
+### Font change:
 
+```bash
+`mkdir NerdFont > cd NerdFont > wget font_link > ls > unzip FiraCode.zip > 'cp fontname.ttf ~/.termux/font.ttf`
+         OR
+`mv font.ttf ~/.termux`
+```
+
+### Termux Dracula Theme:
+
+_touch colors.properties_
 ```bash
 background=#282A36
 foreground=#F8F8F2
@@ -68,7 +71,7 @@ color14=#A4FFFF
 color15=#FFFFFF
 ```
 
-<br>  <hr>
+<br>
 
 ### Packages:
 
@@ -76,12 +79,10 @@ color15=#FFFFFF
 pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
 ```
 
-<!-- ===================================================================================================================================== -->
+<br>  <br>
 
-
-## Install Fish Shell
-```bash
-pkg install fish -y
-```
+- `termux-reload-settings` - load the changes
+- `vol-up + k` - hide/unhide termux bottom toolbar.
+- `termux-open file.txt / file.img` - open files with termux
 
 
