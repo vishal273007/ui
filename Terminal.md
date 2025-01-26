@@ -250,6 +250,7 @@ source ~/.config/fish/config.fish
 
 # Aliases:
 >` touch aliases.fish` in `~/.config/fish`. Add these lines
+>`source ~/.config/fish/aliases.fish` add this line in config.fish to source the alias file automatically.
   
 
 ```bash
