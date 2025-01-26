@@ -69,11 +69,12 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 - In Interaction section, disable `Warn when closing more than one tab`.
 
 - **`F11`**: Full screen
+
 <br>
 
--Reset Terminal:_
+_Reset Terminal:_
 
-- `Settings` > `Apps` > `Installed apps` > Search `terminal` in seach bar > `Advance options` > Scroll down and click on `Reset`.
+- `Installed apps` > Search `terminal` > `Advance options` > `Reset`.
 
 <hr> <br> <br>
 
@@ -110,28 +111,33 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 ### Basic Linux Commands:
 ```bash
-`pwd` = to show present working directly
-`ls -a` = list hidden and normal files/folders inside the present directory
-`cd ../..` = two directory back
+pwd = to show present working directly
+ls -a = list hidden and normal files/folders inside the present directory
+cd ../.. = two directory back
 
-`cd foldername` = Open the directory/folder
-`cat filename.txt` = Show the content of any file like txt on the terminal
+cd foldername = Open the directory/folder
+cat filename.txt = Show the content of any file like txt on the terminal
 
-`mkdir foldername` = Make a folder the current directory
-`touch filename.extension` = Create a file
-`'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/'` = Copy.
-`mv folder/file.txt ~/storage/downloads/` = Move
-`mv old_foldername/old_filename.txt new_foldername/new_filename.txt` = Rename
-`rm filename.txt / rm -r foldername` = Delete.
-- `copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk')` - 'filename' in quote - delete
-`du -h file.txt / du -sh folder` = Check size.
-`ls -l file.txt / ls -ld folder` = Check property.
-`touch/rm ClassA.java ClassB.java ClassC.java` = create/delete files at once.
+mkdir foldername = Make a folder the current directory
+touch filename.extension = Create a file
+'cp file.txt ~/storage/emulated/0/download/' / 'cp -r folder /mnt/d/downloads/' = Copy.
 
-`# sometexts` - Comments ignored by terminal
-`echo message` - print any message on the terminal
-`sudo !!` - repeat last command with sudo right 
-`Ctrl + z/c` - stops/halts executing command
+mv folder/file.txt ~/storage/downloads/ = Move
+mv old_foldername/old_filename.txt new_foldername/new_filename.txt = Rename
+rm filename.txt / rm -r foldername = Delete.
+copy filename > rm 'paste filename' (rm 'com.termux.styling_0.32.1-1000_minAPI21.apk') - 'filename' in quote - delete
+du -h file.txt / du -sh folder = Check size.
+ls -l file.txt / ls -ld folder = Check property.
+touch/rm ClassA.java ClassB.java ClassC.java = create/delete files at once.
+
+# sometexts - Comments ignored by terminal
+echo message - print any message on the terminal
+sudo !! - repeat last command with sudo right 
+Ctrl + z/c - stops/halts executing command
+
+
+`rm *.class` - remove all .class files
+
 ```
 
 <br>
@@ -200,7 +206,7 @@ _NvChad Manual tweaks:_
 
 2. Set Fish as the default shell:
     ```bash
-    'chsh -s fish'   (or bash/zsh)
+    chsh -s shell_name
     ```
 
 ## Fisher + Plugins:
@@ -314,22 +320,22 @@ _Now NvChad:_
 
 ### Shortcuts
 ```bash
-`m` - to mark in file explorer tree
-`a` - to create new file while on a dir in file tree
-`c` - copy
-`y` - copy in text editor
-`p` - paste
-`r` - rename
-`Space(leader)` - other command
-`Vsp/sp` - vertical split/split
-`Ctrl+hjkl` - focus windows
-`Tab/shift + tab` - cycle through open file buffer/tabs or reverse cycle
-`Space+ x` - close active tab
-`Ctrl + n` - Show/hide file tree
+m - to mark in file explorer tree
+a - to create new file while on a dir in file tree
+c - copy
+y - copy in text editor
+p - paste
+r - rename
 
-- `Set indentation to 4 spaces(Error in Termux nvim)`: `cd ~/.config/nvin/` ==> add in `options.lua` these lines:
-- `vim.opt.tabstop = 4        -- Number of spaces for a tab
-	vim.opt.shiftwidth = 4     -- Number of spaces for auto-indentation
-	vim.opt.expandtab = true   -- Convert tabs to spaces
-	vim.opt.smartindent = true -- Enable smart indentation`
-- save and restart.
+Vsp/sp - vertical split/split
+Ctrl+hjkl - focus windows
+Shift + tab - cycle through open file buffer/tabs or reverse cycle
+Space+ x - close active tab
+Ctrl + n - Show/hide file tree
+
+- Set indentation to 4 spaces(Error in nvim): 
+    cd ~/.config/nvin/ ==> options.lua
+    vim.opt.tabstop = 4        -- spaces for a tab
+	vim.opt.shiftwidth = 4     -- spaces for auto-indentation
+	vim.opt.expandtab = true   -- convert tabs to spaces
+	vim.opt.smartindent = true -- smart indentation
