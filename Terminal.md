@@ -89,20 +89,16 @@ _Reset Terminal:_
 ### ls command icon theme with eza
 1. sudo apt install eza -y
 
-2. Add these lines in (~/.config/fish/config.fish)
+2. Add these lines in (~/.config/fish/aliases.fish)
 ```bash
-   alias ls='eza --icons'
-   alias ll='eza -l --icons'
-   alias la='eza -la --icons'
-   alias lt='eza --tree --icons'
-   alias l.='eza -d .* --icons'
+   See the aliases section below for eza aliases
 ```
 3. source ~/.config/fish/config.fish
 
 <br>
 
-### Terminal Multiplexer(side by side windows):
-- `sudo apt isntall tmux -y` > type tmux to open it > `ctrl + b` then `%` for vertical side by side windows.
+### Terminal Multiplexer:
+- `sudo apt isntall tmux -y` > `tmux` > `ctrl + b` then `%`.
 - `ctrl + b` then left/right arrow to navigate in opened windows.
 - `RESIZE PANE: ` `ctrl + b` followed by : then `resize-pane -L 15` (always relative to current self windows size)
 
@@ -150,7 +146,7 @@ sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl b
 <br>
 
 
-# Install NeoVim and Setup NvChad in Ubuntu
+# NeoVim and NvChad in Ubuntu
 ```bash
 pkg update && pkg upgrade -y
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -160,22 +156,23 @@ chmod u+x nvim.appimage
 
 _To expose nvim globally:_
 ```bash
-`mkdir -p /opt/nvim`; permission denied; run `sudo !!` if doing normally or just use `sudo` before mkdir.
-`(use sudo) mv nvim.appimage /opt/nvim/nvim`; if denied without using 'sudo', use `sudo !!`.
+mkdir -p /opt/nvim #permission denied; run `sudo !!` if doing normally or just use `sudo` before mkdir.
+(use sudo) mv nvim.appimage /opt/nvim/nvim #if denied without using 'sudo', use `sudo !!`.
 
-`export PATH="$PATH:/opt/nvim/"` add in .bashrc to set the env variable to run nvim from anywhere.
-`source ~/.bashrc`: load changes.
+export PATH="$PATH:/opt/nvim/" #add in .bashrc to set the env variable to run nvim from anywhere.
+source ~/.bashrc # load changes.
 
 NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
-
+```
 
 _Now NvChad:_
 ```bash
-`sudo apt install ripgrep libfuse2 gcc make -y`: Dependencies.
-`git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
-`:MasonInstallAll`
-`Space th` to choose the theme.
-delete .git from `~/.config/nvin`, in nvim, while in normal mode, press `d` key on directory and `y` to delete.
+sudo apt install ripgrep libfuse2 gcc make -y #Dependencies.
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` copy this from NvChad website and run.
+:MasonInstallAll
+Space th to choose the theme.
+delete .git from `~/.config/nvin, in nvim, while in normal mode, press d key on directory and `y` to delete.
+```
 
 _NvChad Manual tweaks:_
 - add following in "init.lua" file to set 4 space for tab
@@ -208,29 +205,34 @@ _NvChad Manual tweaks:_
     ```bash
     chsh -s shell_name
     ```
+<!-- ====================================================================================================================================== -->
 
-## Fisher + Plugins:
-
-3. Install Fisher:
+## Oh My Posh for Fish:
 ```bash
-    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+# Install
+curl -s https://ohmyposh.dev/install.sh | bash
+
+# Add to Fish path
+fish_add_path ~/.local/bin
+
+# Configure Fish
+echo 'eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"' >> ~/.config/fish/config.fish
+
+# Source config
+source ~/.config/fish/config.fish
 ```
 
-7. Install a Prompt:
+<!-- ====================================================================================================================================== -->
+
+
+
+<br>
+
+# Aliases:
+>` touch aliases.fish` in `~/.config/fish`. Add these lines
+  
+
 ```bash
-fisher install IlanCosman/tide@v5
-tide configure
-```
-
-
-# Aliases and other configs in config file:
-```bash
-    # Expose nvim (In pc only)
-    export PATH="$PATH:/opt/nvim/"
-
-    # Hide fish message
-    set -g fish_greeting ""
-
     alias ui="cd /mnt/d/classes/01_WebDev"
 
     # Tablet
@@ -238,11 +240,32 @@ tide configure
 
     # Windows
     alias sshwindows="~/.ssh_login_windows.sh"
+
+    # Tmux
+    alias tmux="~/.tmux-start.sh"
+
+    # eza/exa
+    alias ls='eza --icons'
+    alias la='eza -la --icons'
+    alias lt='eza --tree --icons'
+    alias l.='eza -d .* --icons'
+    alias ll='eza -l --icons'
+
+    # source ~/.config/fish/aliases.fish --> source file for changes
+```
+
+
+```bash
+    # Hide fish message
+    set -g fish_greeting ""
+
+    # Expose nvim (In pc only)
+    export PATH="$PATH:/opt/nvim/"
 ```
 
 Source the configuration(not with termux-reload):
 ```bash
-    source ~/.config/fish/config.fish
+    source ~/.config/fish/filename.fish
 ```
 
 <br>
