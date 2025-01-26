@@ -193,24 +193,37 @@ _NvChad Manual tweaks:_
 <hr> <br>
 
 
-## Fish Shell:
+# Fish Shell:
 
-1. Update package lists and install Fish:
-    ```bash
-    sudo apt update
-    sudo apt install fish -y
-    ```
+1. Install Fish:
+```bash
+
+# Add fish repository
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt update
+
+# Install fish
+sudo apt install fish -y
+```
 
 2. Set Fish as the default shell:
-    ```bash
-    chsh -s shell_name
-    ```
+```bash
+chsh -s shell_name / chsh -s $(which shell_name)
+
+# Optional: Install Fisher (package manager)
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+
 <!-- ====================================================================================================================================== -->
 
-## Oh My Posh for Fish:
+
+### Oh My Posh for Fish:
 ```bash
+# This may not work in one time. You may need to try few times.
 # Install
 curl -s https://ohmyposh.dev/install.sh | bash
+# Verify
+which oh-my-posh
 
 # Add to fish Config - Oh My Posh initialization
 oh-my-posh init fish --config ~/agnoster.omp.json | source
@@ -222,7 +235,7 @@ n/themes/agnoster.omp.json -O ~/agnoster.omp.json
 # Add to PATH if needed
 fish_add_path ~/.local/bin
 
-# Add initialization
+# Add initialization in config.fish 
 eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"
 
 # Source config
@@ -288,11 +301,11 @@ Source the configuration(not with termux-reload):
 tmux new-session \; split-window -h \; select-pane -L
 ```
 
-2. `chmod +x .tmux-start.sh` and then > restart
+2. `chmod +x .tmux-start.sh` and restart
+3. `~/.tmux-start.sh` - verify
 
-## Start Tmux by default in fish:
-(solution link - https://github.com/fish-shell/fish-shell/issues/4434)
-Add these lines to `config.fish`:
+## Start Tmux by default:
+Add these lines to `config.fish` (solution link - https://github.com/fish-shell/fish-shell/issues/4434)
 ```bash
 if status is-interactive
 and not set -q TMUX
@@ -303,7 +316,7 @@ end
 ### Set mouse on/off in tmux:
 `ctrl+b :` > type `setw -g mouse on/off` in the input field
 
-> Ai assistant couln't help and wasted time to start tmux by default, but a simple google search fixed the problem. So, use the combination of resources and techniques to fix any problem istead of relying on a signle technology.
+_Ai assistant couln't help for starting tmux by default, but a google search fixed the problem. So, use the combination of techniques for troubleshooting._
 
 <br> <br>
 
@@ -372,3 +385,7 @@ vim.opt.shiftwidth = 4     -- spaces for auto-indentation
 vim.opt.expandtab = true   -- convert tabs to spaces
 vim.opt.smartindent = true -- smart indentation
 ```
+
+### Troubleshooting:
+** Fix shell not found**:
+- powershell(admin) > `wsl -d Ubuntu --exec bash` > `sudo nano /etc/passwd` > edit `.../usr/bin/fish` - change to `.../bash`. 
