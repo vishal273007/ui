@@ -242,51 +242,113 @@ source ~/.config/fish/config.fish
 <br>
 
 # Aliases:
->` touch aliases.fish` in `~/.config/fish`. Add these lines
->`source ~/.config/fish/aliases.fish` add this line in config.fish to source the alias file automatically.
+>` touch aliases.fish` in `~/.config/fish` folder.
+<br>
+
+>`source ~/.config/fish/aliases.fish` add in config.fish to source the this file.
   
 
 ```bash
-# hiding .class file
-alias ls 'ls --ignore="*.class"'
+# Add 'source ~/.config/fish/aliases.fish' to the main config.fish file to use these aliases smoothly.
 
-alias ui="cd /mnt/d/classes/01_WebDev"
+# To edit the config file, use the VS Code editor, the most lovable editor with less errors.
 
-# Tablet
-alias sshtablet="~/.ssh_login_tablet.sh"
+# =========================================================================
+# File and Directory Navigation
+alias ..="cd .."       # Navigate to the parent directory.
+alias ...="cd ../.."   # Move up two levels in the directory structure.
+alias c="clear"        # Clear the terminal screen quickly.
 
-# Windows
-alias sshwindows="~/.ssh_login_windows.sh"
+# =========================================================================
+# Package Management
+alias update="sudo apt update && sudo apt upgrade -y"  # Update and upgrade all packages.
+alias remove="sudo apt remove"                         # Remove a package.
 
+# =========================================================================
+# Git Aliases
+alias gs="git status"  # Check the status of the Git repository.
+alias git_update="git add . && git commit -m 'updated' && git push"  # Stage, commit, and push changes in one command.
+alias gl="git log --oneline --graph --decorate"  # Show a concise and visual Git history.
+
+# =========================================================================
 # Tmux
-alias tmux="~/.tmux-start.sh"
+alias tmux="~/.tmux-start.sh"  # Start tmux using a custom script.
 
-# Git aliases
-alias gs='git status'
-alias update='git add . && git commit -m "updated" && git push'
+# =========================================================================
+# SSH to Windows
+alias sshwindows="~/.ssh_login.windows.sh"  # SSH into Windows using a custom script.
 
+# =========================================================================
+# eza/exa (Enhanced File Listings)
+alias ls="eza --icons"              # List files with icons.
+alias ll="eza -l --icons"           # Long format with icons.
+alias la="eza -la --icons"          # List all files (including hidden) with icons.
+alias lt="eza --tree --icons"       # Display files in a tree structure with icons.
+alias l.="eza -d .* --icons"        # List hidden directories with icons.
 
-# eza/exa
-alias ls='eza --icons'
-alias la='eza -la --icons'
-alias lt='eza --tree --icons'
-alias l.='eza -d .* --icons'
-alias ll='eza -l --icons'
+# =========================================================================
+# Programming Languages
+alias python="python3"  # Use Python 3 by default.
 
-# source ~/.config/fish/aliases.fish --> source file forchanges
+# =========================================================================
+# Network and System
+alias ip="ip addr show"         # Show IP addresses.
+alias psg="ps aux | grep"       # Search for running processes.
+alias df="df -h"                # Display disk usage in human-readable format.
+alias free="free -h"            # Show memory usage in human-readable format.
+
+# =========================================================================
+# Custom Folders
+alias nvim_config="nvim ~/.config/fish/config.fish"  # Open the Fish config file in Neovim.
+alias java="cd ~/java"                              # Navigate to the Java folder.
+alias ui="cd ~/ui"                                  # Navigate to the UI folder.
+alias js_class="cd ~/js_class"                      # Navigate to the JavaScript class folder.
+alias js="cd ~/js"                                  # Navigate to the JavaScript projects folder.
+
+# =========================================================================
+# Other Custom Aliases
+
+# Navigate to the Windows Desktop folder.
+alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop"
+
+# Navigate to the Windows Downloads folder.
+alias downloads="cd /mnt/d/Downloads"
 ```
 
-_in config.fish file_
+
+### In config.fish
 ```bash
-# Hide fish message
+# Check if the shell session is interactive
+if status is-interactive
+    # Commands specific to interactive sessions can go here.
+end
+
+# =========================================================================
+# Oh My Posh Initialization
+# Initialize Oh My Posh with the specified theme configuration.
+oh-my-posh init fish --config ~/agnoster.omp.json | source
+
+# Alternative initialization for Oh My Posh with a cached theme configuration.
+eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"
+
+# =========================================================================
+# Fish Greeting
+# Hide the default Fish shell greeting message on startup.
 set -g fish_greeting ""
 
-# Expose nvim (In pc only)
+# =========================================================================
+# Custom Path Addition
+# Add Neovim binary to the system PATH for easy access.
 export PATH="$PATH:/opt/nvim/"
-```
 
-```bash
-source ~/.config/fish/filename.fish
+# =========================================================================
+# Aliases
+# Ignore all files with the `.class` extension when using the `ls` command.
+alias ls 'ls --ignore="*.class"'
+
+# Source additional aliases from an external file.
+source ~/.config/fish/aliases.fish
+
 ```
 
 <br>
