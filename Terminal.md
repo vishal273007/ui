@@ -249,9 +249,10 @@ source ~/.config/fish/config.fish
   
 
 ```bash
+
 # Add 'source ~/.config/fish/aliases.fish' to the main config.fish file to use these aliases smoothly.
 
-# To edit the config file, use the VS Code editor, the most lovable editor with less errors.
+# To edit the config file, use the VS Code editor, the most liked editor for less errors in the code.
 
 # =========================================================================
 # File and Directory Navigation
@@ -259,10 +260,11 @@ alias ..="cd .."       # Navigate to the parent directory.
 alias ...="cd ../.."   # Move up two levels in the directory structure.
 alias c="clear"        # Clear the terminal screen quickly.
 
-# =========================================================================
-# Package Management
-alias update="sudo apt update && sudo apt upgrade -y"  # Update and upgrade all packages.
-alias remove="sudo apt remove"                         # Remove a package.
+
+alias fish="cd ~/.config/fish/"  # Navigate to the Fish shell configuration folder.
+
+alias downloads="cd /mnt/d/Downloads" # Windows Downloads folder.
+alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop" # Windows Desktop folder.
 
 # =========================================================================
 # Git Aliases
@@ -276,7 +278,8 @@ alias tmux="~/.tmux-start.sh"  # Start tmux using a custom script.
 
 # =========================================================================
 # SSH to Windows
-alias sshwindows="~/.ssh_login.windows.sh"  # SSH into Windows using a custom script.
+alias sshwindows="~/.ssh_login_windows.fish" # modified alias for fish
+alias sqlplus="~/.sqlplus_remote_login.fish" # add alias for quick login to sqlplus
 
 # =========================================================================
 # eza/exa (Enhanced File Listings)
@@ -308,15 +311,13 @@ alias js="cd ~/js"                                  # Navigate to the JavaScript
 # =========================================================================
 # Other Custom Aliases
 
-# Navigate to the Windows Desktop folder.
-alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop"
+alias update="sudo apt update && sudo apt upgrade -y"  # Update and upgrade all packages.
 
-# Navigate to the Windows Downloads folder.
-alias downloads="cd /mnt/d/Downloads"
 ```
 
+<br> <br>
 
-### In config.fish
+# Fish Config
 ```bash
 # Check if the shell session is interactive
 if status is-interactive
@@ -348,7 +349,21 @@ alias ls 'ls --ignore="*.class"'
 
 # Source additional aliases from an external file.
 source ~/.config/fish/aliases.fish
+```
 
+<br>
+
+## Set 'sqlplus' for direct login
+
+```bash
+nvim ~/.sqlplus_remote_login.fish # create and add script in this file
+
+#!/usr/bin/env fish
+sshpass -p '12513365@Ms' ssh -t "Vishal Vishwakarma@192.168.0.125" "sqlplus system/tiger" # add this script in the created file
+
+chmod +x ~/.sqlplus_remote_login.fish # set executable permission
+
+alias sqlplus="~/.sqlplus_remote_login.fish" # add alias for quick login
 ```
 
 <br>

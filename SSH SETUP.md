@@ -35,16 +35,28 @@ _Test From client device:_
 <br>
 <br>
 
-### Termux as SSH Client Setup:
-- Type `pkg install sshpass -y`: for storing password. verify with `sshpass -V`.
-- First, connect manually with "ssh username@ip" > password.
-- `nano ~/ssh_login_windows.sh`: to create and open to edit.
-- `#!/bin/bash` (enter) `sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma"@192.168.0.125`: add this lines to config file.
-- `chmod +x ~/ssh_login_windows.sh`: make the script executable.
-- `~/ssh_login_windows.sh`: run to verify the script.
+### SSH Client for Auto Login:
 
-- **`nano ~/.bashrc`**: open config file
-- `alias sshwindows="~/ssh_login_windows.sh"` : add this line belowy.
-- `source ~/.bashrc`: save and apply the changes.
-- `sshwindows`: type on cliet to SSH on windows. 
+```bash
+sudo apt install sshpass -y # for storing password
+sshpass -V # verify
+
+ssh "Vishal Vishwakarma@192.168.0.125" # > enter password password
+
+nano ~/.ssh_login_windows.fish # add below script in this file
+
+#!/usr/bin/env fish
+sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma@192.168.0.125"
+
+
+chmod +x ~/.ssh_login_windows.fish # make the script executable.
+~/.ssh_login_windows.sh # run to verify the script.
+
+nano ~/.config/fish/config.fish # open config file
+alias sshwindows="~/.ssh_login_windows.fish" # add alias
+
+source ~/.config/fish/config.fish # apply the changes
+sshwindows # run on client to connect
+```
+
 
