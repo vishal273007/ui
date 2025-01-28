@@ -7,9 +7,9 @@
 
 ## Powershell Theme:
 
-- `Settings(Ctrl + ,)` --> `Default profile` --> `Color Schemes` --> Choose `Drakula`.
+- `Settings(Ctrl + ,)` -> `Default profile` -> `Color Schemes` -> Choose `Drakula`.
 - Add Drakula theme terminal:
-- add theme code in profile.json file in 'scheme [ here multiple themes with {code}] (ask theme code from multiple ai assistant).
+- add theme code in profile.json file in `"schemes": [ code here ],` (ask theme code from multiple ai assistant).
 - code:
 ```bash
 {
@@ -40,21 +40,20 @@
 
 ### Settings
 
-_Go to settings > Startup tab > Default profile > Ubuntu_
+_Settings > Startup tab > Default profile > Ubuntu_
 
 **Default profile**
 
 
 - Color Scheme: Dracula
-- Default profile: Ubuntu
+- Default profile: Ubuntu(bird icon change with coping red icon path)
 - Font face: FiraCode Nerd Font
 - Font-size/Font-weight: 11 / Medium
 
 - Transparency- Background Opacity: 90%, Enable acrylic material
-- Padding: 10
-- Set terminal default directory: D drive
+- Padding: 12
 
-- Settings --> Profile at left side --> Scroll down --> Delete profile.
+- Delete a profile: Settings --> Profile --> Scroll --> Delete profile.
 
 **Fira Code font download** : Search fira code download > Google font > Get font > Download all > Extract > Static folder files > select all and right click > Install.
 
@@ -64,8 +63,7 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 
 - Launch mode: Focus/Default
 - Launch size: Coulumn: 110, Row: 30
-- Launch positions: X:570, Y: 250.
-- `Ctrl + ,` - Settings
+- Launch positions: `Center on launch` (OR) `X:570, Y: 250`.
 
 - In Interaction section, disable `Warn when closing more than one tab`.
 
