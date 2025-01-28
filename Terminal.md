@@ -45,12 +45,12 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 **Default profile**
 
 
-- Color Scheme: Dark+
+- Color Scheme: Dracula
 - Default profile: Ubuntu
 - Font face: FiraCode Nerd Font
-- Font-size/Font-weight: 10 / Medium
+- Font-size/Font-weight: 11 / Medium
 
-- Transparency- Background Opacity: 70%, Enable acrylic material
+- Transparency- Background Opacity: 90%, Enable acrylic material
 - Padding: 10
 - Set terminal default directory: D drive
 
@@ -63,8 +63,8 @@ _Go to settings > Startup tab > Default profile > Ubuntu_
 **Startup section > Launch parameters**
 
 - Launch mode: Focus/Default
-- Launch size: Coulumn: 90, Row: 22
-- Launch positions: X:840, Y: 400.
+- Launch size: Coulumn: 110, Row: 30
+- Launch positions: X:570, Y: 250.
 - `Ctrl + ,` - Settings
 
 - In Interaction section, disable `Warn when closing more than one tab`.
