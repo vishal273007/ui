@@ -36,7 +36,18 @@
     "yellow": "#F1FA8C"
 }
 ```
-
+### Hide Windows Terminal right status/scroll bar -  
+```json
+"profiles": {
+    "defaults": {
+        // other settings
+        },
+        // other lines
+        "useAcrylic": true,
+        "scrollbarState": "hidden"  // Add this line here
+    },
+  "list": []
+```
 
 ### Settings
 
