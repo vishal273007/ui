@@ -242,11 +242,7 @@ source ~/.config/fish/config.fish
 <br>
 
 # Aliases:
->` touch aliases.fish` in `~/.config/fish` folder.
-<br>
-
->`source ~/.config/fish/aliases.fish` add in config.fish to source the this file.
-  
+>`nvim aliases.fish` in fish folder and add these aliases.  Ensure alias names do not conflict with system keywords, i.e. 'java'.
 
 ```bash
 
@@ -258,8 +254,7 @@ source ~/.config/fish/config.fish
 # File and Directory Navigation
 alias ..="cd .."       # Navigate to the parent directory.
 alias ...="cd ../.."   # Move up two levels in the directory structure.
-alias c="clear"        # Clear the terminal screen quickly.
-
+alias c='clear'; alias cl='clear'; alias cls='clear'  # Clear the terminal screen.
 
 alias fish="cd ~/.config/fish/"  # Navigate to the Fish shell configuration folder.
 
@@ -303,9 +298,9 @@ alias free="free -h"            # Show memory usage in human-readable format.
 # =========================================================================
 # Custom Folders
 alias nvim_config="nvim ~/.config/fish/config.fish"  # Open the Fish config file in Neovim.
-alias java="cd ~/java"                              # Navigate to the Java folder.
+alias jv="cd ~/java"                              # Navigate to the Java folder.
 alias ui="cd ~/ui"                                  # Navigate to the UI folder.
-alias js_class="cd ~/js_class"                      # Navigate to the JavaScript class folder.
+alias jsc="cd ~/js_class"                      # Navigate to the JavaScript class folder.
 alias js="cd ~/js"                                  # Navigate to the JavaScript projects folder.
 
 # =========================================================================
