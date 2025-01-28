@@ -4,9 +4,9 @@
 
 `vdcode.dev/(repolink)` before github link opens vscode web editor.
 
-### Open VS Code Normal windows folder vs Linux folder:
+### Open VS Code in Linux and Windows folder:
 - _Linux_: Navigate to project directory -> `code .`
-- _Windows_: Navigate to project directory -> right click and `open with code`.
+- _Windows_: Navigate to project directory -> right click and `Open with code`.
 
 ### Tips:
 
