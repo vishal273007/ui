@@ -242,6 +242,7 @@ source ~/.config/fish/config.fish
 <br>
 
 # Aliases:
+
 >`nvim aliases.fish` in fish folder and add these aliases.  Ensure alias names do not conflict with system keywords, i.e. 'java'.
 
 ```bash
@@ -261,10 +262,16 @@ alias fish="cd ~/.config/fish/"  # Navigate to the Fish shell configuration fold
 alias downloads="cd /mnt/d/Downloads" # Windows Downloads folder.
 alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop" # Windows Desktop folder.
 
+alias nvim_config="nvim ~/.config/fish/config.fish"  # Open the Fish config file in Neovim.
+alias jv="cd ~/java"                              # Navigate to the Java folder.
+alias ui="cd ~/ui"                                  # Navigate to the UI folder.
+alias jsc="cd ~/js_class"                      # Navigate to the JavaScript class folder.
+alias js="cd ~/js"                                  # Navigate to the JavaScript projects folder.
+
 # =========================================================================
 # Git Aliases
 alias gs="git status"  # Check the status of the Git repository.
-alias git_update="git add . && git commit -m 'updated' && git push"  # Stage, commit, and push changes in one command.
+alias gp="git add . && git commit -m 'updated' && git push"  # Stage, commit, and push changes in one command.
 alias gl="git log --oneline --graph --decorate"  # Show a concise and visual Git history.
 
 # =========================================================================
@@ -294,14 +301,6 @@ alias ip="ip addr show"         # Show IP addresses.
 alias psg="ps aux | grep"       # Search for running processes.
 alias df="df -h"                # Display disk usage in human-readable format.
 alias free="free -h"            # Show memory usage in human-readable format.
-
-# =========================================================================
-# Custom Folders
-alias nvim_config="nvim ~/.config/fish/config.fish"  # Open the Fish config file in Neovim.
-alias jv="cd ~/java"                              # Navigate to the Java folder.
-alias ui="cd ~/ui"                                  # Navigate to the UI folder.
-alias jsc="cd ~/js_class"                      # Navigate to the JavaScript class folder.
-alias js="cd ~/js"                                  # Navigate to the JavaScript projects folder.
 
 # =========================================================================
 # Other Custom Aliases
