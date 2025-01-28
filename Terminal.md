@@ -1,5 +1,6 @@
 <div style="text-align: center;">   <h1> Terminal  </h1>  </div>
 
+> Sometimes ChatGPT fails to solve a problem and Claude solves, sometimes claude fails and ChatGPT solves. Sometimes both fails and google search solves the problem. So, remember not to try out different tools and resources for solution.
 
 > _Note: Official Docs is must recommended to read._
 > _Linux is purely keyboard based, So use only keyboard to control the system, else, just use windows. Don't try to use mouse in Linux enviroment._
@@ -256,9 +257,9 @@ source ~/.config/fish/config.fish
 
 ```bash
 
-# Add 'source ~/.config/fish/aliases.fish' to the main config.fish file to use these aliases smoothly.
+# Add 'source ~/.config/fish/aliases.fish' to the main config.fish file for external alias files.
 
-# To edit the config file, use the VS Code editor, the most liked editor for less errors in the code.
+# Use VS Code editor To edit config files.
 
 # =========================================================================
 # File and Directory Navigation
@@ -298,7 +299,9 @@ alias sqlplus="~/.sqlplus_remote_login.fish" # add alias for quick login to sqlp
 
 # =========================================================================
 # eza/exa (Enhanced File Listings)
-alias ls="eza --icons"              # List files with icons.
+#alias ls="eza --icons"              # List files with icons.
+alias ls="eza --icons --ignore-glob='*.class'" # List files with icons and ignore .class files.
+
 alias ll="eza -l --icons"           # Long format with icons.
 alias la="eza -la --icons"          # List all files (including hidden) with icons.
 alias lt="eza --tree --icons"       # Display files in a tree structure with icons.
@@ -333,6 +336,9 @@ if status is-interactive
     # Commands specific to interactive sessions can go here.
 end
 
+# Source additional aliases from an external file.
+source ~/.config/fish/aliases.fish
+
 # =========================================================================
 # Oh My Posh Initialization
 # Initialize Oh My Posh with the specified theme configuration.
@@ -352,17 +358,8 @@ set -g fish_greeting ""
 export PATH="$PATH:/opt/nvim/"
 
 # =========================================================================
-# Aliases
-# Ignore all files with the `.class` extension when using the `ls` command.
-alias ls 'ls --ignore="*.class"'
-
-
 # Reload the Fish shell configuration and aliases simultaneously.
 alias sf 'source ~/.config/fish/config.fish'
-
-
-# Source additional aliases from an external file.
-source ~/.config/fish/aliases.fish
 ```
 
 
