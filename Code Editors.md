@@ -33,7 +33,7 @@
         main = java main() block
         out/syso = println statement
     ```
-- 
+- Search `workspace trust` -> `Security>Workspace>Trust:Enabled (Applies to all profiles)` - Uncheck to trust all folders.
 
 # JSON Settings
     
