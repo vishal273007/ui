@@ -1,15 +1,19 @@
-## Powertoys Run:
 
-**Enable plugins**:
+### Powertoys Run:
+
 - URI handler - search "github.com"
 - Search - search "chrome"
 - Folder - search "ui"
 - Set the "Number of results shown before scrolling" to 1 from default 4.
 - Plugin hint: none - to disable auto suggestion below search box.
 
-    
+### PC Lid Closing preserve Display Scalling:
+> Static Display "Scale" - Display settings -> Scale -> Custom Scaling -> fix default value(200). Use it to fix auto scalling down when closing pc lid.
 
-<div style="text-align: center;">   <h1>  Termux  </h1>  </div>  <br>
+### Logi Software:
+- To use the logi shortcut for ChatGPT, keep the cursor in center as logi window opens at cursor location.
+
+# Termux
 
 ### Basic to-dos after installing temux:
 

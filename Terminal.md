@@ -268,6 +268,10 @@ alias ui="cd ~/ui"                                  # Navigate to the UI folder.
 alias jsc="cd ~/js_class"                      # Navigate to the JavaScript class folder.
 alias js="cd ~/js"                                  # Navigate to the JavaScript projects folder.
 
+
+alias sf='source ~/.config/fish/config.fish' # source config and alias files with only config file
+
+
 # =========================================================================
 # Git Aliases
 alias gs="git status"  # Check the status of the Git repository.
@@ -309,6 +313,8 @@ alias update="sudo apt update && sudo apt upgrade -y"  # Update and upgrade all 
 
 ```
 
+
+
 <br> <br>
 
 # Fish Config
@@ -341,9 +347,16 @@ export PATH="$PATH:/opt/nvim/"
 # Ignore all files with the `.class` extension when using the `ls` command.
 alias ls 'ls --ignore="*.class"'
 
+
+# Reload the Fish shell configuration and aliases simultaneously.
+alias sf 'source ~/.config/fish/config.fish'
+
+
 # Source additional aliases from an external file.
 source ~/.config/fish/aliases.fish
 ```
+
+
 
 <br>
 

@@ -1,61 +1,74 @@
+
 # VS Code Settings
+<!---------------------------------------------------------------------------------------------------------------->
 
-* add 'vdcode.dev/' before the github link to edit files in vscode web editor.
+`vdcode.dev` before github link opens vscode web editor.
 
-### Regular used keys tips:
 
--   Hold “Alt” key to enable multi-line cursor to write or delete similar text at once.
--
+### Tips:
+
+- Hold “Alt” key to enable multi-line cursor to write or delete similar text at once.
+- `code .` - open current directory in vs code from terminal.
 
 <hr>
 
 ### VS Code Frequently Used Shortcuts:
 
--   **`Ctrl + Backtick`** --> Open terminal.
--   **`Ctrl + ,`** --> Open settings
-    <br>
+- `Ctrl + Backtick` --> Terminal.
+- `Ctrl + ,` --> Settings<br>
 
--   **`Ctrl + D`** --> Copy same line below
--   **`Alt + Z`** --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
--   **`Ctrl + Shift + V`** --> Preview Markdown Docs
+- `Ctrl + Shift + D` --> Copy same line below
+- `Alt + Z` --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
+- `Ctrl + Shift + V` --> Preview Markdown Docs
 
-    <!------------------------------------------------------------------------------------------------------------------------------------>
 
 ## Tips:
 
--   **`Format on save`**: Ctrl + , --> search format on save and enable.
--   **`Word wrap`** enabled by default - Search for word wrap and select on.
--   For troubleshooting any any issue due to extensions, just disable one by one and find the problatic extention to uninstall.
--   Snippet:
-      <pre>
-    
-          main + enter = java main() block
-          out + enter = println statement
-      
-      </pre>
+- `Format on save`: Search in settings
 
--   In `json` file settings, add following:
-    -   `"editor.suggest.overline": false` (,): for suggestions show below cursor line.
-    -   From the suggestions popup edge, hold the edge and drag inward to resize the suggestions box to make it small.
-    -   Search `code-runner` and check `clear previous output` for clean output.
-    -   
+- For troubleshooting any any issue due to extensions, just disable one by one and find the problatic extention to uninstall.
+- Snippet:
+
+    ```java
+        main = java main() block
+        out/syso = println statement
+    ```
+- 
+
+# JSON Settings
+    
+```json
+"editor.suggest.overline": false, // suggestions below cursor.
+
+// Editor and Terminal Font for font ligature(enable from settings) support
+"terminal.integrated.fontFamily": "FiraCode Nerd Font Medium", // must use medium for terminal
+"terminal.integrated.fontWeight": "normal",
+"terminal.integrated.fontWeightBold": "normal" // consistent font weight for all text
+    
+```
+<!---------------------------------------------------------------------------------------------------------------->
+
+
+- Resize suggestions popup by holding popup edge to 3 lines small.
+
+- Search `code-runner` and check `clear previous output` for clean output.
+
 
 ### Files and Folders Organization:
 
--   For oraganizing files and folders in the file explorer, follow this approace:
--   01_HTML/
+- Oraganizing files and folders:
+
+- 01_HTML/
     01_Basics/
     |--- 01_first.html  
     |--- 02_anchor.html
 
-<br>
+<br> <hr>
 
-<hr>
+### Hide file/folder from file explorer
 
-### Hide any folder from file explorer
+- `"files.exclude` > Add Pattern > `**/.vscode, **/gitignore, **/*.class`
 
--   Settings("CTRL + ,) > Search for "files.exclude" > Click "Add Pattern" > enter folder name like "**/.vscode or **/gitignore".
--   Similarly, add pattern [**/*.class] to hide generated java .class files from vscode file exporer area.
 
 ### Folder expand only after clicking the arrow left to the folder:
 
@@ -63,70 +76,58 @@
 
 ### Prevent unwanted folders from getting pushed while pushing changes:
 
--   **Steps**: Create or open ".gitignore" file in the root directory of the project.
-    Add the unwanted folder name to hide it from being pushed (e.g., '.vscode/').
+- `.gitignore` file in the root directory > write `.vscode` to hide .vscode folder from being pushed 
 
 ## Live Server Setup:
 
--   live server can be configured to view output on the another device browser also.
+- live server can be configured to view output on the another device browser also.
 
--   Install **nodejs** --> run `node -v` and `npm -v` commands on terminal to verify installation.
--   **`npm install -g live-server`**: run this command on terminal to insatll liver server.
--   **`live-server`**: open desired folder --> open terminal there. run `live-server` command to enable live server.
--   `http://192.168.0.125:8080`: open this url in tab to see live changes.
--   **Firewall Issue**: Initially, the url will not open in another device. <br>
-    > Firewall --> Advanced settings --> Inbound Rules --> Port --> 8080 --> Allow connection --> Name "Allow live-server".
+- Install **nodejs** --> run `node -v` and `npm -v` commands on terminal to verify installation.
+- **`npm install -g live-server`**: run this command on terminal to insatll liver server.
+- **`live-server`**: open desired folder --> open terminal there. run `live-server` command to enable live server.
+- `http://192.168.0.125:8080`: open this url in tab to see live changes.
+- **Firewall Issue**: Initially, the url will not open in another device. <br>> Firewall --> Advanced settings --> Inbound Rules --> Port --> 8080 --> Allow connection --> Name "Allow live-server".
 
-<br>
+<br> <br> <br> <br>
 
--   Open the folder where you want to open the VS Code. Hold shift key and right click on an empty space in the folder and choose open with VS Code.
--   Or open the terminal in the same folder/directory where you wanna open VS Code then type "code ." in the terminal and the VS Code will open with folder.
 
-<br> <br> <br> <br> <br> <br>
-
----
-
-<!----------------------------------------------------------------------------------------------------------------------------------------->
-
-<br>
+<!--------------------------------------------------------------------------------------------------------------------------->
 
 # MARKDOWN GUIDE
 
-`Use MARKDOWN LANGUAGE to edit notes. Use plain txt only for writing code and then copy paste into the IDE for running.`
-
 ### Heading/Title
-
--   `#` MAIN TOPIC
--   `##` SUBTOPIC
--   `###` SMALLER SECTION
+- `#` MAIN TOPIC
+- `##` SUBTOPIC
+- `###` SMALLER SECTION
 
 ### Text Styling
 
--   `**Bold Text**`
--   `_Italic Text_`
--   `**_Bold and Italic_**`
--   (`xyz`) for Highlight or main quote, tick will not be visible on the markdown viewer.
+- `**Bold Text**`
+- `_Italic Text_`
+- `**_Bold and Italic_**`
+- (`xyz`) for Highlight or main quote, tick will not be visible on the markdown viewer.
 
 ### Lists
-
--   `-`: for Unordered Lists
--   `1.xyz` for Ordered Lists
+`-`, `1.xyz` : Unordered Lists and Ordered Lists
 
 ### Horizontal Line
-
--   `---`: for horizontal line
+ `---`: for horizontal line
 
 ### Note
+`>` for important notes
 
--   `>` for important notes
+### New Line
 
-### Empty/New Line
+`<br>` tag as html for new line as markdown also supports html codes.
 
--   Use `<br>` tag as html for new line as markdown also supports html codes.
+<br> <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------->
 
-<br>
+
+
+
+
 
 # Eclipse
 
@@ -166,36 +167,3 @@
 -   **`Ctrl + Shift + F`**: To format code automatically.
 -   **`Ctrl + F11`**: Shortcut to run the code immediately.
 
-<!----------------------------------------------------------------------------------------------------------------------------------------->
-
-# ACODE
-
--   **Autosave**: Settings > Search "autosava" > Enter 0 to diable autosave.
--   **Format on Autosave**: Disable format on autosave to fix the prevent constant text notification to select a formatter.
--   **Ctrl+Shift+D**: Copy line down.
--   Use files exclude to hide files like .class from file explorer in acode.
-
-<br>
-
--   **Alt + Backspace**: Remove whole at once.
--   **Ctrl + u / Ctrl + Shift + u**: uppercase/lowercase.
--   **Alt + Right Arrow**: Go to end of the line.
-
-<br>
-
--   **Alt + Up/Down Arrow**: Instead of moving a line up or down, use it to move the line.
--   **Ctrl + Q**: To close the current open file.
-
-**Acode plugins**: AcodeX Terminal, GitHub, Acode Ayu, Snippet, Prettier, Lint, Vscode Dark, AI Assistant Beta, Extra Syntax Highlight, Code Runner, Auto Rename Tag, Lorem Ipsum, Java Cliet, Material Icons, Acode ES7+ snippets, Eruda Acode, Acode LSP.
-
-<mark> <u> **Formatting** </u> - <span style="color: red; font-weigh: bold;"> Formatting > Java > Select 'Java extension'.</span> Java language formatting extension works only if acode language server is installed as a prerequisite. </mark>
-
-
-### Common Settings to do in Acode:
-
--   Go to Settings > Themes > Enable VS Code for editor in Themes
--   Go to Formatter > Select popular language and and there format.
-
-### Emmets:
-
--   **main** + enter = java main() snippet
