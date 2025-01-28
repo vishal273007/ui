@@ -33,8 +33,8 @@
 - Snippet:
 
     ```java
-        main = java main() block
-        out/syso = println statement
+        main = main() block
+        syso/out = println statement
     ```
 - Search `workspace trust` -> `Security>Workspace>Trust:Enabled (Applies to all profiles)` - Uncheck to trust all folders.
 
