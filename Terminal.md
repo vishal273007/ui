@@ -90,3 +90,84 @@ _Reset Terminal:_
 <hr> <br> <br>
 
 <!-- ===================================================================================================================================== -->
+
+
+# Alacritty
+
+### Alacritty config Settings
+_alacritty.toml_
+
+```toml
+# General Settings
+[general]
+import = ["~/.config/alacritty/themes/dracula.toml"]
+
+# Window Settings
+[window]
+decorations = "full"  # Enable the title bar for window dragging
+startup_mode = "Windowed"
+position = { x = 570, y = 250 }
+dimensions = { columns = 110, lines = 30 }
+padding = { x = 12, y = 12 }
+dynamic_padding = true
+opacity = 0.95  # Increase transparency slightly for better text visibility
+
+# Terminal Shell Settings
+[terminal]
+shell = { program = "wsl.exe", args = ["-d", "Ubuntu", "--cd", "~"] }
+
+
+# Font Settings
+[font]
+size = 11.0
+normal = { family = "FiraCode Nerd Font", style = "Medium" }
+bold = { family = "FiraCode Nerd Font", style = "Bold" }
+italic = { family = "FiraCode Nerd Font", style = "Italic" }
+offset = { x = 0, y = 0 }
+
+# Colors
+[colors.primary]
+background = "0x282a36"
+foreground = "0xf8f8f2"
+
+[colors.normal]
+black = "0x21222c"
+blue = "0xbd93f9"
+cyan = "0x8be9fd"
+green = "0x50fa7b"
+magenta = "0xff79c6"
+red = "0xff5555"
+white = "0xf8f8f2"
+yellow = "0xf1fa8c"
+
+[colors.bright]
+black = "0x6272a4"
+blue = "0xd6acff"
+cyan = "0xa4ffff"
+green = "0x69ff94"
+magenta = "0xff92df"
+red = "0xff6e6e"
+white = "0xffffff"
+yellow = "0xffffa5"
+
+[colors.cursor]
+cursor = "0xf8f8f2"
+text = "0x44475a"
+
+[colors.selection]
+background = "0x44475a"
+text = "0xf8f8f2"
+
+# Cursor Settings
+[cursor]
+blink_interval = 750
+style = { blinking = "On", shape = "Block" }
+
+# Selection Settings
+[selection]
+save_to_clipboard = true
+
+# Prevent annoying ubuntu prompt scroll
+[scrolling]
+  multiplier = 0
+```

@@ -12,6 +12,7 @@
 - `tmux` > `ctrl + b` then `%`.
 - `ctrl + b` then left/right arrow to navigate in opened windows.
 - `RESIZE PANE: ` `ctrl + b` followed by : then `resize-pane -L 15` (always relative to current self windows size)
+- in `.tmux.conf` -> add `setw -g mouse on` to enable mouse
 
 
 ### Basic Linux Commands:
@@ -54,7 +55,7 @@ Ctrl + z/c # stops/halts executing command
 ```bash
 sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl # set 1 packages
 
-sudo apt install tmux eza bat -y #batcat(bat) for enanced quick file preview 
+sudo apt install tmux eza bat fzf -y #batcat(bat) for enanced quick file preview 
 
 sudo apt install build-essential make net-tools unzip adb fastboot platform-tools -y # set 2 packages
 ```
@@ -219,6 +220,7 @@ alias python="python3"  # Use Python 3 by default.
 # =========================================================================
 # Network and System
 alias ip="ip addr show"         # Show IP addresses.
+alias ip="ipconfig.exe | grep IPv4"     # Combined IP addresses.
 alias psg="ps aux | grep"       # Search for running processes.
 alias df="df -h"                # Display disk usage in human-readable format.
 alias free="free -h"            # Show memory usage in human-readable format.
