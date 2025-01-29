@@ -12,6 +12,7 @@
 
 - Hold “Alt” key to enable multi-line cursor to write or delete similar text at once.
 - `code .` - open current directory in vs code from terminal.
+- Use the right preview to scroll easily in vs code instead of difficult mouse scroll.
 
 <hr>
 

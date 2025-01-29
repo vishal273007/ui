@@ -23,6 +23,8 @@ ls -l file.txt (OR) ls -ld folder # Check property.
 rm *.ext  # remove all files with specific extension(.class)
 mv .* * ~/ui  # move all files in previous folder
 
+echo "text" >/>> file.ext # '>' erase and overwrite with new data, creates a file if not available. '>>' appends text safely
+echo message # print message on the terminal
 
 touch/rm ClassA.java ClassB.java ClassC.java # create/delete simultaneously
 
@@ -41,7 +43,6 @@ mv old_foldername/filename.txt new_foldername/filename.txt # Rename
 rm -f 'long_filename.txt' / rm -rf foldername # Delete(-f flag for forced)
 
 # text - Terminal Comments(Ex: ls # this will not ignored by terminal)
-echo message # print message on the terminal
 sudo !! # repeat last command with sudo
 Ctrl + z/c # stops/halts executing command
 
