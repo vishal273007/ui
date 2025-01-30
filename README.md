@@ -1,6 +1,6 @@
 # Web Development Folder
 
-This folder contains my learning journey for web development. It is organized as follows:
+This folder contains learning journey for web development.
 
 1. **HTML** - Basic to advanced HTML concepts.
 2. **CSS** - Styling techniques and layouts.
