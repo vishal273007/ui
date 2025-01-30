@@ -63,6 +63,10 @@ sudo apt pip pipx install build-essential make net-tools unzip adb fastboot plat
 
 # pip(for libraries & framework)
 # pipx(for apps like yt-dlp) > pipx ensurepath > [set -gx PATH $PATH ~/.local/bin(do manually if not recognized)] > pipx install yt-dlp
+
+# Install via downloading debian based(for ubuntu) packages
+`wget app.deb_link` > `sudo apt install ~/chrome.deb` / `sudo dpkg -i vscode.deb` > `code`
+
 ```
 
 <br>

@@ -19,6 +19,9 @@
 
 <br>
 
+### Conflict changes:
+1. `git pull --no-rebase` -> merge changes from local and cloud
+
 ### Push Changes:
 
 1. `git status` --> show modified files.

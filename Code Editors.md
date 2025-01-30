@@ -2,11 +2,14 @@
 # VS Code Settings
 <!---------------------------------------------------------------------------------------------------------------->
 
-`vdcode.dev/(repolink)` before github link opens vscode web editor. [Click on `Source Control` > Enter message > Click on `Commit & Push` or `Checkmark` above message box.]
+`vdcode.dev/(repolink)` before github link opens vscode web editor. [`Source Control` > Enter message > Click on `Commit & Push` or `Checkmark` above message box.]
 
 ### Open VS Code in Linux and Windows folder:
 - _Linux_: Navigate to project directory -> `code .`
 - _Windows_: Navigate to project directory -> right click and `Open with code`.
+
+- `code` - VS Code
+- `code .` - VS Code in current directory
 
 ### Tips:
 
