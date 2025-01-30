@@ -2,6 +2,8 @@
 
 <div style="text-align: center;">   <h1>  Ubuntu  </h1>  </div>
 
+> Use your palm and fish shell as a stick note to memorize and remember things and change after memorizing.
+
 ### Basic to dos:
 - `touch ~/.hushlogin`: Hide home screen message.
 
@@ -57,7 +59,10 @@ sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl #
 
 sudo apt install tmux eza bat fzf -y #batcat(bat) for enanced quick file preview 
 
-sudo apt install build-essential make net-tools unzip adb fastboot platform-tools -y # set 2 packages
+sudo apt pip pipx install build-essential make net-tools unzip adb fastboot platform-tools -y # set 2 packages
+
+# pip(for libraries & framework)
+# pipx(for apps like yt-dlp) > pipx ensurepath > [set -gx PATH $PATH ~/.local/bin(do manually if not recognized)] > pipx install yt-dlp
 ```
 
 <br>
@@ -66,6 +71,12 @@ sudo apt install build-essential make net-tools unzip adb fastboot platform-tool
 # NeoVim and NvChad in Ubuntu
 ```bash
 sudo apt update && apt upgrade -y
+
+# snap package manager for latest neovim
+sudo snap install nvim
+set -gx PATH $PATH /snap/bin # set environment variable, add in config file
+
+# OR - Manually installing app image and configuring
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
@@ -243,6 +254,11 @@ if status is-interactive
     # Commands specific to interactive sessions can go here.
 end
 
+# =========================================================================
+# Fish Greeting
+set -g fish_greeting "   Note: Don't be at the room. Go out, explore, socialize and learn."
+
+
 # Source additional aliases from an external file.
 source ~/.config/fish/aliases.fish
 
@@ -257,15 +273,13 @@ oh-my-posh init fish --config ~/agnoster.omp.json | source
 # Alternative initialization for Oh My Posh with a cached theme configuration.
 eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"
 
-# =========================================================================
-# Fish Greeting
-# Hide the default Fish shell greeting message on startup.
-set -g fish_greeting ""
 
 # =========================================================================
 # Custom Path Addition
 # Add Neovim binary to the system PATH for easy access.
 export PATH="$PATH:/opt/nvim/"
+
+set -gx PATH $PATH /snap/bin # set environment variable
 
 ```
 
