@@ -199,7 +199,6 @@ alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop" # Windows Desktop fo
 
 alias jv="cd ~/java"   # Java folder.
 alias ui="cd ~/ui"    # UI folder.
-alias jsc="cd ~/js_class"   # JavaScript class folder.
 alias js="cd ~/js"    # Navigate to the JavaScript projects folder.
 
 
