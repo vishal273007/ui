@@ -371,7 +371,9 @@ Space+ x - close active tab
 Ctrl + n - Show/hide file tree
 ```
 
+
 # OR - Manually installing app image and configuring
+```bash
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
