@@ -371,20 +371,6 @@ Space+ x - close active tab
 Ctrl + n - Show/hide file tree
 ```
 
-
-
-
-### Set indentation to 4 spaces
-
-```bash
-#cd ~/.config/nvin/ ==> options.lua
-vim.opt.tabstop = 4        -- spaces for a tab
-vim.opt.shiftwidth = 4     -- spaces for auto-indentation
-vim.opt.expandtab = true   -- convert tabs to spaces
-vim.opt.smartindent = true -- smart indentation
-
-
-
 # OR - Manually installing app image and configuring
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
