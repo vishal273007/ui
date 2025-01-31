@@ -69,50 +69,6 @@ sudo apt pip pipx install build-essential make net-tools unzip adb fastboot plat
 
 ```
 
-<br>
-
-
-# NeoVim and NvChad in Ubuntu
-```bash
-sudo apt update && apt upgrade -y
-
-# snap package manager for latest neovim
-sudo snap install nvim
-set -gx PATH $PATH /snap/bin # set environment variable, add in config file
-
-# OR - Manually installing app image and configuring
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-./nvim.appimage
-```
-
-_To expose nvim globally:_
-```bash
-sudo mkdir -p /opt/nvim #if permission denied; run `sudo !!`.
-sudo mv nvim.appimage /opt/nvim/nvim
-
-export PATH="$PATH:/opt/nvim/" #add in shell config file to set the env variable to run nvim from anywhere.
-source config_file # load changes.
-
-NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
-```
-
-_Now NvChad:_
-```bash
-sudo apt install ripgrep libfuse2 gcc make -y #Dependencies.
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # from NvChad website
-:MasonInstallAll
-Space th - theme.
-delete .git from ~/.config/nvin, in nvim, while in normal mode, press d key on directory and y to delete.
-```
-
-_NvChad Manual tweaks:_
-- add following in "init.lua" file to set 4 space for tab
-```bash
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-```
 
 <!-- ===================================================================================================================================== -->
 
@@ -338,6 +294,36 @@ _Ai assistant couln't help for starting tmux by default, but a google search fix
 <!-- ===================================================================================================================================== -->
 
 
+<br>
+
+
+# NeoVim and NvChad in Ubuntu
+```bash
+# snap package manager for latest neovim
+sudo snap install nvim
+set -gx PATH $PATH /snap/bin # set environment variable, add in config file, Complete.
+
+NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
+```
+
+_Now NvChad:_
+```bash
+sudo apt install ripgrep libfuse2 gcc make -y #Dependencies.
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # from NvChad website
+:MasonInstallAll
+Space th - theme.
+delete .git from ~/.config/nvin, in nvim, while in normal mode, press d key on directory and y to delete.
+```
+
+_NvChad Manual tweaks:_
+- add following in "init.lua" file to set 4 space for tab
+```bash
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+```
+
+
 _Now NvChad:_
 
 
@@ -370,21 +356,25 @@ _Now NvChad:_
 
 ### NvChad Shortcuts
 
-- m - to mark in file explorer tree
-- a - to create new file while on a dir in file tree
-- c - copy
-- y - copy in text editor
-- p - paste
-- r - rename
+```
+m - to mark in file explorer tree
+a - to create new file while on a dir in file tree
+c - copy
+y - copy in text editor
+p - paste
+r - rename
 
-- Vsp/sp - vertical split/split
-- Ctrl+hjkl - focus windows
-- Shift + tab - cycle through open file buffer/tabs or reverse cycle
-- Space+ x - close active tab
-- Ctrl + n - Show/hide file tree
+Vsp/sp - vertical split/split
+Ctrl+hjkl - focus windows
+Shift + tab - cycle through open file buffer/tabs or reverse cycle
+Space+ x - close active tab
+Ctrl + n - Show/hide file tree
+```
 
 
-### Set indentation to 4 spaces(Error in nvim): 
+
+
+### Set indentation to 4 spaces
 
 ```bash
 #cd ~/.config/nvin/ ==> options.lua
@@ -392,6 +382,22 @@ vim.opt.tabstop = 4        -- spaces for a tab
 vim.opt.shiftwidth = 4     -- spaces for auto-indentation
 vim.opt.expandtab = true   -- convert tabs to spaces
 vim.opt.smartindent = true -- smart indentation
+
+
+
+# OR - Manually installing app image and configuring
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+```
+
+_To expose nvim globally:_
+```bash
+sudo mkdir -p /opt/nvim #if permission denied; run `sudo !!`.
+sudo mv nvim.appimage /opt/nvim/nvim
+
+export PATH="$PATH:/opt/nvim/" #add in shell config file to set the env variable to run nvim from anywhere.
+source config_file # load changes.
 ```
 
 ### Troubleshooting:
