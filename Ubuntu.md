@@ -307,15 +307,17 @@ NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .t
 ```
 
 _For Installing NvChad:_
-```bash
-sudo apt install ripgrep libfuse2 gcc make -y #Dependencies.
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # from NvChad website
-:MasonInstallAll
-Space th - theme.
-delete .git from ~/.config/nvin.
-```
 
-- Edit "init.lua" file to set Indentation
+- `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` run to clone files
+- `:MasonInstallAll` > `TSInstall java html css javascript`
+- `:Lazy > I/U/S` - to install/update/sync etc
+
+- `:h nvui` - Learn customization
+- `Space th` - theme
+- Delete `.git` from nvim config directory.
+
+
+- Edit "init.lua" for Indentation
 ```bash
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -323,23 +325,11 @@ vim.opt.expandtab = true
 ```
 
 
-_Now NvChad:_
+<br>  <hr>
 
-- pkg install neovim python nodejs git wget -y
-- Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command and run.
-- `:MasonInstallAll` > Delete the `.git` from nvim config directory.
-- `:Lazy sync` - run to update
+# NvChad configuration: 
+- Mapping (keymap) -  `:Telescope keymaps`
 
-- `:h nvui` - Learn customization
-
-<br>
-
-<hr>
-
-# Neovim NvChad configuration: 
-- Mapping (keymp) -  `:Telescope keymaps`, `:NvCheatsheet`(Space + ch)
-- `TSModuleInfo` > `TSInstall java html css javascript` - Check installed `Syntax highlight` and install if needed.
-- Set `Fira Code Nerd Font` instead of just `Fira Code` to view files with icons.
 
 **Deleting text**:
 - 5d: delete line no 5
@@ -347,10 +337,16 @@ _Now NvChad:_
 - dd: delete current line
 
 
-- `Space + v/h` - terminal at right/down
-- `Space + ff` - find files
-- `Control + t` - open file in new window
-- `Tab` - switch window active windows
+- `Space + v/h`  terminal at right/down
+- `Space + ch` (cheatsheet)
+- `Space + /` - Toggle comment
+- `Space + fa/ff` - find (all files / files)
+- `Tab` - switch window next buffer (windows)
+- `c - KJKL` (window up/down/left/right)
+- `Space + b` (new buffer)
+- `C-C` - copy whole file
+- `;` - command mode
+  
 
 ### NvChad Shortcuts
 
@@ -369,8 +365,9 @@ Space+ x - close active tab
 Ctrl + n - Show/hide file tree
 ```
 
+<br> <br>
 
-# OR - Manually installing app image and configuring
+# Manually installing NVIM app image
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
@@ -385,7 +382,3 @@ sudo mv nvim.appimage /opt/nvim/nvim
 export PATH="$PATH:/opt/nvim/" #add in shell config file to set the env variable to run nvim from anywhere.
 source config_file # load changes.
 ```
-
-### Troubleshooting:
-**Fix shell deleted without changing shell**:
-- powershell(admin) > `wsl -d Ubuntu --exec bash` > `sudo nano /etc/passwd` > edit `.../usr/bin/fish` - change to `.../bash`. 
