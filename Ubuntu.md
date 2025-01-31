@@ -306,17 +306,16 @@ set -gx PATH $PATH /snap/bin # set environment variable, add in config file, Com
 NerdFont website > Downloads > FiraCode Nerd Font > Download > Unzip > Select .ttf files and right click > Install.
 ```
 
-_Now NvChad:_
+_For Installing NvChad:_
 ```bash
 sudo apt install ripgrep libfuse2 gcc make -y #Dependencies.
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim # from NvChad website
 :MasonInstallAll
 Space th - theme.
-delete .git from ~/.config/nvin, in nvim, while in normal mode, press d key on directory and y to delete.
+delete .git from ~/.config/nvin.
 ```
 
-_NvChad Manual tweaks:_
-- add following in "init.lua" file to set 4 space for tab
+- Edit "init.lua" file to set Indentation
 ```bash
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -325,7 +324,6 @@ vim.opt.expandtab = true
 
 
 _Now NvChad:_
-
 
 - pkg install neovim python nodejs git wget -y
 - Go to 'nvchad' website and copy `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim` this command and run.
