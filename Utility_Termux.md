@@ -110,3 +110,7 @@ set -g fish_greeting "          Wasting Time again?
 ### ftp with hotspot(hidden ftp server address) in android
 
 - Open Termux in server device > check IPv4 with ifconfig > use client device to connect with address - "ftp://IPv4:9999"
+
+### In windows:
+- File explorer, right click on "This PC" > "Add a network location" > 
+- or, Right click on desktop, click new > shortcut. ednter 'explorer ftp://192.168.48.32:9999/' and give name 'Nord 4' and save.
