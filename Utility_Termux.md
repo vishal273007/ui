@@ -99,7 +99,7 @@ pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which 
 _`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
 
 ```bash
-alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
+alias ip="ifconfig 2>/dev/null | awk '/wlan0/ {interface=\"wlan0\"} /wlan1/ {interface=\"wlan1\"} /inet / && \$2 !~ /127.0.0.1/ {print interface \": \" \$2}'"
 
 set -g fish_greeting "          Wasting Time again?
 
