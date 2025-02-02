@@ -21,19 +21,18 @@
 
 # Termux
 
-### Basic to-dos after installing temux:
+### Basic to-dos:
 
 ```bash
-pkg update -y and pkg upgrade -y
+pkg update -y   and   pkg upgrade -y
 termux-setup-storage
-termux-change-repo > asia server
+termux-change-repo > Mirror group > All mirror/asia mirrors
 
 cd /sdcard/ - main storage
 
-pkg help - help
+
 which <pkg name>: show pkg path
 pkg show <PKG name> - details about a package
-pkg search <music> - searching packages related to <music>
 ```
   
 <br> <hr>
@@ -41,9 +40,9 @@ pkg search <music> - searching packages related to <music>
 ### Termux margin settings:
 
 ```bash
-nano ~/.termux/termux.properties - termux settings files
-terminal-margin-horizontal=20 - set horizontal margin
-terminal-margin-vertical=10 - set vertical margin
+nano ~/.termux/termux.properties
+terminal-margin-horizontal=20
+terminal-margin-vertical=10
 ```
 
 ### Font change:
@@ -89,13 +88,15 @@ pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which 
 
 <br>  <br>
 
-- `termux-reload-settings` - load the changes
-- `vol-up + k` - hide/unhide termux bottom toolbar.
-- `termux-open file.txt / file.img` - open files with termux
-
+```bash
+- termux-reload-settings # load the changes
+- vol-up + k # hide/unhide termux bottom toolbar.
+- termux-open file.txt / file.img # open files with termux
+```
 
 # Termux Fish alias:
-fish_config > prompt > set `usrname@localhost ~ $` as prompt.
+
+_`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
 
 ```bash
 alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
@@ -103,7 +104,6 @@ alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END
 set -g fish_greeting "          Wasting Time again?
 # This line is or new line
 "
-
 ```
 
 # FTP server enable on android:
