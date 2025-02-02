@@ -7,7 +7,7 @@
 - Terminal > "services.msc" > SSH Server > Properties > Change from manual to Automatic.
 
 - Test with SSH Client
-- Type `ssh "Vishal Vishwakarma@192.168.0.125"` and enter.
+- Type `ssh "Vishal Vishwakarma@vishal(hostname)/192.168.0.125"` and enter. hostname will work only when router support hostname resolution. use ip if it doesn't work.
 - Now, since you used Microsoft User_Name, so enter Microsoft account password, not local password.
 
 <br>
