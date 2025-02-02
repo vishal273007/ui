@@ -10,13 +10,6 @@
 
 <br>
 
-### Terminal Multiplexer:
-- `tmux` > `ctrl + b` then `%`.
-- `ctrl + b` then left/right arrow to navigate in opened windows.
-- `RESIZE PANE: ` `ctrl + b` followed by : then `resize-pane -L 15` (always relative to current self windows size)
-- in `.tmux.conf` -> add `setw -g mouse on` to enable mouse
-
-
 ### Basic Linux Commands:
 ```bash
 
@@ -57,9 +50,9 @@ Ctrl + z/c # stops/halts executing command
 ```bash
 sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl # set 1 packages
 
-sudo apt install tmux eza bat fzf -y #batcat(bat) for enanced quick file preview 
+sudo apt install fish tmux eza bat fzf -y #batcat(bat) for enanced quick file preview 
 
-sudo apt pip pipx install build-essential make net-tools unzip adb fastboot platform-tools -y # set 2 packages
+sudo apt install pip pipx snapd build-essential make net-tools unzip adb fastboot platform-tools -y # set 2 packages
 
 # pip(for libraries & framework)
 # pipx(for apps like yt-dlp) > pipx ensurepath > [set -gx PATH $PATH ~/.local/bin(do manually if not recognized)] > pipx install yt-dlp
@@ -234,12 +227,15 @@ eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/ag
 
 
 # =========================================================================
-# Custom Path Addition
-# Add Neovim binary to the system PATH for easy access.
-export PATH="$PATH:/opt/nvim/"
+# Environment variables
+# Invironment variable in fish "set -x PATH $PATH:/mnt..." (set -x VAR value) (export VAR=value - in bash/zsh).
+# -x flag for child processes, and -gx flag for increase scope to global.
 
-set -gx PATH $PATH /snap/bin # set environment variable
 
+set -gx PATH $PATH /snap/bin # environment variable for neovim
+
+set -x PATH $PATH:/mnt/c/Windows/System32 # env for ipconfig.exe | grep IPv4
+# /mnt/c/Windows/System32/ipconfig.exe | grep IPv4 - if no env is set for ipconfig.exe
 ```
 
 
@@ -263,7 +259,9 @@ alias sqlplus="~/.sqlplus_remote_login.fish" # add alias for quick login
 
 <!-- ======================================================================================================================== -->
 
-# Tmux
+
+### TMUX - Terminal Multiplexer:
+
 
 ## Create alias to open tmux with two window:
 1. Touch `.tmux-start.sh` and add these lines
@@ -283,6 +281,13 @@ and not set -q TMUX
     exec ~/.tmux-start.sh("tmux" if not using alias)
 end
 ```
+
+- `tmux` > `ctrl + b` then `%` - vsp
+- `ctrl + b` then left/right arrow to navigate in opened windows.
+- `RESIZE PANE: ` `ctrl + b` followed by : then `resize-pane -L 15` (always relative to current self windows size)
+- `nano .tmux.conf` -> add `setw -g mouse on` to enable mouse
+
+
 
 ### Set mouse on/off in tmux:
 `ctrl+b :` > type `setw -g mouse on/off` in the input field

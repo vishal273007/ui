@@ -13,6 +13,12 @@
 ### Logi Software:
 - To use the logi shortcut for ChatGPT, keep the cursor in center as logi window opens at cursor location.
 
+
+<!-- ============================================================= -->
+
+
+
+
 # Termux
 
 ### Basic to-dos after installing temux:
@@ -43,9 +49,7 @@ terminal-margin-vertical=10 - set vertical margin
 ### Font change:
 
 ```bash
-`mkdir NerdFont > cd NerdFont > wget font_link > ls > unzip FiraCode.zip > 'cp fontname.ttf ~/.termux/font.ttf`
-         OR
-`mv font.ttf ~/.termux`
+`mkdir NerdFont > cd NerdFont > wget font_link > ls > unzip FiraCode.zip > rename `mv font.ttf ~/.termux`
 ```
 
 ### Termux Dracula Theme:
@@ -80,7 +84,7 @@ color15=#FFFFFF
 ### Packages:
 
 ```bash
-pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which -y
+pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which fish -y
 ```
 
 <br>  <br>
@@ -90,3 +94,19 @@ pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which 
 - `termux-open file.txt / file.img` - open files with termux
 
 
+# Termux Fish alias:
+
+```bash
+alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
+
+set -g fish_greeting "          Wasting Time again?
+# This line is or new line
+"
+
+```
+
+# FTP server enable on android:
+
+### ftp with hotspot(hidden ftp server address) in android
+
+- Open Termux in server device > check IPv4 with ifconfig > use client device to connect with address - "ftp://IPv4:9999"
