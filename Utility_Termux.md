@@ -95,6 +95,7 @@ pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which 
 
 
 # Termux Fish alias:
+fish_config > prompt > set `usrname@localhost ~ $` as prompt.
 
 ```bash
 alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
