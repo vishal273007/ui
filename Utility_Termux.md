@@ -115,3 +115,9 @@ set -g fish_greeting "          Wasting Time again?
 ### In windows:
 - File explorer, right click on "This PC" > "Add a network location" > 
 - or, Right click on desktop, click new > shortcut. ednter 'explorer ftp://192.168.48.32:9999/' and give name 'Nord 4' and save.
+
+# Enable SMB in Win 11:
+- Search and open `Advanced sharing settings` and enable `Network discovery` and `File sharing`.
+- Right click on drives and enable sharing (Properities > Sharing tab > Advanced sharing) and set full permission.
+
+- Solid explorer, add cloud connection as `SMB` > `Select PC` > `Username and password` > `MS username and password`
