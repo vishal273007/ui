@@ -102,7 +102,7 @@ _`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
 alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
 
 set -g fish_greeting "          Wasting Time again?
-# This line is or new line
+
 "
 ```
 
