@@ -96,6 +96,7 @@ _Reset Terminal:_
 
 ### Alacritty config Settings
 _alacritty.toml_
+_config file location: `C:\Users\Vishal Vishwakarma\AppData\Roaming\alacritty`_
 
 ```toml
 # General Settings
@@ -161,7 +162,7 @@ text = "0xf8f8f2"
 # Cursor Settings
 [cursor]
 blink_interval = 750
-style = { blinking = "On", shape = "Block" }
+style = { blinking = "On", shape = "Beam" }
 
 # Selection Settings
 [selection]
