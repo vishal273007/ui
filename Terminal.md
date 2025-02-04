@@ -163,6 +163,8 @@ text = "0xf8f8f2"
 [cursor]
 blink_interval = 750
 style = { blinking = "On", shape = "Beam" }
+# unfocused_hollow = false # Uncomment to see the hollow cursor when unfocused.
+
 
 # Selection Settings
 [selection]
@@ -171,4 +173,16 @@ save_to_clipboard = true
 # Prevent annoying ubuntu prompt scroll
 [scrolling]
   multiplier = 0
+
+
+# Traditional Copy and paste behaviour
+[keyboard]
+bindings = [
+  { key = "C", mods = "Control", action = "Copy" },
+  { key = "V", mods = "Control", action = "Paste" },
+  { key = "C", mods = "Control", mode = "~Vi", action = "ClearSelection" }  # Clears selection after copying
+]
+
+
+
 ```
