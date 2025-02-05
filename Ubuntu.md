@@ -165,7 +165,12 @@ alias sqlplus="~/.sqlplus_remote_login.fish" # add alias for quick login to sqlp
 # bat(cat) and eza/exa (ls - Enhanced File Listings with icons)
 
 alias cat='batcat' # Use bat as a replacement for cat.
-alias ls="eza --icons --ignore-glob='*.class'"
+alias ls='eza --icons --ignore-glob="snap|*.class"' # hide snap dir and .class files.
+# OR function for hiding the snap folder and .class files
+#function ls --wraps eza
+#    eza --icons --ignore-glob="snap|*.class" $argv
+#end
+
 alias ll="eza -l --icons"           # Long format with icons.
 alias la="eza -la --icons"          # List all files (including hidden) with icons.
 alias lt="eza --tree --icons"       # Display files in a tree structure with icons.
