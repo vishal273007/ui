@@ -206,6 +206,9 @@ if status is-interactive
     # Commands specific to interactive sessions can go here.
 end
 
+# Bind tab key to accept-autosuggestion
+bind \t accept-autosuggestion
+
 # =========================================================================
 # Fish Greeting
 set -g fish_greeting "   Note: Don't be at the room. Go out, explore, socialize and learn."

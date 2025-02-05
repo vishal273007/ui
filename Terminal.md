@@ -161,9 +161,9 @@ text = "0xf8f8f2"
 
 # Cursor Settings
 [cursor]
-blink_interval = 750
+blink_interval = 500
 style = { blinking = "On", shape = "Beam" }
-# unfocused_hollow = false # Uncomment to see the hollow cursor when unfocused.
+unfocused_hollow = true # Change value for beam shape cursor when unfocused
 
 
 # Selection Settings
@@ -182,7 +182,6 @@ bindings = [
   { key = "V", mods = "Control", action = "Paste" },
   { key = "C", mods = "Control", mode = "~Vi", action = "ClearSelection" }  # Clears selection after copying
 ]
-
 
 
 ```
