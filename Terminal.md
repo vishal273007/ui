@@ -174,6 +174,10 @@ save_to_clipboard = true
 [scrolling]
   multiplier = 0
 
+# Enable windows Terminal like right click to paste
+[[mouse.bindings]]
+mouse = "Right"
+action = "Paste"
 
 # Traditional Copy and paste behaviour
 [keyboard]
