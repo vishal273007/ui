@@ -128,6 +128,8 @@ source ~/.config/fish/config.fish
 
 >`nvim aliases.fish` in fish folder and add these aliases.  Ensure alias names do not conflict with system keywords, i.e. 'java'.
 
+>[Use alias ONLY for longer path or most frequently used directories only.]
+
 ```bash
 
 # Add 'source ~/.config/fish/aliases.fish' to the main config.fish file for external alias files.
@@ -136,19 +138,12 @@ source ~/.config/fish/config.fish
 
 # =========================================================================
 # File and Directory Navigation
-alias ..="cd .."       # Navigate to the parent directory.
-alias ...="cd ../.."   # Move up two levels in the directory structure.
 alias c='clear'; alias cl='clear'; alias cls='clear'  # Clear the terminal screen.
 
 alias fish="cd ~/.config/fish/"  # Navigate to the Fish shell configuration folder.
 
 alias downloads="cd /mnt/d/Downloads" # Windows Downloads folder.
 alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop" # Windows Desktop folder.
-
-
-alias jv="cd ~/java"   # Java folder.
-alias ui="cd ~/ui"    # UI folder.
-alias js="cd ~/js"    # Navigate to the JavaScript projects folder.
 
 
 # =========================================================================
