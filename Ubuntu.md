@@ -46,13 +46,17 @@ Ctrl + z/c # stops/halts executing command
 
 <br>
 
+<!-- ===================================================================================================================================== -->
+
+
 ### Ubuntu packages:
 ```bash
 sudo apt install git python openjdk-17 nodejs openssh sshpass neovim wget curl # set 1 packages
 
-sudo apt install fish tmux eza bat fzf -y #batcat(bat) for enanced quick file preview 
+sudo apt install fish tmux eza bat fzf, tree, tldr, neofetch, colordiff -y #batcat(bat) for enanced quick file preview 
 
 sudo apt install pip pipx snapd build-essential make net-tools unzip adb fastboot platform-tools -y # set 2 packages
+
 
 # pip(for libraries & framework)
 # pipx(for apps like yt-dlp) > pipx ensurepath > [set -gx PATH $PATH ~/.local/bin(do manually if not recognized)] > pipx install yt-dlp
