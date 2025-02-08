@@ -153,7 +153,7 @@ alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop" # Windows Desktop fo
 # =========================================================================
 # Git Aliases
 alias gs="git status"  # Check the status of the Git repository.
-alias gp="git add . && git commit -m 'updated' && git push"  # Stage, commit, and push changes in one command.
+alias gp="git pull && git add . && git commit -m 'updated' && git push"  # Pull first, then stage, commit, and push changes
 alias gl="git log --oneline --graph --decorate"  # Show a concise and visual Git history.
 
 # =========================================================================
