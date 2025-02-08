@@ -81,6 +81,12 @@ _Settings > Startup tab > Default profile > Ubuntu_
 
 - **`F11`**: Full screen
 
+# Update windows apps with `winget`
+winget is package manager for windows. It is similar to `apt` in linux. Package manager is powerful way to manage windows apps. Install apps with `winget install` and update with `winget upgrade`. It is recommended to use because faster way to install apps than download and install manually.
+```bash
+winget upgrade --all (similar to `apt upgrade -y`)
+```
+
 <br>
 
 _Reset Terminal:_
