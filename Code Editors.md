@@ -116,14 +116,17 @@
 
 # Cursor
 
-- `Ctrl + L` to open chatgpt.
-- `Ctrl + K` to open cursor.
-- `Ctrl + I` to open cursor insights.
-- `Ctrl + .` to open cursor.
-
 ## Create a symlink for cursor(cursor .) in linux
 
 `sudo ln -s "/mnt/c/Users/Vishal Vishwakarma/AppData/Local/Programs/cursor/cursor.exe" /usr/local/bin/cursor`
+
+## Cursor Settings
+
+- `Ctrl + ,` to open cursor settings.
+- `Ctrl + K` to open cursor chatgpt.
+- `Ctrl + I` to open cursor insights.
+- `Ctrl + .` to open cursor.
+- Change Activity Bar(left side bar) Position to Vertical like vs code: `Ctrl + ,` > search "activity bar position" > change to "Vertical".
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
