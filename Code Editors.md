@@ -1,10 +1,10 @@
-
 # VS Code Settings
 <!---------------------------------------------------------------------------------------------------------------->
 
 `vdcode.dev/(repolink)` before github link opens vscode web editor. [`Source Control` > Enter message > Click on `Commit & Push` or `Checkmark` above message box.]
 
 ### Open VS Code in Linux and Windows folder:
+
 - _Linux_: Navigate to project directory -> `code .`
 - _Windows_: Navigate to project directory -> right click and `Open with code`.
 
@@ -13,7 +13,7 @@
 
 ### Tips:
 
-- Hold “Alt” key to enable multi-line cursor to write or delete similar text at once.
+- Hold "Alt" key to enable multi-line cursor to write or delete similar text at once.
 - `code .` - open current directory in vs code from terminal.
 - Use the right preview to scroll easily in vs code instead of difficult mouse scroll.
 
@@ -40,6 +40,7 @@
         main = main() block
         syso/out = println statement
     ```
+
 - Search `workspace trust` -> `Security>Workspace>Trust:Enabled (Applies to all profiles)` - Uncheck to trust all folders.
 
 # JSON Settings
@@ -70,71 +71,98 @@
     |--- 01_first.html  
     |--- 02_anchor.html
 
-<br> <hr>
+
+
+
+
+---
 
 ### Hide file/folder from file explorer
 
 - `"files.exclude` > Add Pattern > `**/.vscode, **/gitignore, **/*.class`
 
-
 ### Folder expand only after clicking the arrow left to the folder:
 
--   CTRL + , > search "compact folders" > disable.
+- CTRL + , > search "compact folders" > disable.
 
-### Prevent unwanted folders from getting pushed while pushing changes:
+### Prevent unwanted folders from getting pushed
 
-- `.gitignore` file in the root directory > write `.vscode` to hide .vscode folder from being pushed 
+- Create a `.gitignore` file in the root directory
+- Add `.vscode` to hide the .vscode folder from being pushed
 
-## Live Server Setup:
+## Live Server Setup
 
-- live server can be configured to view output on the another device browser also.
+### Installation & Usage
 
-- Install **nodejs** --> run `node -v` and `npm -v` commands on terminal to verify installation.
-- **`npm install -g live-server`**: run this command on terminal to insatll liver server.
-- **`live-server`**: open desired folder --> open terminal there. run `live-server` command to enable live server.
-- `http://192.168.0.125:8080`: open this url in tab to see live changes.
-- **Firewall Issue**: Initially, the url will not open in another device. <br>> Firewall --> Advanced settings --> Inbound Rules --> Port --> 8080 --> Allow connection --> Name "Allow live-server".
+1. Install **Node.js**
+   - Verify installation by running:
 
-<br> <br> <br> <br>
+     ```bash
+     node -v
+     npm -v
+     ```
+
+2. Install live-server globally:
+
+   ```bash
+   npm install -g live-server
+   ```
+
+3. Start the server:
+   - Navigate to desired folder
+   - Run `live-server` in terminal
+
+### Remote Device Access:
+- Access via: `http://192.168.0.125:8080`
+- **Firewall Configuration:**
+  1. Open Firewall → Advanced settings
+  2. Navigate to Inbound Rules → Port
+  3. Allow connection on port 8080
+  4. Name the rule "Allow live-server"
+
+# Cursor
+
+- `Ctrl + L` to open chatgpt.
+- `Ctrl + K` to open cursor.
+- `Ctrl + I` to open cursor insights.
+- `Ctrl + .` to open cursor.
+
+
+## Create a symlink for cursor(cursor .) in linux
+
+`sudo ln -s "/mnt/c/Users/Vishal Vishwakarma/AppData/Local/Programs/cursor/cursor.exe" /usr/local/bin/cursor`
 
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 # MARKDOWN GUIDE
 
-### Heading/Title
+## Heading/Title
+
 - `#` MAIN TOPIC
 - `##` SUBTOPIC
 - `###` SMALLER SECTION
 
-### Text Styling
+## Text Styling
 
 - `**Bold Text**`
 - `_Italic Text_`
 - `**_Bold and Italic_**`
 - (`xyz`) for Highlight or main quote, tick will not be visible on the markdown viewer.
 
-### Lists
+## Lists
+
 `-`, `1.xyz` : Unordered Lists and Ordered Lists
 
-### Horizontal Line
+## Horizontal Line
+
  `---`: for horizontal line
 
-### Note
+## Note
 `>` for important notes
 
-### New Line
-
-`<br>` tag as html for new line as markdown also supports html codes.
-
-<br> <br>
-
-<!----------------------------------------------------------------------------------------------------------------------->
-
-
-
-
-
+## New Line
+Use two blank lines between sections for spacing, instead of using HTML <br> tags.
 
 # Eclipse
 
@@ -146,9 +174,11 @@
 -   **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
 -   **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
 -   **`Nested Project Explorer`**: Project Explorer > three vertical dots > Package Presentation > Select Hierarchical.
+
 ---
 
 **Disable forced comment formatting**:
+
 - search formatter in settings.
 - click edit(beside active profile).
 - go to comment tab
