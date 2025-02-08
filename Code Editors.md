@@ -3,7 +3,7 @@
 
 `vdcode.dev/(repolink)` before github link opens vscode web editor. [`Source Control` > Enter message > Click on `Commit & Push` or `Checkmark` above message box.]
 
-### Open VS Code in Linux and Windows folder:
+### Open VS Code in Linux and Windows folder
 
 - _Linux_: Navigate to project directory -> `code .`
 - _Windows_: Navigate to project directory -> right click and `Open with code`.
@@ -11,7 +11,7 @@
 - `code` - VS Code
 - `code .` - VS Code in current directory
 
-### Tips:
+### Tips
 
 - Hold "Alt" key to enable multi-line cursor to write or delete similar text at once.
 - `code .` - open current directory in vs code from terminal.
@@ -19,7 +19,7 @@
 
 <hr>
 
-### VS Code Frequently Used Shortcuts:
+### VS Code Frequently Used Shortcuts
 
 - `Ctrl + Backtick` --> Terminal.
 - `Ctrl + ,` --> Settings<br>
@@ -28,8 +28,7 @@
 - `Alt + Z` --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
 - `Ctrl + Shift + V` --> Preview Markdown Docs
 
-
-## Tips:
+## Tips
 
 - `Format on save`: Search in settings
 
@@ -44,7 +43,7 @@
 - Search `workspace trust` -> `Security>Workspace>Trust:Enabled (Applies to all profiles)` - Uncheck to trust all folders.
 
 # JSON Settings
-    
+
 ```json
 "editor.suggest.overline": false, // suggestions below cursor.
 
@@ -56,13 +55,11 @@
 ```
 <!---------------------------------------------------------------------------------------------------------------->
 
-
 - Resize suggestions popup by holding popup edge to 3 lines small.
 
 - Search `code-runner` and check `clear previous output` for clean output.
 
-
-### Files and Folders Organization:
+### Files and Folders Organization
 
 - Oraganizing files and folders:
 
@@ -71,17 +68,13 @@
     |--- 01_first.html  
     |--- 02_anchor.html
 
-
-
-
-
 ---
 
 ### Hide file/folder from file explorer
 
 - `"files.exclude` > Add Pattern > `**/.vscode, **/gitignore, **/*.class`
 
-### Folder expand only after clicking the arrow left to the folder:
+### Folder expand only after clicking the arrow left to the folder
 
 - CTRL + , > search "compact folders" > disable.
 
@@ -112,7 +105,8 @@
    - Navigate to desired folder
    - Run `live-server` in terminal
 
-### Remote Device Access:
+### Remote Device Access
+
 - Access via: `http://192.168.0.125:8080`
 - **Firewall Configuration:**
   1. Open Firewall → Advanced settings
@@ -127,11 +121,9 @@
 - `Ctrl + I` to open cursor insights.
 - `Ctrl + .` to open cursor.
 
-
 ## Create a symlink for cursor(cursor .) in linux
 
 `sudo ln -s "/mnt/c/Users/Vishal Vishwakarma/AppData/Local/Programs/cursor/cursor.exe" /usr/local/bin/cursor`
-
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
@@ -159,21 +151,23 @@
  `---`: for horizontal line
 
 ## Note
+
 `>` for important notes
 
 ## New Line
+
 Use two blank lines between sections for spacing, instead of using HTML <br> tags.
 
 # Eclipse
 
-## Basic Settings:
+## Basic Settings
 
--   **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
--   **`Change font`**: ...Appearance --> Colors and Fonts --> Basic --> Text Font --> JetBrains Mono. Then Font style "Regular" and leave size default.
+- **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
+- **`Change font`**: ...Appearance --> Colors and Fonts --> Basic --> Text Font --> JetBrains Mono. Then Font style "Regular" and leave size default.
 
--   **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
--   **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
--   **`Nested Project Explorer`**: Project Explorer > three vertical dots > Package Presentation > Select Hierarchical.
+- **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
+- **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
+- **`Nested Project Explorer`**: Project Explorer > three vertical dots > Package Presentation > Select Hierarchical.
 
 ---
 
@@ -187,20 +181,19 @@ Use two blank lines between sections for spacing, instead of using HTML <br> tag
 
 <br> <br>
 
--   Change Output layout to right side of code editor: Hold the top edge of output windows and drag it to the position you want.
+- Change Output layout to right side of code editor: Hold the top edge of output windows and drag it to the position you want.
 
 ---
 
 **Eclipse Marketplace**:
 
--   Use the eclipse market place to download useful plugins and theme and many more. `Help --> Eclipse Marketplace` the use the search bar for your specific queries.
+- Use the eclipse market place to download useful plugins and theme and many more. `Help --> Eclipse Marketplace` the use the search bar for your specific queries.
 
--   Delete the .metadata folder in the username/eclipse-workspace to reset layout and font. it will fix the .project not found while opening the project.
+- Delete the .metadata folder in the username/eclipse-workspace to reset layout and font. it will fix the .project not found while opening the project.
 
 <br>
 
-## Eclipse Shortcuts:
+## Eclipse Shortcuts
 
--   **`Ctrl + Shift + F`**: To format code automatically.
--   **`Ctrl + F11`**: Shortcut to run the code immediately.
-
+- **`Ctrl + Shift + F`**: To format code automatically.
+- **`Ctrl + F11`**: Shortcut to run the code immediately.
