@@ -122,11 +122,9 @@
 
 ## Cursor Settings
 
-- `Ctrl + ,` to open cursor settings.
-- `Ctrl + K` to open cursor chatgpt.
-- `Ctrl + I` to open cursor insights.
-- `Ctrl + .` to open cursor.
 - Change Activity Bar(left side bar) Position to Vertical like vs code: `Ctrl + ,` > search "activity bar position" > change to "Vertical".
+
+- Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
