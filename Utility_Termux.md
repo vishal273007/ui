@@ -48,7 +48,7 @@ terminal-margin-vertical=10
 ### Font change:
 
 ```bash
-`mkdir NerdFont > cd NerdFont > wget font_link > ls > unzip FiraCode.zip > rename `mv font.ttf ~/.termux`
+mkdir NerdFont > cd NerdFont > wget font_link > ls > unzip FiraCode.zip > rename mv font.ttf ~/.termux
 ```
 
 ### Termux Dracula Theme:
