@@ -1,17 +1,16 @@
-<div style="text-align: center;">   <h1> Terminal  </h1>  </div>
+# Terminal
 
 > Sometimes ChatGPT fails to solve a problem and Claude solves, sometimes claude fails and ChatGPT solves. Sometimes both fails and google search solves the problem. So, remember not to try out different tools and resources for solution.
-
 > _Note: Official Docs is must recommended to read._
-> _Linux is purely keyboard based, So use only keyboard to control the system, else, just use windows. Don't try to use mouse in Linux enviroment._
+> _Linux is purely keyboard based, So use only keyboard to control the system, else, just use windows. Don't try to use mouse in Linux environment._
 
-
-## Powershell Theme:
+## Powershell Theme
 
 - `Settings(Ctrl + ,)` -> `Default profile` -> `Color Schemes` -> Choose `Drakula`.
 - Add Drakula theme terminal:
 - add theme code in profile.json file in `"schemes": [ code here ],` (ask theme code from multiple ai assistant).
 - code:
+
 ```bash
 {
     "name": "Dracula",
@@ -37,7 +36,9 @@
     "yellow": "#F1FA8C"
 }
 ```
+
 ### Hide Windows Terminal right status/scroll bar -  
+
 ```json
 "profiles": {
     "defaults": {
@@ -55,7 +56,6 @@
 _Settings > Startup tab > Default profile > Ubuntu_
 
 **Default profile**
-
 
 - Color Scheme: Dracula
 - Default profile: Ubuntu(bird icon change with coping red icon path)
@@ -82,7 +82,9 @@ _Settings > Startup tab > Default profile > Ubuntu_
 - **`F11`**: Full screen
 
 # Update windows apps with `winget`
+
 winget is package manager for windows. It is similar to `apt` in linux. Package manager is powerful way to manage windows apps. Install apps with `winget install` and update with `winget upgrade`. It is recommended to use because faster way to install apps than download and install manually.
+
 ```bash
 winget upgrade --all (similar to `apt upgrade -y`)
 ```
@@ -97,10 +99,10 @@ _Reset Terminal:_
 
 <!-- ===================================================================================================================================== -->
 
-
 # Alacritty
 
 ### Alacritty config Settings
+
 _alacritty.toml_
 _config file location: `C:\Users\Vishal Vishwakarma\AppData\Roaming\alacritty`_
 

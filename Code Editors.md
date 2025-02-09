@@ -1,9 +1,9 @@
 # VS Code Settings
 <!---------------------------------------------------------------------------------------------------------------->
 
-`vdcode.dev/(repolink)` before github link opens vscode web editor. [`Source Control` > Enter message > Click on `Commit & Push` or `Checkmark` above message box.]
+`vscode.dev/(link)` - VS Code web editor. [`Source Control` > Enter message > Click on `Commit & Push`]
 
-### Open VS Code in Linux and Windows folder
+## Open VS Code in Linux and Windows folder
 
 - _Linux_: Navigate to project directory -> `code .`
 - _Windows_: Navigate to project directory -> right click and `Open with code`.
@@ -17,7 +17,7 @@
 - `code .` - open current directory in vs code from terminal.
 - Use the right preview to scroll easily in vs code instead of difficult mouse scroll.
 
-<hr>
+___
 
 ### VS Code Frequently Used Shortcuts
 
@@ -28,21 +28,19 @@
 - `Alt + Z` --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
 - `Ctrl + Shift + V` --> Preview Markdown Docs
 
-## Tips
-
 - `Format on save`: Search in settings
 
-- For troubleshooting any any issue due to extensions, just disable one by one and find the problatic extention to uninstall.
+- For troubleshooting any any issue due to extensions, just disable one by one and find the problematic extension to uninstall.
 - Snippet:
 
     ```java
         main = main() block
-        syso/out = println statement
+        sys = print line statement
     ```
 
 - Search `workspace trust` -> `Security>Workspace>Trust:Enabled (Applies to all profiles)` - Uncheck to trust all folders.
 
-# JSON Settings
+### JSON Settings
 
 ```json
 "editor.suggest.overline": false, // suggestions below cursor.
@@ -68,7 +66,7 @@
     |--- 01_first.html  
     |--- 02_anchor.html
 
----
+___
 
 ### Hide file/folder from file explorer
 
@@ -114,17 +112,19 @@
   3. Allow connection on port 8080
   4. Name the rule "Allow live-server"
 
-# Cursor
+## Cursor
 
-## Create a symlink for cursor(cursor .) in linux
+### Create a symlink for cursor(cursor .) in linux
 
-`sudo ln -s "/mnt/c/Users/Vishal Vishwakarma/AppData/Local/Programs/cursor/cursor.exe" /usr/local/bin/cursor`
+`sudo ln -s "/mnt/c/Users/'Vishal Vishwakarma'/AppData/Local/Programs/cursor/cursor.exe" /usr/local/bin/cursor`
 
-## Cursor Settings
+### Cursor Settings
 
 - Change Activity Bar(left side bar) Position to Vertical like vs code: `Ctrl + ,` > search "activity bar position" > change to "Vertical".
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
+
+- Settings > Cursor settings > import settings.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
@@ -159,12 +159,13 @@
 
 Use two blank lines between sections for spacing, instead of using HTML <br> tags.
 
-# Eclipse
+## Eclipse
 
-## Basic Settings
+### Basic Settings
 
 - **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
 - **`Change font`**: ...Appearance --> Colors and Fonts --> Basic --> Text Font --> JetBrains Mono. Then Font style "Regular" and leave size default.
+
 
 - **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
 - **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
@@ -184,7 +185,7 @@ Use two blank lines between sections for spacing, instead of using HTML <br> tag
 
 - Change Output layout to right side of code editor: Hold the top edge of output windows and drag it to the position you want.
 
----
+___
 
 **Eclipse Marketplace**:
 
