@@ -5,10 +5,9 @@
 
 ## Open VS Code in Linux and Windows folder
 
-- _Linux_: Navigate to project directory -> `code .`
-- _Windows_: Navigate to project directory -> right click and `Open with code`.
+- _Linux_: -> `code .` - open current directory in vs code from terminal.
 
-- `code` - VS Code
+- `code filename.txt` - Open file with VS Code
 - `code .` - VS Code in current directory
 
 ### Tips
@@ -22,7 +21,8 @@ ___
 ### VS Code Frequently Used Shortcuts
 
 - `Ctrl + Backtick` --> Terminal.
-- `Ctrl + ,` --> Settings<br>
+- `Ctrl + ,` --> Settings
+- `Alt + up/down arrow` --> Move a line without cut and paste quickly.
 
 - `Ctrl + Shift + D` --> Copy same line below
 - `Alt + Z` --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
@@ -40,7 +40,19 @@ ___
 
 - Search `workspace trust` -> `Security>Workspace>Trust:Enabled (Applies to all profiles)` - Uncheck to trust all folders.
 
-### JSON Settings
+## Settings
+
+- `Minimap`: View > Appearance > Minimap > uncheck.
+- Settings > search `sticky` > `Editor > Hover: Sticky` (Hide popup on hover when moving mouse).
+- Settings > search `sticky` > `Editor > Sticky Scroll: Enabled` > Uncheck to make the top heading disable sticky scroll.
+
+- `code runner - run in terminal` > uncheck to show output in Output tab.
+- Enable `format on save` by searching and enabling it in settings.
+- Search
+
+> Move to "secondary sidebar" to enable `Codeium` to open with button beside minimize button, just like where copilot opens.
+
+## JSON Settings
 
 ```json
 "editor.suggest.overline": false, // suggestions below cursor.
@@ -49,6 +61,7 @@ ___
 "terminal.integrated.fontFamily": "FiraCode Nerd Font Medium", // must use medium for terminal
 "terminal.integrated.fontWeight": "normal",
 "terminal.integrated.fontWeightBold": "normal" // consistent font weight for all text
+"editor.matchBrackets": "never" // hide the boxes that are shown when selecting one parenthesis.
     
 ```
 <!---------------------------------------------------------------------------------------------------------------->
@@ -112,6 +125,8 @@ ___
   3. Allow connection on port 8080
   4. Name the rule "Allow live-server"
 
+<!--------------------------------------------------------------------------------------------------------------------------->
+
 ## Cursor
 
 ### Create a symlink for cursor(cursor .) in linux
@@ -128,50 +143,47 @@ ___
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
-# MARKDOWN GUIDE
+## MARKDOWN GUIDE
 
-## Heading/Title
+### Heading/Title
 
 - `#` MAIN TOPIC
 - `##` SUBTOPIC
 - `###` SMALLER SECTION
 
-## Text Styling
+### Text Styling
 
 - `**Bold Text**`
 - `_Italic Text_`
 - `**_Bold and Italic_**`
 - (`xyz`) for Highlight or main quote, tick will not be visible on the markdown viewer.
 
-## Lists
+### Lists
 
 `-`, `1.xyz` : Unordered Lists and Ordered Lists
 
-## Horizontal Line
+### Horizontal Line
 
  `---`: for horizontal line
 
-## Note
+### Note
 
 `>` for important notes
 
-## New Line
-
-Use two blank lines between sections for spacing, instead of using HTML <br> tags.
-
 ## Eclipse
+<!-- ==== -->
+
 
 ### Basic Settings
 
 - **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
 - **`Change font`**: ...Appearance --> Colors and Fonts --> Basic --> Text Font --> JetBrains Mono. Then Font style "Regular" and leave size default.
 
-
 - **`Auto format source code`**: Go to Windows --> Preferences --> Java --> Editor --> Save Actions. Check "Perform the selected actions on save", Check "Format source code", Check "Format all lines", and Check "Organize imports".
-- **`Enable autosave before run`**: Search for "build" in setting and enalbe "Save automatically before manual build".
+- **`Enable autosave before run`**: Search for "build" in setting and enable "Save automatically before manual build".
 - **`Nested Project Explorer`**: Project Explorer > three vertical dots > Package Presentation > Select Hierarchical.
 
----
+___
 
 **Disable forced comment formatting**:
 
@@ -180,8 +192,6 @@ Use two blank lines between sections for spacing, instead of using HTML <br> tag
 - go to comment tab
 - uncheck enable line comment formatting and block comment formatting.
 - change the name from built-in to your any name.
-
-<br> <br>
 
 - Change Output layout to right side of code editor: Hold the top edge of output windows and drag it to the position you want.
 
@@ -193,9 +203,14 @@ ___
 
 - Delete the .metadata folder in the username/eclipse-workspace to reset layout and font. it will fix the .project not found while opening the project.
 
-<br>
-
 ## Eclipse Shortcuts
 
 - **`Ctrl + Shift + F`**: To format code automatically.
 - **`Ctrl + F11`**: Shortcut to run the code immediately.
+
+```quote
+Do not pray for an easy life. Pray for the strength to use the keyboard - Bruce Lee.
+Not all shortcut are needed but only mostly used 10 to 15 shortcuts
+```
+
+<!--------------------------------------------------------------------------------------------------------------------------->
