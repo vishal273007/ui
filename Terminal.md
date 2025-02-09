@@ -1,13 +1,13 @@
 # Terminal
 
-> Sometimes ChatGPT fails to solve a problem and Claude solves, sometimes claude fails and ChatGPT solves. Sometimes both fails and google search solves the problem. So, remember not to try out different tools and resources for solution.
-> _Note: Official Docs is must recommended to read._
-> _Linux is purely keyboard based, So use only keyboard to control the system, else, just use windows. Don't try to use mouse in Linux environment._
+> Try multiple resources (ChatGPT, Claude, Google) when solving a problem.
+> Read official docs(documentation) and use keyboard-only in Linux.
+> Codeium: Ctrl + I (to open and ask queries)
 
-## Powershell Theme
+## Windows Terminal Theme
 
-- `Settings(Ctrl + ,)` -> `Default profile` -> `Color Schemes` -> Choose `Drakula`.
-- Add Drakula theme terminal:
+- `Settings(Ctrl + ,)` -> `Default profile` -> `Color Schemes` -> Choose `Dracula`.
+- Add Dracula theme terminal:
 - add theme code in profile.json file in `"schemes": [ code here ],` (ask theme code from multiple ai assistant).
 - code:
 
@@ -74,8 +74,8 @@ _Settings > Startup tab > Default profile > Ubuntu_
 **Startup section > Launch parameters**
 
 - Launch mode: Focus/Default
-- Launch size: Coulumn: 110, Row: 30
-- Launch positions: `Center on launch` (OR) `X:570, Y: 250`.
+- Launch size: Column: 130, Row: 35
+- Launch positions: `Center on launch` (OR) `X:405, Y: 220`.
 
 - In Interaction section, disable `Warn when closing more than one tab`.
 
@@ -94,106 +94,3 @@ winget upgrade --all (similar to `apt upgrade -y`)
 _Reset Terminal:_
 
 - `Installed apps` > Search `terminal` > `Advance options` > `Reset`.
-
-<hr> <br> <br>
-
-<!-- ===================================================================================================================================== -->
-
-# Alacritty
-
-### Alacritty config Settings
-
-_alacritty.toml_
-_config file location: `C:\Users\Vishal Vishwakarma\AppData\Roaming\alacritty`_
-
-```toml
-# General Settings
-[general]
-import = ["~/.config/alacritty/themes/dracula.toml"]
-
-# Window Settings
-[window]
-decorations = "full"  # Enable the title bar for window dragging
-startup_mode = "Windowed"
-position = { x = 570, y = 250 }
-dimensions = { columns = 110, lines = 30 }
-padding = { x = 12, y = 12 }
-dynamic_padding = true
-opacity = 0.95  # Increase transparency slightly for better text visibility
-
-# Terminal Shell Settings
-[terminal]
-shell = { program = "wsl.exe", args = ["-d", "Ubuntu", "--cd", "~"] }
-
-
-# Font Settings
-[font]
-size = 11.0
-normal = { family = "FiraCode Nerd Font", style = "Medium" }
-bold = { family = "FiraCode Nerd Font", style = "Bold" }
-italic = { family = "FiraCode Nerd Font", style = "Italic" }
-offset = { x = 0, y = 0 }
-
-# Colors
-[colors.primary]
-background = "0x282a36"
-foreground = "0xf8f8f2"
-
-[colors.normal]
-black = "0x21222c"
-blue = "0xbd93f9"
-cyan = "0x8be9fd"
-green = "0x50fa7b"
-magenta = "0xff79c6"
-red = "0xff5555"
-white = "0xf8f8f2"
-yellow = "0xf1fa8c"
-
-[colors.bright]
-black = "0x6272a4"
-blue = "0xd6acff"
-cyan = "0xa4ffff"
-green = "0x69ff94"
-magenta = "0xff92df"
-red = "0xff6e6e"
-white = "0xffffff"
-yellow = "0xffffa5"
-
-[colors.cursor]
-cursor = "0xf8f8f2"
-text = "0x44475a"
-
-[colors.selection]
-background = "0x44475a"
-text = "0xf8f8f2"
-
-# Cursor Settings
-[cursor]
-blink_interval = 500
-style = { blinking = "On", shape = "Beam" }
-unfocused_hollow = true # Change value for beam shape cursor when unfocused
-
-
-# Selection Settings
-[selection]
-save_to_clipboard = true
-
-# Prevent annoying ubuntu prompt scroll
-[scrolling]
-  multiplier = 0
-
-# Enable windows Terminal like right click to paste
-[[mouse.bindings]]
-mouse = "Right"
-action = "Paste"
-
-# Traditional Copy and paste behaviour
-[keyboard]
-bindings = [
-  { key = "C", mods = "Control", action = "Copy" },
-  { key = "V", mods = "Control", action = "Paste" },
-  { key = "C", mods = "Control", mode = "~Vi", action = "ClearSelection" }  # Clears selection after copying
-]
-
-
-```
