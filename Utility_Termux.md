@@ -1,5 +1,5 @@
 
-### Powertoys Run:
+### Powertoys Run
 
 - URI handler - search "github.com"
 - Search - search "chrome"
@@ -7,21 +7,19 @@
 - Set the "Number of results shown before scrolling" to 1 from default 4.
 - Plugin hint: none - to disable auto suggestion below search box.
 
-### PC Lid Closing preserve Display Scalling:
+### PC Lid Closing preserve Display Scaling
+
 > Static Display "Scale" - Display settings -> Scale -> Custom Scaling -> fix default value(200). Use it to fix auto scalling down when closing pc lid.
 
-### Logi Software:
-- To use the logi shortcut for ChatGPT, keep the cursor in center as logi window opens at cursor location.
+### Logi Software
 
+- To use the logi shortcut for ChatGPT, keep the cursor in center as logi window opens at cursor location.
 
 <!-- ============================================================= -->
 
-
-
-
 # Termux
 
-### Basic to-dos:
+## Basic to-dos
 
 ```bash
 pkg update -y   and   pkg upgrade -y
@@ -34,10 +32,10 @@ cd /sdcard/ - main storage
 which <pkg name>: show pkg path
 pkg show <PKG name> - details about a package
 ```
-  
-<br> <hr>
 
-### Termux margin settings:
+___
+
+### Termux margin settings
 
 ```bash
 nano ~/.termux/termux.properties
@@ -45,15 +43,16 @@ terminal-margin-horizontal=20
 terminal-margin-vertical=10
 ```
 
-### Font change:
+### Font change
 
 ```bash
 mkdir NerdFont > cd NerdFont > wget font_link > ls > unzip FiraCode.zip > rename mv font.ttf ~/.termux
 ```
 
-### Termux Dracula Theme:
+### Termux Dracula Theme
 
-_touch colors.properties_
+>touch colors.properties
+
 ```bash
 background=#282A36
 foreground=#F8F8F2
@@ -78,15 +77,11 @@ color14=#A4FFFF
 color15=#FFFFFF
 ```
 
-<br>
-
-### Packages:
+### Packages
 
 ```bash
 pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which fish -y
 ```
-
-<br>  <br>
 
 ```bash
 - termux-reload-settings # load the changes
@@ -94,7 +89,7 @@ pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which 
 - termux-open file.txt / file.img # open files with termux
 ```
 
-# Termux Fish alias:
+# Termux Fish alias
 
 _`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
 
@@ -106,19 +101,20 @@ set -g fish_greeting "          Wasting Time again?
 "
 ```
 
-# FTP server enable on android:
+# FTP server enable on android
 
-### ftp with hotspot(hidden ftp server address) in android
+## ftp with Hotspot(hidden ftp server address) in android
 
 - Open Termux in server device > check IPv4 with ifconfig > use client device to connect with address - "ftp://IPv4:9999"
 
-### In windows:
-- File explorer, right click on "This PC" > "Add a network location" > 
-- or, Right click on desktop, click new > shortcut. ednter 'explorer ftp://192.168.48.32:9999/' and give name 'Nord 4' and save.
+## In windows
 
-# Enable SMB in Win 11:
+- File explorer, right click on "This PC" > "Add a network location" >
+- or, Right click on desktop, click new > shortcut. enter 'explorer ftp://192.168.48.32:9999/' and give name 'Nord 4' and save.
+
+# Enable SMB in Win 11
 
 - Search and open `Advanced sharing settings` and enable `Network discovery` and `File sharing`.
-- Right click on drives and enable sharing (Properities > Sharing tab > Advanced sharing) and set full permission.
+- Right click on drives and enable sharing (Properties > Sharing tab > Advanced sharing) and set full permission.
 
 - Solid explorer, add cloud connection as `SMB` > `Select PC` > `Username and password` > `MS username and password`. The hostname `vishal` hostname will work dynamically for SMB connection, no need to update ip on different wifi.

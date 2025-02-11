@@ -1,60 +1,55 @@
 # Git & GitHub
 
-### Using Two Devices to Work on The Same Repository:
+## Using Two Devices to Work on The Same Repository
 
 > Always do this before making any changes.
 
-1. **On Laptop**:
+- **On Laptop**:
 
 - Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
 
-2. **On Tablet**:
+- **On Tablet**:
 
 - Pull changes from GitHub before making new edits. (Go to working directory --> git pull).
 - Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> `git push`)
 
-3. **Back to Laptop**:
+- **Back to Laptop**:
 
 - Pull the latest changes before starting work again. (git pull)
 
-<br>
+### Conflict changes
 
-### Conflict changes:
 1. `git pull --no-rebase` -> merge changes from local and cloud
 
-### Push Changes:
+### Push Changes
 
 1. `git status` --> show modified files.
 2. `git add .` --> stages the changes.
 3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
 4. `git push` --> upload changes to the GitHub.
-   <br>
 
-### Git Pull:
+### Git Pull
 
 1. Download changes and updates from remote branch to keep local branch up-to-date.
 2. `git pull` --> download and merge updates. Make sure local branch is already tracking a remote branch.
 3. Ex: You cloned prasad sir project. when he changes in his code, then you can simply run the "git pull" command to update your copy of their project automatically.
 
-<br>
-
 ---
 
-## Git Clone:
+## Git Clone
 
 - `git clone https://github.com/vishal273007/ui.git`: Download a copy of ui repository in to current folder.
 
-## Git Fork:
+## Git Fork
 
 - Create a copy of someone else's repository on self GitHub account without any connection to the original repository.
 - We need to **fork first**, then **clone** in our system to work locally.
 
-<br>
-<br>
-
 ---
 
-# Git and GitHub for Beginner
+<!-- =================================== -->
+
+## For Beginners
 
 ### 1. Set Up Git
 
@@ -63,8 +58,6 @@ Before starting, configure Git with details:
 - `git config --global user.name "Vishal Vishwakarma"`: Sets Git username.
 - `git config --global user.email "273007@gmail.com"`: Sets email for commits.
 - `git config --list`: verify details.
-
-<br>
 
 For the first time push, enter following:
 
@@ -76,9 +69,6 @@ _Now, when asked, enter the details like following:_
 - `username`: Enter github username `vishal273007`
 - `enter password`: enter the `PAT(access token)` from Proton pass note.
 
-<br>
-<br>
-
 ---
 
 ### 2. Create a New Repository
@@ -89,12 +79,8 @@ When starting a new project:
 - `git add .`: Adds all the files to the staging area (ready for commit).
 - `git commit -m "initial commit"`: Saves changes with a message.
 
-<br>
-
 - `git remote add origin https://github.com/vishal273007/Notes.git`: Links local project to a GitHub repository.
 - `git push -u origin main`: Pushes code to GitHub (need "-u" flag only for the first push).
-
-<br>
 
 ---
 
@@ -107,8 +93,6 @@ For regular updates in our code:
 - `git commit -m "updated some files"`: Save the staged changes with short message.
 - `git push`: Upload changes to GitHub.
 
-<br>
-
 ---
 
 ### 4. Update the Code
@@ -116,8 +100,6 @@ For regular updates in our code:
 To get the latest updates fromGitHub:
 
 - `git pull`: Pulls changes from GitHub and merges them into local project.
-
-<br>
 
 ---
 
@@ -129,8 +111,6 @@ For experimenting or working on new features:
 - `git checkout <branch-name>`: Switches to that branch to start working.
 - `git merge <branch-name>`: Merges changes from another branch into current one.
 - `git branch -d <branch-name>`: Deletes a branch that is no longer needed.
-
-<br>
 
 ---
 

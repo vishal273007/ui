@@ -53,9 +53,9 @@
 
 ### Settings
 
-_Settings > Startup tab > Default profile > Ubuntu_
+- Settings > Startup tab > Default profile > Ubuntu
 
-**Default profile**
+### Default profile
 
 - Color Scheme: Dracula
 - Default profile: Ubuntu(bird icon change with coping red icon path)
@@ -69,9 +69,7 @@ _Settings > Startup tab > Default profile > Ubuntu_
 
 **Fira Code font download** : Search fira code download > Google font > Get font > Download all > Extract > Static folder files > select all and right click > Install.
 
-<br>
-
-**Startup section > Launch parameters**
+### Startup section > Launch parameters
 
 - Launch mode: Focus/Default
 - Launch size: Column: 130, Row: 35
@@ -81,15 +79,13 @@ _Settings > Startup tab > Default profile > Ubuntu_
 
 - **`F11`**: Full screen
 
-# Update windows apps with `winget`
+### Update windows apps with `winget`
 
 winget is package manager for windows. It is similar to `apt` in linux. Package manager is powerful way to manage windows apps. Install apps with `winget install` and update with `winget upgrade`. It is recommended to use because faster way to install apps than download and install manually.
 
 ```bash
 winget upgrade --all (similar to `apt upgrade -y`)
 ```
-
-<br>
 
 _Reset Terminal:_
 

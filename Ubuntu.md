@@ -3,9 +3,11 @@
 > Use your palm and fish shell as a stick note to memorize and remember things and change after memorizing.
 
 ## Basic To-Dos
+
 - `touch ~/.hushlogin` - Hide home screen message
 
 ## Basic Linux Commands
+
 ```bash
 # File/Directory Information
 du -h file.txt      # Check file size
@@ -43,6 +45,7 @@ Ctrl + c          # Stop current process
 ## Package Management
 
 ### Essential Packages
+
 ```bash
 # Core Development Tools
 sudo apt install -y \
@@ -60,12 +63,16 @@ sudo apt install -y \
 ```
 
 ### Package Installation Notes
+
 - Use `pipx` for Python applications (e.g., yt-dlp)
+
   ```bash
   pipx ensurepath
   pipx install yt-dlp
   ```
+
 - For .deb packages:
+
   ```bash
   wget app_url.deb
   sudo apt install ./app.deb
@@ -76,6 +83,7 @@ sudo apt install -y \
 ## Fish Shell Setup
 
 ### Installation
+
 ```bash
 # Add repository
 sudo apt-add-repository ppa:fish-shell/release-3
@@ -92,11 +100,13 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 ```
 
 ### Oh My Posh Setup
+
 ```bash
 # Install Oh My Posh
 curl -s https://ohmyposh.dev/install.sh | bash
 
 # Setup Agnoster theme
+
 wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/agnoster.omp.json -O ~/agnoster.omp.json
 
 # Add to Fish config
@@ -105,6 +115,7 @@ eval "$(~/.local/bin/oh-my-posh init fish --config ~/agnoster.omp.json)"
 ```
 
 ## Useful Aliases
+
 Create `~/.config/fish/aliases.fish`:
 
 ```bash
@@ -133,6 +144,7 @@ alias python='python3'
 ```
 
 ## Fish Configuration
+
 Add to `~/.config/fish/config.fish`:
 
 ```bash
@@ -161,14 +173,18 @@ oh-my-posh init fish --config ~/agnoster.omp.json | source
 ## TMUX Configuration
 
 ### Startup Script
+
 Create `~/.tmux-start.sh`:
+
 ```bash
 #!/bin/bash
 tmux new-session \; split-window -h \; select-pane -L
 ```
 
 ### Auto-start TMUX
+
 Add to `config.fish`:
+
 ```bash
 if status is-interactive
 and not set -q TMUX
@@ -177,6 +193,7 @@ end
 ```
 
 ### Common TMUX Commands
+
 - `Ctrl + b %` - Vertical split
 - `Ctrl + b →/←` - Navigate panes
 - `Ctrl + b :resize-pane -L 15` - Resize pane
@@ -184,18 +201,21 @@ end
 
 ## NeoVim Setup
 
-### Installation
+### Install
+
 ```bash
 sudo snap install nvim
 set -gx PATH $PATH /snap/bin
 ```
 
 ### NvChad Installation
+
 ```bash
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
 
 ### Common Commands
+
 - `:MasonInstallAll` - Install language servers
 - `:TSInstall java html css javascript` - Install language support
 - `Space th` - Theme selection

@@ -173,7 +173,6 @@ ___
 ## Eclipse
 <!-- ==== -->
 
-
 ### Basic Settings
 
 - **Change theme**: Go to Windows --> Preferences --> General --> Appearance --> Theme: `DevStyle` Theme.
