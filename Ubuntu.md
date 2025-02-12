@@ -224,3 +224,22 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 - `Space /` - Toggle comment
 - `Space fa/ff` - Find files
 - `Tab` - Switch buffer
+
+### NvChad Terminal Settings
+
+```bash
+M.nvdash = { load_on_startup = true }
+M.ui = {
+      tabufline = {
+         lazyload = false
+     }
+}
+
+-- Add this autocommand to set terminal size
+vim.cmd([[
+    augroup TerminalSize
+        autocmd!
+        autocmd TermOpen * setlocal winwidth=40
+    augroup END
+]])
+```
