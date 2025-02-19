@@ -157,7 +157,8 @@ end
 bind \t accept-autosuggestion
 
 # Greeting
-set -g fish_greeting "   Note: Don't be at the room. Go out, explore, socialize and learn."
+set -g fish_greeting "                                                     Be in the lab or library
+"
 
 # Source aliases
 source ~/.config/fish/aliases.fish
