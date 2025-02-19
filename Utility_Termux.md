@@ -80,7 +80,7 @@ color15=#FFFFFF
 ### Packages
 
 ```bash
-pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which fish -y
+pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which fish bat -y # alias cat = bat
 ```
 
 ```bash
