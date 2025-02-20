@@ -1,5 +1,12 @@
+# Utility
 
-### Powertoys Run
+- MSI (Microsoft Installer) is an installation package format, while EXE files are portable executables. The MSI installer requires installation, whereas EXE files can be used without installation.
+
+- The MSI installer is generally preferred because it automatically sets the system path and can handle updates effectively, making it a better long-term solution. Use MSI unless an EXE is specifically required.
+
+- EXE files are more suitable for one-time runs.
+
+## Powertoys Run
 
 - URI handler - search "github.com"
 - Search - search "chrome"
@@ -9,7 +16,7 @@
 
 ### PC Lid Closing preserve Display Scaling
 
-> Static Display "Scale" - Display settings -> Scale -> Custom Scaling -> fix default value(200). Use it to fix auto scalling down when closing pc lid.
+> Static Display "Scale" - Display settings -> Scale -> Custom Scaling -> fix default value(200). Use it to fix auto scaling down when closing pc lid.
 
 ### Logi Software
 
@@ -17,9 +24,9 @@
 
 <!-- ============================================================= -->
 
-# Termux
+## Termux
 
-## Basic to-dos
+### Basic to-dos
 
 ```bash
 pkg update -y   and   pkg upgrade -y

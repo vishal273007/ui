@@ -5,15 +5,12 @@
 
 ## Open VS Code in Linux and Windows folder
 
-- _Linux_: -> `code .` - open current directory in vs code from terminal.
-
+- `code .` - VS Code/Cursor in current directory by default. `cursor .` may ask to open current directory again in WSL file system.
 - `code filename.txt` - Open file with VS Code
-- `code .` - VS Code in current directory
 
 ### Tips
 
 - Hold "Alt" key to enable multi-line cursor to write or delete similar text at once.
-- `code .` - open current directory in vs code from terminal.
 - Use the right preview to scroll easily in vs code instead of difficult mouse scroll.
 
 ___
@@ -129,9 +126,7 @@ ___
 
 ## Cursor
 
-### Create a symlink for cursor(cursor .) in linux
-
-`sudo ln -s "/mnt/c/Users/'Vishal Vishwakarma'/AppData/Local/Programs/cursor/cursor.exe" /usr/local/bin/cursor`
+- Install `cursor` command instead of `code .` when asked after opening cursor after installation. [Because cursor command cannot replace code . during installation. It will replace code . automatically after initial setup.]
 
 ### Cursor Settings
 
