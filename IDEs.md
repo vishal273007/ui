@@ -136,6 +136,8 @@ ___
 
 - Settings > Cursor settings > import settings.
 
+- Use `temp mail` to sign in to cursor after trial period is over.
+
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 ## MARKDOWN GUIDE
