@@ -119,62 +119,105 @@ eval "$(~/.local/bin/oh-my-posh init fish --config ~/agnoster.omp.json)"
 Create `~/.config/fish/aliases.fish`:
 
 ```bash
-# Navigation
-alias c='clear'
-alias fish='cd ~/.config/fish/'
-alias downloads='cd /mnt/d/Downloads'
-alias desktop='cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop'
+# Add 'source ~/.config/fish/aliases.fish' to the main config.fish file for external aliases file.
+source ~/.config/fish/aliases.fish
 
-# Git
-alias gs='git status'
-alias gp='git add . && git commit -m "updated" && git push'
-alias gl='git log --oneline --graph --decorate'
+# File and Directory Navigation
+alias c='clear'                   # Clear the terminal screen.
+alias cl='clear'                  # Another clear alias.
+alias cls='clear'                 # Clear alias for Windows.
 
-# Enhanced Commands
-alias cat='batcat'
-alias ls='eza --icons --ignore-glob="snap|*.class"'
-alias ll='eza -l --icons'
-alias la='eza -la --icons'
-alias lt='eza --tree --icons'
+alias fish="cd ~/.config/fish/"   # Navigate to the Fish shell configuration folder.
+alias downloads="cd /mnt/d/Downloads"  # Navigate to Windows Downloads folder.
+alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop"  # Navigate to Windows Desktop folder.
 
-# System
-alias update='sudo apt update && sudo apt upgrade -y'
-alias ip='ipconfig.exe | grep "IPv4 Address" | grep "192.168."'
-alias python='python3'
+# Git Aliases
+alias gs="git status"             # Check the status of the Git repository.
+alias gp="git add . && git commit -m 'updated' && git push"  # Stage, commit, and push changes in one command.
+alias gl="git log --oneline --graph --decorate"  # Show a concise and visual Git history.
+
+# Tmux
+alias tmux="~/.tmux-start.sh"     # Start tmux using a custom script.
+
+# SSH to Windows
+alias sshwindows="~/.ssh_login_windows.fish"   # SSH login to Windows.
+alias sqlplus="~/.sqlplus_remote_login.fish"   # SQLPlus remote login alias.
+
+# bat (cat) and eza/exa (ls - Enhanced File Listings with icons)
+alias cat='batcat'                 # Use bat as a replacement for cat.
+
+# Use eza as the ls replacement with icons and custom exclusions
+function ls --wraps eza
+    eza --icons --ignore-glob="snap|*.class" $argv
+end
+
+alias ll="eza -l --icons"          # Long format with icons.
+alias la="eza -la --icons"         # List all files (including hidden) with icons.
+alias lt="eza --tree --icons"      # Display files in a tree structure with icons.
+alias l.="eza -d .* --icons"       # List hidden directories with icons.
+
+# Programming Languages
+alias python="python3"  # Use Python 3 by default.
+
+# Network
+alias ip='ipconfig.exe | grep "IPv4 Address" | grep "192.168."'  # FilteredIPv4 address.
+
+# Other Custom Aliases
+alias update='sudo apt update && sudo apt upgrade -y'  # Update and upgrade system packages.
+
+
 ```
 
-## Fish Configuration
+## Fish Config
 
 Add to `~/.config/fish/config.fish`:
 
 ```bash
-# Interactive session check
+# Check if the shell session is interactive
 if status is-interactive
-    # Commands for interactive sessions
+    # Commands specific to interactive sessions can go here.
 end
 
-# Key bindings
+# Bind tab key to accept-autosuggestion
 bind \t accept-autosuggestion
 
-# Greeting
-set -g fish_greeting "                                                     Be in the lab or library
+# =========================================================================
+# Fish Greeting
+set -g fish_greeting "            There will be too much resistance at the room. You'll not be distracted, instead you'll distract yourself.
 "
 
-# Source aliases
+# Source additional aliases from an external file.
 source ~/.config/fish/aliases.fish
 
-# Environment variables
-set -gx PATH $PATH /snap/bin
-set -x PATH $PATH:/mnt/c/Windows/System32
+# Reload the Fish shell configuration.
+alias sf 'source ~/.config/fish/config.fish'
 
-# Oh My Posh
+# =========================================================================
+# Oh My Posh Initialization
+# Initialize Oh My Posh with the specified theme configuration.
 oh-my-posh init fish --config ~/agnoster.omp.json | source
 
-# sqlplus function for fish with custom commands in c:\tools\commands.sql with 'cl scr and set linesize 100'
+# Alternative initialization for Oh My Posh with a cached theme configuration.
+eval "$(~/.local/bin/oh-my-posh init fish --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"
+
+# =========================================================================
+# Environment variables
+# Environment variable in fish "set -x PATH $PATH:/mnt..." (set -x VAR value) (export VAR=value - in bash/zsh).
+# -x flag for child processes, and -gx flag for increase scope to global.
+
+set -gx PATH $PATH /snap/bin # environment variable for neovim
+set -x PATH $PATH:/mnt/c/Windows/System32 # env for ipconfig.exe | grep IPv4
+
+# for using Windows path adb from Linux:
+set -x PATH $PATH /mnt/c/tools/platform-tools
+
+# =========================================================================
+# sqlplus function with custom commands in c:\tools\commands.sql and 'cl scr and set linesize 100'
 function sqlplus
     set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r')
     sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
 end
+
 ```
 
 ## TMUX Configuration
