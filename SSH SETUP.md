@@ -65,18 +65,25 @@ echo "Host IP: $HOST_IP"
 sshpass -p "12513365@Ms" ssh "vishal vishwakarma@$HOST_IP"
 ```
 
-### sqlplus auto login
+### sqlplus dynamic IP auto login
 
 ```bash
 #!/usr/bin/env fish
 
 # Set the IP address dynamically (example for Windows)
-set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r') # Get the host IP address containing 192.168.x.x
-echo "Connecting to host at IP: $HOST_IP"
---------------------------------------------------------------
-set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # Get the host IP address containing 172.25.16.1
-echo "Connecting to host at IP: $HOST_IP"
+set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r') # IP address containing 192.168.x.x
+# set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # IP address containing 172.25.16.1
 
 # Use sshpass to SSH into the remote host and run sqlplus
 sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger"
+```
+
+### sqlplus dynamic IP auto login with custom sql commands
+
+```bash
+# sqlplus function with custom commands in c:\tools\commands.sql with 'cl scr and set linesize 100'
+function sqlplus
+    set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r')
+    sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
+end
 ```

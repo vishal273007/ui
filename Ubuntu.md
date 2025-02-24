@@ -139,7 +139,7 @@ alias lt='eza --tree --icons'
 
 # System
 alias update='sudo apt update && sudo apt upgrade -y'
-alias ip='ipconfig.exe | grep IPv4'
+alias ip='ipconfig.exe | grep "IPv4 Address" | grep "192.168."'
 alias python='python3'
 ```
 
@@ -169,6 +169,12 @@ set -x PATH $PATH:/mnt/c/Windows/System32
 
 # Oh My Posh
 oh-my-posh init fish --config ~/agnoster.omp.json | source
+
+# sqlplus function for fish with custom commands in c:\tools\commands.sql with 'cl scr and set linesize 100'
+function sqlplus
+    set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r')
+    sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
+end
 ```
 
 ## TMUX Configuration
