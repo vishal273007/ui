@@ -71,8 +71,8 @@ sshpass -p "12513365@Ms" ssh "vishal vishwakarma@$HOST_IP"
 #!/usr/bin/env fish
 
 # Set the IP address dynamically (example for Windows)
-set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r') # IP address containing 192.168.x.x
-# set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # IP address containing 172.25.16.1
+# set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r') # IP address containing 192.168.x.x - This will work even when no wifi is connected
+set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # IP address containing 172.25.16.1 - This will work even when no wifi is connected
 
 # Use sshpass to SSH into the remote host and run sqlplus
 sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger"
@@ -83,7 +83,7 @@ sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/ti
 ```bash
 # sqlplus function with custom commands in c:\tools\commands.sql with 'cl scr and set linesize 100'
 function sqlplus
-    set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r')
+    set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # IP address containing 172.25.16.1
     sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
 end
 ```
