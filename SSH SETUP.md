@@ -1,7 +1,7 @@
 
 # SSH Setup
 
-- type `ubuntu(or shell name)`: To access ubuntu from any local or remote terminal client.
+- `ubuntu`: Access ubuntu from terminal client.
 
 ## SSH Server Setup on Windows
 
@@ -14,21 +14,19 @@
 
 ## SSH Server setup in Termux
 
- 1. `pkg update && pkg upgrade -y`: _Update packages_
- 2. `pkg install openssh -y`: _Install OpenSSH_
- 3. `passwd`: _Set password `ssh@pad6/ssh@nord4`_
- 4. `sshd`: _Start SSH server_
- 5. `ps aux | grep sshd`: _Verify if server is running_
- 6. `nano .bashrc` ==> add `sshd` in the end of the config file to auto start ssh server after opening termux.
- 7. _[In client's `.bashrc` config file, add  line `alias ssh_pad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` > add script `#!/bin/bash (enter) sshpass -p 'ssh@pad6' ssh "u0_a327@192.168.0.149" -p 8022` > `ls -a` to check_
+ 1. `passwd`: _Set password `ssh@pad6/ssh@nord4`_
+ 2. `sshd`: _Start SSH server_
+ 3. `ps aux | grep sshd`: _Verify_
+ 4. `shell config` ==> add `sshd` to autostart.
+ 5. _In client's config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` >
 
-- `whoami`: _Show termux username_
-- `ifconfig`: _Find Termux IP address_
+ >`#!/bin/bash (enter) sshpass -p 'ssh@pad6' ssh "u0_a327@192.168.0.149" -p 8022` > `ls -a` to check_
+
+- `whoami`: _username_ `ifconfig`: _IP address_
 
 _Test From client device:_
 
-- **Enter** - `ssh "u0_a327@192.168.0.149" -p 8022`
-- **Password** - `ssh@pad6`
+- `ssh "u0_a327@192.168.0.149" -p 8022` and pwd `ssh@pad6`
 
 ### SSH Client for Auto Login
 
@@ -52,4 +50,33 @@ alias sshwindows="~/.ssh_login_windows.fish" # add alias
 
 source ~/.config/fish/config.fish # apply the changes
 sshwindows # run on client to connect
+```
+
+### SSH Client for Auto Login on dynamic auto IP
+
+```bash
+#!/usr/bin/env fish
+
+# Get the host IP address
+set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r')
+echo "Host IP: $HOST_IP"
+
+# Use sshpass to SSH into the remote host
+sshpass -p "12513365@Ms" ssh "vishal vishwakarma@$HOST_IP"
+```
+
+### sqlplus auto login
+
+```bash
+#!/usr/bin/env fish
+
+# Set the IP address dynamically (example for Windows)
+set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r') # Get the host IP address containing 192.168.x.x
+echo "Connecting to host at IP: $HOST_IP"
+--------------------------------------------------------------
+set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # Get the host IP address containing 172.25.16.1
+echo "Connecting to host at IP: $HOST_IP"
+
+# Use sshpass to SSH into the remote host and run sqlplus
+sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger"
 ```
