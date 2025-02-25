@@ -129,6 +129,7 @@ alias cls='clear'                 # Clear alias for Windows.
 alias fish="cd ~/.config/fish/"   # Navigate to the Fish shell configuration folder.
 alias downloads="cd /mnt/d/Downloads"  # Navigate to Windows Downloads folder.
 alias desktop="cd /mnt/c/Users/Vishal\ Vishwakarma/Desktop"  # Navigate to Windows Desktop folder.
+alias users="cd /mnt/c/Users/Vishal\ Vishwakarma"  # Navigate to Vishal Vishwakarma's home directory in Windows.
 
 # Git Aliases
 alias gs="git status"             # Check the status of the Git repository.
@@ -159,7 +160,8 @@ alias l.="eza -d .* --icons"       # List hidden directories with icons.
 alias python="python3"  # Use Python 3 by default.
 
 # Network
-alias ip='ipconfig.exe | grep "IPv4 Address" | grep "192.168."'  # FilteredIPv4 address.
+alias ip='ipconfig.exe | grep "IPv4 Address" | grep "192.168."'  # Filtered IPv4 address for 192.168...
+alias ip='ipconfig.exe | grep "IPv4 Address" | grep -v "Autoconfiguration"' # Filtered out Autoconfiguration
 
 # Other Custom Aliases
 alias update='sudo apt update && sudo apt upgrade -y'  # Update and upgrade system packages.

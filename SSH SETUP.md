@@ -1,24 +1,23 @@
 
 # SSH Setup
 
-- `ubuntu`: Access ubuntu from terminal client.
+- `shell-name`: access shell from terminal client.
 
 ## SSH Server Setup on Windows
 
-- Settings > System > Optional Features > Add an optional feature > Search for SSH and install the SSH Server.
-- Terminal > "services.msc" > SSH Server > Properties > Change from manual to Automatic.
+- Install OpenSSH Server > setup using ChatGPT.
 
 - Test with SSH Client
-- Type `ssh "Vishal Vishwakarma@vishal(hostname)/192.168.0.125"` and enter. hostname will work only when router support hostname resolution. use ip if it doesn't work.
-- Now, since you used Microsoft User_Name, so enter Microsoft account password, not local password.
+- Type `ssh "vishal vishwakarma@hostname/ip"`. hostname will work when router support hostname resolution on other devices.
+- Enter Microsoft password as ssh password, not local.
 
 ## SSH Server setup in Termux
 
  1. `passwd`: _Set password `ssh@pad6/ssh@nord4`_
- 2. `sshd`: _Start SSH server_
+ 2. `sshd`: _Start_
  3. `ps aux | grep sshd`: _Verify_
- 4. `shell config` ==> add `sshd` to autostart.
- 5. _In client's config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` >
+ 4. `config file` ==> add `sshd` to autostart.
+ 5. _In client config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` >
 
  >`#!/bin/bash (enter) sshpass -p 'ssh@pad6' ssh "u0_a327@192.168.0.149" -p 8022` > `ls -a` to check_
 
