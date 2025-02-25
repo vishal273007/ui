@@ -41,10 +41,9 @@ sudo !!            # Repeat last command with sudo
 Ctrl + z          # Suspend current process
 Ctrl + c          # Stop current process
 ```
+<!-- --------------------------------------------------------------------------------- -->
 
-## Package Management
-
-### Essential Packages
+## Essential Packages
 
 ```bash
 # Core Development Tools
@@ -292,4 +291,25 @@ vim.cmd([[
         autocmd TermOpen * setlocal winwidth=40
     augroup END
 ]])
+```
+
+### Change ubuntu hostname
+
+```bash
+sudo nano /etc/wsl.conf
+# Ensure network section script is added
+[boot]
+systemd=true
+
+[wsl2]
+guiApplications = true
+
+[network]
+hostname = ubuntu
+generateHosts = false
+
+
+# Also replace name in
+sudo nano /etc/hostname
+sudo nano /etc/hosts
 ```
