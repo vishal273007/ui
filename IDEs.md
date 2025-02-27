@@ -69,7 +69,7 @@ ___
 
 ### Files and Folders Organization
 
-- Oraganizing files and folders:
+- Organizing files and folders:
 
 - 01_HTML/
     01_Basics/
