@@ -140,11 +140,23 @@ ___
 
 ## AdvJava in ubuntu solution
 
-1. Added jar file - in lib and settings[issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
+- Added jar file - [issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
 
-2. Firewall - port 1521 was blocked [issue - stuck for infinity] - verified.
+- Set ClassPath -> `.vscode/settings.json` in current advanced java project:
 
-3. URL IP in Code - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
+```json
+   {
+     "java.project.sourcePaths": ["."],
+     "java.project.referencedLibraries": ["/home/vishal/.config/dbjar/ojdbc8.jar"],
+     "code-runner.executorMap": {
+       "java": "cd $dir && javac -cp .:/home/vishal/.config/dbjar/ojdbc8.jar $fileName && java -cp .:/home/vishal/.config/dbjar/ojdbc8.jar $fileNameWithoutExt"
+     }
+   }
+```
+
+- Firewall - port 1521 was blocked [issue - stuck for infinity] - verified.
+
+- URL IP in java code - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
