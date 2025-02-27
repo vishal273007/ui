@@ -126,7 +126,7 @@ ___
 
 ## Cursor
 
-- Install `cursor` command instead of `code .` when asked after opening cursor after installation. [Because cursor command cannot replace code . during installation. It will replace code . automatically after initial setup.]
+- Install `cursor` command instead of `code .` after installation. [cursor command cannot replace code . during installation. It will replace code . automatically after initial setup.]
 
 ### Cursor Settings
 
@@ -137,6 +137,14 @@ ___
 - Settings > Cursor settings > import settings.
 
 - Use `temp mail` to sign in to cursor after trial period is over.
+
+## AdvJava in ubuntu solution
+
+1. Added jar file - in lib and settings[issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
+
+2. Firewall - port 1521 was blocked [issue - stuck for infinity] - verified.
+
+3. URL IP in Code - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
