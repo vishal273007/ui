@@ -265,35 +265,16 @@ set -gx PATH $PATH /snap/bin
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
 
+- `:MasonInstallAll`, `:TSInstall java html css javascript`
+
 ### Common Commands
 
-- `:MasonInstallAll` - Install language servers
-- `:TSInstall java html css javascript` - Install language support
 - `Space th` - Theme selection
 - `Space v/h` - Terminal split
 - `Space ch` - Cheatsheet
 - `Space /` - Toggle comment
 - `Space fa/ff` - Find files
 - `Tab` - Switch buffer
-
-### NvChad Terminal Settings
-
-```bash
-M.nvdash = { load_on_startup = true }
-M.ui = {
-      tabufline = {
-         lazyload = false
-     }
-}
-
--- Add this autocommand to set terminal size
-vim.cmd([[
-    augroup TerminalSize
-        autocmd!
-        autocmd TermOpen * setlocal winwidth=40
-    augroup END
-]])
-```
 
 ### Change ubuntu hostname
 
