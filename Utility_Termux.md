@@ -1,10 +1,6 @@
 # Utility
 
-- MSI (Microsoft Installer) is an installation package format, while EXE files are portable executables. The MSI installer requires installation, whereas EXE files can be used without installation.
-
-- The MSI installer is generally preferred because it automatically sets the system path and can handle updates effectively, making it a better long-term solution. Use MSI unless an EXE is specifically required.
-
-- EXE files are more suitable for one-time runs.
+- MSI (Microsoft Installer) - Automatic full application installer package, and EXE files is portable executables that can be used without installation. Exe packages may require settings path if needed as well.
 
 ## Powertoys Run
 
@@ -96,7 +92,7 @@ pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which 
 - termux-open file.txt / file.img # open files with termux
 ```
 
-# Termux Fish alias
+## Termux Fish alias
 
 _`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
 
@@ -107,21 +103,3 @@ set -g fish_greeting "          Wasting Time again?
 
 "
 ```
-
-# FTP server enable on android
-
-## ftp with Hotspot(hidden ftp server address) in android
-
-- Open Termux in server device > check IPv4 with ifconfig > use client device to connect with address - "ftp://IPv4:9999"
-
-## In windows
-
-- File explorer, right click on "This PC" > "Add a network location" >
-- or, Right click on desktop, click new > shortcut. enter 'explorer ftp://192.168.48.32:9999/' and give name 'Nord 4' and save.
-
-# Enable SMB in Win 11
-
-- Search and open `Advanced sharing settings` and enable `Network discovery` and `File sharing`.
-- Right click on drives and enable sharing (Properties > Sharing tab > Advanced sharing) and set full permission.
-
-- Solid explorer, add cloud connection as `SMB` > `Select PC` > `Username and password` > `MS username and password`. The hostname `vishal` hostname will work dynamically for SMB connection, no need to update ip on different wifi.
