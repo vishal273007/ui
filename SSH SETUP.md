@@ -23,58 +23,36 @@
 
 - `whoami`: _username_ `ifconfig`: _IP address_
 
-_Test From client device:_
-
-- `ssh "u0_a327@192.168.0.149" -p 8022` and pwd `ssh@pad6`
+- Test From client device: `ssh "u0_a327@192.168.0.149" -p 8022` and pwd `ssh@pad6`
 
 ### SSH Client for Auto Login
 
 ```bash
-sudo apt install sshpass -y # for storing password
-sshpass -V # verify
+sudo apt install sshpass -y && sshpass -V # for storing password and verify
 
-ssh "Vishal Vishwakarma@192.168.0.125" # > enter password password
-
-nano ~/.ssh_login_windows.fish # add below script in this file
+nvim ~/.ssh_login_windows.fish # add below script in this file
 
 #!/usr/bin/env fish
-sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma@192.168.0.125"
-
+sshpass -p '12513365@Ms' ssh "Vishal Vishwakarma@vishal/192.168.0.125"
 
 chmod +x ~/.ssh_login_windows.fish # make the script executable.
 ~/.ssh_login_windows.sh # run to verify the script.
 
-nano ~/.config/fish/config.fish # open config file
+nvim ~/.config/fish/config.fish # open config file
 alias sshwindows="~/.ssh_login_windows.fish" # add alias
 
-source ~/.config/fish/config.fish # apply the changes
-sshwindows # run on client to connect
+source `sf` # apply the changes
+sshwindows
 ```
 
 ### SSH Client for Auto Login on dynamic auto IP
 
 ```bash
 #!/usr/bin/env fish
-
-# Get the host IP address
-set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r')
-echo "Host IP: $HOST_IP"
-
-# Use sshpass to SSH into the remote host
+set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # Get filtered host IP address
 sshpass -p "12513365@Ms" ssh "vishal vishwakarma@$HOST_IP"
-```
-
-### sqlplus dynamic IP auto login
-
-```bash
-#!/usr/bin/env fish
-
-# Set the IP address dynamically (example for Windows)
-# set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r') # IP address containing 192.168.x.x - This will work even when no wifi is connected
-set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # IP address containing 172.25.16.1 - This will work even when no wifi is connected
-
-# Use sshpass to SSH into the remote host and run sqlplus
-sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger"
+------------------------------OR------------------------------------
+sshpass -p "12513365@Ms" ssh "vishal vishwakarma@vishal"
 ```
 
 ### sqlplus dynamic IP auto login with custom sql commands
@@ -82,6 +60,8 @@ sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/ti
 ```bash
 # sqlplus function with custom commands in c:\tools\commands.sql with 'cl scr and set linesize 100'
 function sqlplus
+    sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@vishal" "sqlplus system/tiger @C:\\tools\\commands.sql"
+    ---------------------------------------------OR---------------------------------------------------------
     set HOST_IP (ipconfig.exe | grep -m 1 "IPv4 Address" | awk '{print $NF}' | tr -d '\r') # IP address containing 172.25.16.1
     sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
 end

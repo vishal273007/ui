@@ -215,8 +215,7 @@ set -x PATH $PATH /mnt/c/tools/platform-tools
 # =========================================================================
 # sqlplus function with custom commands in c:\tools\commands.sql and 'cl scr and set linesize 100'
 function sqlplus
-    set HOST_IP (ipconfig.exe | grep "IPv4 Address" | grep "192.168." | awk '{print $NF}' | tr -d '\r')
-    sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
+    sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@vishal" "sqlplus system/tiger @C:\\tools\\commands.sql"
 end
 
 ```

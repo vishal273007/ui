@@ -126,23 +126,22 @@ ___
 
 ## Cursor
 
-- Install `cursor` command instead of `code .` after installation. [cursor command cannot replace code . during installation. It will replace code . automatically after initial setup.]
+- Install `cursor` (not `code .`) after installation.
 
 ### Cursor Settings
 
-- Change Activity Bar(left side bar) Position to Vertical like vs code: `Ctrl + ,` > search "activity bar position" > change to "Vertical".
+- Change left Activity Bar orientation panel: `Ctrl + ,` > search "activity bar orientation" > Vertical.
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
-- Settings > Cursor settings > import settings.
-
-- Use `temp mail` to sign in to cursor after trial period is over.
+- Use `temp mail` to reset credits.
+- Cursor settings > import settings to copy VS Code settings.
 
 ## AdvJava in ubuntu solution
 
-- Added jar file - [issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
+- `1. Added jar file` - [issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
 
-- Set ClassPath -> `.vscode/settings.json` in current advanced java project:
+- `2. Set ClassPath` -> `.vscode/settings.json` in current advanced java project:
 
 ```json
    {
@@ -154,9 +153,9 @@ ___
    }
 ```
 
-- Firewall - port 1521 was blocked [issue - stuck for infinity] - verified.
+- `3. Firewall` - port 1521 was blocked [issue - stuck for infinity] - verified.
 
-- URL IP in java code - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
+- `4. URL IP in program` - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
