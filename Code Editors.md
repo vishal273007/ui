@@ -144,6 +144,7 @@ ___
 - `2. Set ClassPath` -> `.vscode/settings.json` in current advanced java project:
 
 ```json
+   // "java.project.settings" for Ubuntu:
    {
      "java.project.sourcePaths": ["."],
      "java.project.referencedLibraries": ["/home/vishal/.config/dbjar/ojdbc8.jar"],
@@ -151,6 +152,17 @@ ___
        "java": "cd $dir && javac -cp .:/home/vishal/.config/dbjar/ojdbc8.jar $fileName && java -cp .:/home/vishal/.config/dbjar/ojdbc8.jar $fileNameWithoutExt"
      }
    }
+
+   // "java.project.settings" for Windows:
+   {
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "code-runner.executorMap": {
+    "java": "cd $dir && javac -cp \"../lib/ojdbc8.jar\" $fileName && java -cp \"../lib/ojdbc8.jar;.\" $fileNameWithoutExt"
+  },
+  "code-runner.runInTerminal": true
+  }
 ```
 
 - `3. Firewall` - port 1521 was blocked [issue - stuck for infinity] - verified.
