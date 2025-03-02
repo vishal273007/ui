@@ -1,5 +1,4 @@
 # VS Code Settings
-<!---------------------------------------------------------------------------------------------------------------->
 
 `vscode.dev/(link)` - VS Code web editor. [`Source Control` > Enter message > Click on `Commit & Push`]
 
