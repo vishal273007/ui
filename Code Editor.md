@@ -2,15 +2,15 @@
 
 `vscode.dev/(link)` - VS Code web editor. [`Source Control` > Enter message > Click on `Commit & Push`]
 
-## Open VS Code in Linux and Windows folder
+## Open VS Code in Linux/Windows
 
 - `code .` - VS Code/Cursor in current directory by default. `cursor .` may ask to open current directory again in WSL file system.
 - `code filename.txt` - Open file with VS Code
 
 ### Tips
 
-- Hold "Alt" key to enable multi-line cursor to write or delete similar text at once.
-- Use the right preview to scroll easily in vs code instead of difficult mouse scroll.
+- Hold "Alt" key - multi-line cursor.
+- Ctrl + alt + up/down - multiple cursor.
 
 ___
 
@@ -168,6 +168,11 @@ ___
 
 - `4. URL IP in program` - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
 
+### Windsurf
+
+- Customize files in system folders: Open AI code editor as Administrator and do required edits with prompt.
+- auto execution policy - `turbo`  to auto run commands.
+
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 ## MARKDOWN GUIDE
@@ -240,3 +245,13 @@ Not all shortcut are needed but only mostly used 10 to 15 shortcuts
 ```
 
 <!--------------------------------------------------------------------------------------------------------------------------->
+
+```text
+Cursor Chat:
+
+Ask(question) - Gives knowledge and does not change code directly. if you ask to add comment, it will give you code and you have to click apply to add comment.
+
+Edit(give command) - directly fix or change code without at once. When you ask to add comment, it directly adds the comment.
+
+Agent(give extended command) - Works as a smart programming partner that can handle complex tasks with multiple steps. It combines both Ask and Edit features - can explain things, make code changes, and continue conversation to improve code further. When you ask to add comment, it will explain what it's doing, add the comment, and might suggest related improvements.
+```
