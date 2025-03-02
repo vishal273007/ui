@@ -1,39 +1,17 @@
-# Utility
+# Termux
 
-- MSI (Microsoft Installer) - Automatic full application installer package, and EXE files is portable executables that can be used without installation. Exe packages may require settings path if needed as well.
-
-## Powertoys Run
-
-- URI handler - search "github.com"
-- Search - search "chrome"
-- Folder - search "ui"
-- Set the "Number of results shown before scrolling" to 1 from default 4.
-- Plugin hint: none - to disable auto suggestion below search box.
-
-### PC Lid Closing preserve Display Scaling
-
-> Static Display "Scale" - Display settings -> Scale -> Custom Scaling -> fix default value(200). Use it to fix auto scaling down when closing pc lid.
-
-### Logi Software
-
-- To use the logi shortcut for ChatGPT, keep the cursor in center as logi window opens at cursor location.
-
-<!-- ============================================================= -->
-
-## Termux
-
-### Basic to-dos
+## Basic to-dos
 
 ```bash
 pkg update -y   and   pkg upgrade -y
 termux-setup-storage
 termux-change-repo > Mirror group > All mirror/asia mirrors
 
-cd /sdcard/ - main storage
+cd /sdcard/  # main storage
 
 
-which <pkg name>: show pkg path
-pkg show <PKG name> - details about a package
+which <pkg name> # show pkg path
+pkg show <PKG name> # details about a package
 ```
 
 ___
