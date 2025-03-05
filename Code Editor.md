@@ -146,9 +146,9 @@ ___
    // "java.project.settings" for Ubuntu:
    {
      "java.project.sourcePaths": ["."],
-     "java.project.referencedLibraries": ["/home/vishal/.config/dbjar/ojdbc8.jar"],
+     "java.project.referencedLibraries": ["lib/ojdbc8.jar"],
      "code-runner.executorMap": {
-       "java": "cd $dir && javac -cp .:/home/vishal/.config/dbjar/ojdbc8.jar $fileName && java -cp .:/home/vishal/.config/dbjar/ojdbc8.jar $fileNameWithoutExt"
+       "java": "cd $dir && javac -cp .:../lib/ojdbc8.jar $fileName && java -cp .:../lib/ojdbc8.jar $fileNameWithoutExt"
      }
    }
 
