@@ -32,4 +32,5 @@ mv source dest      # Move/rename files or folders
 sudo !!            # Repeat last command with sudo
 Ctrl + z          # Suspend current process
 Ctrl + c          # Stop current process
+mv filename ..(/folder) - move file in previous folder # move file up one level
 ```

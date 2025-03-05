@@ -133,7 +133,7 @@ ___
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
-- Use `temp mail` to reset credits.
+- Use `temp mail` to reset credits, no more working. Another way, Log out from editor > DELETE account and clear data of editor site > From editor, sign in and use the same deleted account to sign in.
 - Cursor settings > import settings to copy VS Code settings.
 
 ## AdvJava in ubuntu solution
@@ -172,6 +172,7 @@ ___
 
 - Customize files in system folders: Open AI code editor as Administrator and do required edits with prompt.
 - auto execution policy - `turbo`  to auto run commands.
+- in windsurf, when running any command automatically, click on show/run command on the top right corner of command. then click on delete button on the main command line so it will automatically continue running.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
