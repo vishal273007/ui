@@ -11,7 +11,7 @@
 
 - Hold "Alt" key - multi-line cursor.
 - Ctrl + alt + up/down - multiple cursor.
-
+- Move cursor to a word with multiple occurrences > "ctrl + d" to make multiple cursor for that word.
 ___
 
 ### VS Code Frequently Used Shortcuts
