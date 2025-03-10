@@ -12,13 +12,18 @@
 - Hold "Alt" key - multi-line cursor.
 - Ctrl + alt + up/down - multiple cursor.
 - Move cursor to a word with multiple occurrences > "ctrl + d" to make multiple cursor for that word.
+- editor: format on save : off - to disable auto formatting on save from settings.
+- Use down arrow for code collapse and expand to hide and show a code method block to make the code look absolutely shorter.
+- Alt + Shift + O = import java packages automatically in vs code ( like ctrl + shift + o in eclipse)
+- Right click on navigation > hide recommended extensions.
+
 ___
 
 ### VS Code Frequently Used Shortcuts
 
 - `Ctrl + Backtick` --> Terminal.
 - `Ctrl + ,` --> Settings
-- `Alt + up/down arrow` --> Move a line without cut and paste quickly.
+- `Alt + up/down arrow` --> Move a line up/down without cut and paste.
 
 - `Ctrl + Shift + D` --> Copy same line below
 - `Alt + Z` --> Enable/Disable Word Wrap "OR" Search "word wrap" in settings and enable.
@@ -121,11 +126,31 @@ ___
   3. Allow connection on port 8080
   4. Name the rule "Allow live-server"
 
+### Pevent cursor to go to the start of the line
+
+- Search `editor.formatontype` - check it to disable auto formatting.
+- Search `editor.trimautowhitespace` - uncheck it to trim whitespaces.
+
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 ## Cursor
 
 - Install `cursor` (not `code .`) after installation.
+
+## Cursor Shortcuts
+
+- Ctrl + K = `Toggle inline / Terminal prompt bar` (Open command palette/AI command bar)
+- Ctrl + L = `Ask(Open Chat) / Add selection to new chat`
+- Ctrl + I = Agent(Composer{code generation}) - Opens the AI code generation in Chat. Used for generating new code or modifying existing code
+
+- `Tab` = Accept suggestion
+- `Ctrt + ->` = Accept next word
+
+### Cursor Tips
+
+- Enable `remember my preference` checked for search web in cursor for chat.
+- Use `Ctrl+K` for learning and assistant while coding. i.e. select one or whole lines of code and ask to add comments or change.
+- Use `Context` like web or files options for more controlled assistance.
 
 ### Cursor Settings
 
@@ -136,37 +161,7 @@ ___
 - Use `temp mail` to reset credits, no more working. Another way, Log out from editor > DELETE account and clear data of editor site > From editor, sign in and use the same deleted account to sign in.
 - Cursor settings > import settings to copy VS Code settings.
 
-## AdvJava in ubuntu solution
-
-- `1. Added jar file` - [issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
-
-- `2. Set ClassPath` -> `.vscode/settings.json` in current advanced java project:
-
-```json
-   // "java.project.settings" for Ubuntu:
-   {
-     "java.project.sourcePaths": ["."],
-     "java.project.referencedLibraries": ["lib/ojdbc8.jar"],
-     "code-runner.executorMap": {
-       "java": "cd $dir && javac -cp .:../lib/ojdbc8.jar $fileName && java -cp .:../lib/ojdbc8.jar $fileNameWithoutExt"
-     }
-   }
-
-   // "java.project.settings" for Windows:
-   {
-  "java.project.sourcePaths": ["src"],
-  "java.project.outputPath": "bin",
-  "java.project.referencedLibraries": ["lib/**/*.jar"],
-  "code-runner.executorMap": {
-    "java": "cd $dir && javac -cp \"../lib/ojdbc8.jar\" $fileName && java -cp \"../lib/ojdbc8.jar;.\" $fileNameWithoutExt"
-  },
-  "code-runner.runInTerminal": true
-  }
-```
-
-- `3. Firewall` - port 1521 was blocked [issue - stuck for infinity] - verified.
-
-- `4. URL IP in program` - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
+___
 
 ### Windsurf
 
@@ -256,3 +251,35 @@ Edit(give command) - directly fix or change code without at once. When you ask t
 
 Agent(give extended command) - Works as a smart programming partner that can handle complex tasks with multiple steps. It combines both Ask and Edit features - can explain things, make code changes, and continue conversation to improve code further. When you ask to add comment, it will explain what it's doing, add the comment, and might suggest related improvements.
 ```
+
+## AdvJava in ubuntu solution
+
+- `1. Added jar file` - [issue - ClassNotFoundException: oracle.jdbc.OracleDriver].
+
+- `2. Set ClassPath` -> `.vscode/settings.json` in current advanced java project:
+
+```json
+   // "java.project.settings" for Ubuntu:
+   {
+     "java.project.sourcePaths": ["."],
+     "java.project.referencedLibraries": ["lib/ojdbc8.jar"],
+     "code-runner.executorMap": {
+       "java": "cd $dir && javac -cp .:../lib/ojdbc8.jar $fileName && java -cp .:../lib/ojdbc8.jar $fileNameWithoutExt"
+     }
+   }
+
+   // "java.project.settings" for Windows:
+   {
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "code-runner.executorMap": {
+    "java": "cd $dir && javac -cp \"../lib/ojdbc8.jar\" $fileName && java -cp \"../lib/ojdbc8.jar;.\" $fileNameWithoutExt"
+  },
+  "code-runner.runInTerminal": true
+  }
+```
+
+- `3. Firewall` - port 1521 was blocked [issue - stuck for infinity] - verified.
+
+- `4. URL IP in program` - Changed from localhost - 172.25.16.1(even when no wifi)/192.168.0.125 - [issue - Network Adapter could not establish the connection]  - verified.
