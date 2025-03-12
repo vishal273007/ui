@@ -126,7 +126,7 @@ ___
   3. Allow connection on port 8080
   4. Name the rule "Allow live-server"
 
-### Pevent cursor to go to the start of the line
+### Prevent cursor to go to the start of the line
 
 - Search `editor.formatontype` - check it to disable auto formatting.
 - Search `editor.trimautowhitespace` - uncheck it to trim whitespaces.
@@ -158,7 +158,8 @@ ___
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
-- Use `temp mail` to reset credits, no more working. Another way, Log out from editor > DELETE account and clear data of editor site > From editor, sign in and use the same deleted account to sign in.
+- `delete account` and login normally from cursor as if it is first time. Use this loophole as a way for free credits till their team does not solves.
+- use `temp mail` to try if reset credits works until they remove the loophole.
 - Cursor settings > import settings to copy VS Code settings.
 
 ___
