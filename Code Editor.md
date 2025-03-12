@@ -158,8 +158,7 @@ ___
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
-- `delete account` and login normally from cursor as if it is first time. Use this loophole as a way for free credits till their team does not solves.
-- use `temp mail` to try if reset credits works until they remove the loophole.
+- `delete account` and login normally as if it is first time. Also, use `temp mail` to reset credits. Cursor team better know few people will use workaround like using temp-mail, still they are giving free credits but 3 times less than genuine first time users and to let users get used to using cursor increasing potential to purchase later when users become able to by plan.
 - Cursor settings > import settings to copy VS Code settings.
 
 ___
