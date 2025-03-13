@@ -148,7 +148,7 @@ ___
 
 ### Cursor Tips
 
-- Enable `remember my preference` checked for search web in cursor for chat.
+- Enable `remember my preference` when using search web in cursor for chat.
 - Use `Ctrl+K` for learning and assistant while coding. i.e. select one or whole lines of code and ask to add comments or change.
 - Use `Context` like web or files options for more controlled assistance.
 
@@ -158,7 +158,7 @@ ___
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
-- `delete account` and login normally as if it is first time. Also, use `temp mail` to reset credits. Cursor team better know few people will use workaround like using temp-mail, still they are giving free credits but 3 times less than genuine first time users and to let users get used to using cursor increasing potential to purchase later when users become able to by plan.
+- `delete account` and login again to check if its working. Also, use `temp mail` to reset credits. Cursor team better know few people will use workaround like using temp-mail, still they are giving free credits but 3 times less than genuine first time users and to let users get used to using cursor increasing potential to purchase later when users become able to by plan.
 - Cursor settings > import settings to copy VS Code settings.
 
 ___
