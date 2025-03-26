@@ -72,6 +72,7 @@ pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias
 - termux-reload-settings # load the changes
 - vol-up + k # hide/unhide termux bottom toolbar.
 - termux-open file.txt / file.img # open files with termux
+- termux-wake-lock/unlock # keep running/close after lock screen 
 ```
 
 ## Termux Fish Config File
