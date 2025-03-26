@@ -23,7 +23,7 @@
 
 - `whoami`: _username_ `ifconfig`: _IP address_
 
-- Test From client device: `ssh "u0_a327@192.168.0.149" -p 8022` and pwd `ssh@pad6`
+- Test From client device: `ssh -p 8022 u0_a363@192.168.0.142` and pwd `ssh@pad6/ssh@nord4`
 
 ### SSH Client for Auto Login
 
