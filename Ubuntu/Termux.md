@@ -74,13 +74,33 @@ pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias
 - termux-open file.txt / file.img # open files with termux
 ```
 
-## Termux Fish alias
-
-_`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
+## Termux Fish Config File
 
 ```bash
+
+# auto start ssh server
+sshd
+
+# IP address
 alias ip="ifconfig 2>/dev/null | awk '/wlan0/ {interface=\"wlan0\"} /wlan1/ {interface=\"wlan1\"} /inet / && \$2 !~ /127.0.0.1/ {print interface \": \" \$2}'"
 
+# Clean fish greeting
 set -g fish_greeting ""
 
+# Auto start FTP server
+nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /sdcard > /dev/null 2>&1 &
+
+```
+
+## Setup FTP Server in Termux
+
+```bash
+# Install FTP server
+pkg install busybox
+
+# Start FTP server
+nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /storage/emulated/0 > /dev/null 2>&1 &
+
+# Check if FTP server is running
+ps aux | grep -E "ftpd|tcpsvd" | grep -v grep
 ```
