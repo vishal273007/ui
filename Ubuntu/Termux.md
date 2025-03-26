@@ -1,5 +1,8 @@
 # Termux
 
+**Open Root File Manager and navigate to `/data/data/com.termux/files/home/` and copy the .termux folder to take termux backup.**
+**Similarly, open .config folder and copy important folders to take backup. Save backup folders in OneDrive to access from any device**
+
 ## Basic to-dos
 
 ```bash
@@ -7,6 +10,7 @@ pkg update -y   and   pkg upgrade -y
 termux-setup-storage
 termux-change-repo > Mirror group > All mirror/asia mirrors
 
+cd /  # root storage 
 cd /sdcard/  # main storage
 
 
@@ -61,7 +65,7 @@ color15=#FFFFFF
 ### Packages
 
 ```bash
-pkg install python git nodejs openssh sshpass neovim curl wget openjdk-17 which fish bat -y # alias cat = bat
+pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias cat = bat
 ```
 
 ```bash
@@ -77,7 +81,6 @@ _`fish_config` > prompt tab > find and set `usrname@localhost ~ $` type prompt._
 ```bash
 alias ip="ifconfig 2>/dev/null | awk '/wlan0/ {interface=\"wlan0\"} /wlan1/ {interface=\"wlan1\"} /inet / && \$2 !~ /127.0.0.1/ {print interface \": \" \$2}'"
 
-set -g fish_greeting "          Wasting Time again?
+set -g fish_greeting ""
 
-"
 ```
