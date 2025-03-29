@@ -75,27 +75,7 @@ pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias
 - termux-wake-lock/unlock # keep running/close after lock screen 
 ```
 
-## Termux Fish Config File
-
-```bash
-
-# auto start ssh server
-sshd
-
-# IP address
-alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
-
-
-
-set -g fish_greeting ""
-alias fish="cd ~/.config/fish/"
-
-# Auto start FTP server
-nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /sdcard > /dev/null 2>&1 &
-
-```
-
-## Setup FTP Server in Termux
+## Termux FTP Server
 
 ```bash
 # Install FTP server
@@ -106,4 +86,19 @@ nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /storage/emulated/0 > /dev
 
 # Check if FTP server is running
 ps aux | grep -E "ftpd|tcpsvd" | grep -v grep
+```
+
+## Fish Config File
+
+```bash
+bind \t accept-autosuggestion
+sshd
+
+alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
+
+set -g fish_greeting ""
+alias fish="cd ~/.config/fish/"
+
+# Auto start FTP server
+# nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /sdcard > /dev/null 2>&1 &
 ```
