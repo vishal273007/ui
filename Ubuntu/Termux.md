@@ -83,10 +83,12 @@ pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias
 sshd
 
 # IP address
-alias ip="ifconfig 2>/dev/null | awk '/wlan0/ {interface=\"wlan0\"} /wlan1/ {interface=\"wlan1\"} /inet / && \$2 !~ /127.0.0.1/ {print interface \": \" \$2}'"
+alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
 
-# Clean fish greeting
+
+
 set -g fish_greeting ""
+alias fish="cd ~/.config/fish/"
 
 # Auto start FTP server
 nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /sdcard > /dev/null 2>&1 &
