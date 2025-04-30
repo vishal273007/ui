@@ -158,7 +158,10 @@ ___
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
+- Well, it's all over. Now recreating account by deleting account and using temp mail both are patched and showing error. So, use the feature while the services are new till they are showing generosity to users, because they will soon implement the security to prevent free usage abuse. 
+
 - `delete account` and login again to check if its working. Also, use `temp mail` to reset credits. Cursor team better know few people will use workaround like using temp-mail, still they are giving free credits but 3 times less than genuine first time users and to let users get used to using cursor increasing potential to purchase later when users become able to by plan.
+
 - Cursor settings > import settings to copy VS Code settings.
 
 ___

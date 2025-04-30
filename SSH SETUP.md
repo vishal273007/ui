@@ -66,3 +66,11 @@ function sqlplus
     sshpass -p '12513365@Ms' ssh -t "vishal vishwakarma@$HOST_IP" "sqlplus system/tiger @C:\\tools\\commands.sql"
 end
 ```
+
+## REMOTE HOST IDENTIFICATION HAS CHANGED Solution
+
+```bash
+ssh-keygen -f ~/.ssh/known_hosts -R '[ip(192.168.0.142)]:8022'
+
+Then first login to ssh with password and then use alias.
+```
