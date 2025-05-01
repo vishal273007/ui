@@ -180,6 +180,8 @@ ___
 
 - As Cursor has been completely blocked, now stick with `Windsurf` for tiny credits and free low capable AI Assistant.
 
+- Now use Windsurf with limited credits of costly models for important and complex tasks only. Don't waste the credits on easy and small tasks.
+
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 ## MARKDOWN GUIDE
