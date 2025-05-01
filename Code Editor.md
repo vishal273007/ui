@@ -180,7 +180,9 @@ ___
 
 - As Cursor has been completely blocked, now stick with `Windsurf` for tiny credits and free low capable AI Assistant.
 
-- Now use Windsurf with limited credits of costly models for important and complex tasks only. Don't waste the credits on easy and small tasks.
+- Now use `Windsurf` with less free credits. Cursor, no longer usable for free users.
+
+- Remember that AI editors with models like Claude, GPT 4o is incredibly impressive and very powerful, but very limited for free usage. So ensure to use it for important and complex tasks only.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
