@@ -158,9 +158,9 @@ ___
 
 - Change terminal shell to powershell: `Ctrl + ,` > search "terminal.integrated.defaultProfile" > change to "PowerShell".
 
-- Well, it's all over. Now recreating account by deleting account and using temp mail both are patched and showing error. So, use the feature while the services are new till they are showing generosity to users, because they will soon implement the security to prevent free usage abuse. 
+- Well, it's all over. Now recreating account by deleting account to get free credits. Use the feature while the services are new till they are showing generosity to users, because they will soon implement the security to prevent free usage abuse.
 
-- `delete account` and login again to check if its working. Also, use `temp mail` to reset credits. Cursor team better know few people will use workaround like using temp-mail, still they are giving free credits but 3 times less than genuine first time users and to let users get used to using cursor increasing potential to purchase later when users become able to by plan.
+- Delete account and re-login or Use `temp-mail` to check if credit resets. Developers know about free usage abuse. They will implement the security as people get used to using cursor.
 
 - Cursor settings > import settings to copy VS Code settings.
 
@@ -171,6 +171,14 @@ ___
 - Customize files in system folders: Open AI code editor as Administrator and do required edits with prompt.
 - auto execution policy - `turbo`  to auto run commands.
 - in windsurf, when running any command automatically, click on show/run command on the top right corner of command. then click on delete button on the main command line so it will automatically continue running.
+
+- See free Credits usage: Windsurf - Settings at bottom right corner of chat window > Plan Info tab at bottom-left corner of the popup.
+
+- Use `Ctrl + I` for AI code generation and `Ctrl + L`  for AI chat.
+
+- Do not use the AI chat for long editing, instead use it for debugging and learning.
+
+- As Cursor has been completely blocked, now stick with `Windsurf` for tiny credits and free low capable AI Assistant.
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
