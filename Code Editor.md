@@ -184,6 +184,8 @@ ___
 
 - Remember that AI editors with models like Claude, GPT 4o is incredibly impressive and very powerful, but very limited for free usage. So ensure to use it for important and complex tasks only.
 
+- Now Windsurf gave few free credits with temp mail at 10:20 PM around. Credits was 0, so I opened Windsurf manually in Chrome, then signed out existing account, then created new account then opened Windsurf and logged in again, then it gave few credits.
+
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 ## MARKDOWN GUIDE
