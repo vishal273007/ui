@@ -17,13 +17,13 @@
  2. `sshd`: _Start_
  3. `ps aux | grep sshd`: _Verify_
  4. `config file` ==> add `sshd` to autostart.
- 5. _In client config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` >
+ 5. Test From client device: `ssh -p 8022 u0_a363@192.168.0.142` and pwd `ssh@pad6/ssh@nord4`, Ensure to connect with hotspot or wifi first.
+
+- In client config file, add  line `alias sshpad6="~/.pad6_ssh_login.sh`. > `touch ~/.pad6_ssh_login.sh` > `chmod +x ~/.pad6_ssh_login.sh` >
 
  >`#!/bin/bash (enter) sshpass -p 'ssh@pad6' ssh "u0_a327@192.168.0.149" -p 8022` > `ls -a` to check_
 
 - `whoami`: _username_ `ifconfig`: _IP address_
-
-- Test From client device: `ssh -p 8022 u0_a363@192.168.0.142` and pwd `ssh@pad6/ssh@nord4`
 
 ### SSH Client for Auto Login
 

@@ -6,9 +6,9 @@
 ## Basic to-dos
 
 ```bash
-pkg update -y   and   pkg upgrade -y
-termux-setup-storage
 termux-change-repo > Mirror group > All mirror/asia mirrors
+termux-setup-storage
+pkg update -y   and   pkg upgrade -y
 
 cd /  # root storage 
 cd /sdcard/  # main storage
