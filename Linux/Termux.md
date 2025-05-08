@@ -10,17 +10,34 @@ termux-change-repo > Mirror group > All mirror/asia mirrors
 termux-setup-storage
 pkg update -y   and   pkg upgrade -y
 
+pkg install fish -y
+chsh -s fish
+
 cd /  # root storage 
 cd /sdcard/  # main storage
 
 
 which <pkg name> # show pkg path
-pkg show <PKG name> # details about a package
-```
+pkg show <PKG name> # details about a package```
 
 ___
 
+### Packages
+
+```bash
+pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias cat = bat
+```
+
+```bash
+- termux-reload-settings # load the changes
+- vol-up + k # hide/unhide termux bottom toolbar.
+- termux-open file.txt / file.img # open files with termux
+- termux-wake-lock/unlock # keep running/close after lock screen 
+```
+
 ### Termux margin settings
+
+- Just copy the backup folder of .termux to restore the settings.
 
 ```bash
 nano ~/.termux/termux.properties
@@ -60,19 +77,6 @@ color12=#D6ACFF
 color13=#FF92DF
 color14=#A4FFFF
 color15=#FFFFFF
-```
-
-### Packages
-
-```bash
-pkg install python git nodejs openssh curl wget openjdk-17 which fish -y # alias cat = bat
-```
-
-```bash
-- termux-reload-settings # load the changes
-- vol-up + k # hide/unhide termux bottom toolbar.
-- termux-open file.txt / file.img # open files with termux
-- termux-wake-lock/unlock # keep running/close after lock screen 
 ```
 
 ## Termux FTP Server
