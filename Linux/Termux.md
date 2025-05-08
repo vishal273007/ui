@@ -80,19 +80,6 @@ color14=#A4FFFF
 color15=#FFFFFF
 ```
 
-## Termux FTP Server
-
-```bash
-# Install FTP server
-pkg install busybox
-
-# Start FTP server
-nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /storage/emulated/0 > /dev/null 2>&1 &
-
-# Check if FTP server is running
-ps aux | grep -E "ftpd|tcpsvd" | grep -v grep
-```
-
 ## Fish Config File
 
 ```bash
@@ -106,4 +93,17 @@ alias fish="cd ~/.config/fish/"
 
 # Auto start FTP server
 # nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /sdcard > /dev/null 2>&1 &
+```
+
+## Termux FTP Server
+
+```bash
+# Install FTP server
+pkg install busybox
+
+# Start FTP server
+nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /storage/emulated/0 > /dev/null 2>&1 &
+
+# Check if FTP server is running
+ps aux | grep -E "ftpd|tcpsvd" | grep -v grep
 ```
