@@ -83,27 +83,20 @@ color15=#FFFFFF
 ## Fish Config File
 
 ```bash
-bind \t accept-autosuggestion
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
 sshd
 
-alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {ip=\$2} END {print ip}'"
+alias c='clear'
+alias cl='clear'
+alias cls='clear'
 
+bind \t accept-autosuggestion
 set -g fish_greeting ""
+alias sf 'source ~/.config/fish/config.fish'
+
+alias ip "ifconfig 2>/dev/null | awk '/inet / && \$2 !~ /127.0.0.1/ {i>
 alias fish="cd ~/.config/fish/"
-
-# Auto start FTP server
-# nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /sdcard > /dev/null 2>&1 &
-```
-
-## Termux FTP Server
-
-```bash
-# Install FTP server
-pkg install busybox
-
-# Start FTP server
-nohup busybox tcpsvd -vE 0.0.0.0 9999 busybox ftpd -w /storage/emulated/0 > /dev/null 2>&1 &
-
-# Check if FTP server is running
-ps aux | grep -E "ftpd|tcpsvd" | grep -v grep
 ```
