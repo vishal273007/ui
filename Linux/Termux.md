@@ -18,7 +18,8 @@ cd /sdcard/  # main storage
 
 
 which <pkg name> # show pkg path
-pkg show <PKG name> # details about a package```
+pkg show <PKG name> # details about a package
+```
 
 ___
 
