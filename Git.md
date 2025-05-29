@@ -1,21 +1,6 @@
 # Git & GitHub
 
-## Using Two Devices to Work on The Same Repository
-
-> Always do this before making any changes.
-
-- **On Laptop**:
-
-- Make changes, add, commit, and push. (`git add .` --> `git commit -m "message"` --> `git push`)
-
-- **On Tablet**:
-
-- Pull changes from GitHub before making new edits. (Go to working directory --> git pull).
-- Then Make changes, add, commit, and push. (git add . --> git commit -m "message" --> `git push`)
-
-- **Back to Laptop**:
-
-- Pull the latest changes before starting work again. (git pull)
+## Git Commands
 
 ### Conflict changes
 
@@ -56,7 +41,7 @@
 Before starting, configure Git with details:
 
 - `git config --global user.name "Vishal Vishwakarma"`: Sets Git username.
-- `git config --global user.email "273007@gmail.com"`: Sets email for commits.
+- `git config --global user.email "myemailgmail.com"`: Sets email for commits.
 - `git config --list`: verify details.
 
 For the first time push, enter following:
