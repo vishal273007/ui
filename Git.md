@@ -8,10 +8,13 @@
 
 ### Push Changes
 
-1. `git status` --> show modified files.
-2. `git add .` --> stages the changes.
-3. `git commit -m "updated notes"` --> provide meaningful message describing what you changed.
-4. `git push` --> upload changes to the GitHub.
+```bash
+git status          # Check what files changed
+git add .           # Add/stage all changes
+git commit -m "message"  # Save changes with message
+git push origin main     # Upload to GitHub
+git pull origin main     # Download latest changes
+```
 
 ### Git Pull
 
@@ -40,19 +43,20 @@
 
 Before starting, configure Git with details:
 
-- `git config --global user.name "Vishal Vishwakarma"`: Sets Git username.
-- `git config --global user.email "myemailgmail.com"`: Sets email for commits.
-- `git config --list`: verify details.
+```bash
+git config --global user.name "Vishal Vishwakarma" # Sets Git username.
+git config --global user.email "myemailgmail.com" # Sets email for commits.
+git config --list # verify details.
 
-For the first time push, enter following:
-
-- `git config --global credential.helper store` - firt time only to store git credentials
+# For the first time push, enter following:
+git config --global credential.helper store` - firt time only to store git credentials
 - Clone and then edit and push > Enter credentials once when pushing/pulling (after this, Git will remember them)
 
-_Now, when asked, enter the details like following:_
+# Now, when asked, enter the details like following:
 
-- `username`: Enter github username `vishal273007`
-- `enter password`: enter the `PAT(access token)` from Proton pass note.
+username: Enter github username `vishal273007`
+password: enter the `PAT(access token)` from Proton pass note.
+```
 
 ---
 
